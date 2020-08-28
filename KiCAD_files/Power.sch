@@ -860,8 +860,8 @@ AR Path="/5F461442" Ref="C8"  Part="1"
 AR Path="/5E91AAF4/5F461442" Ref="C?"  Part="1" 
 AR Path="/5E86B783/5F461442" Ref="C?"  Part="1" 
 AR Path="/5E99427A/5F461442" Ref="C9"  Part="1" 
-F 0 "C8" H 3615 5746 50  0000 L CNN
-F 1 "100nF" H 3615 5655 50  0000 L CNN
+F 0 "C8" H 3370 5790 50  0000 L CNN
+F 1 "100nF" H 3270 5600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" H 3538 5550 50  0001 C CNN
 F 3 "~" H 3500 5700 50  0001 C CNN
 	1    3500 5700
@@ -896,8 +896,8 @@ AR Path="/5F4613FC" Ref="C10"  Part="1"
 AR Path="/5E91AAF4/5F4613FC" Ref="C?"  Part="1" 
 AR Path="/5E86B783/5F4613FC" Ref="C?"  Part="1" 
 AR Path="/5E99427A/5F4613FC" Ref="C10"  Part="1" 
-F 0 "C10" H 3865 5746 50  0000 L CNN
-F 1 "100nF" H 3865 5655 50  0000 L CNN
+F 0 "C10" H 3590 5780 50  0000 L CNN
+F 1 "100nF" H 3500 5610 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" H 3788 5550 50  0001 C CNN
 F 3 "~" H 3750 5700 50  0001 C CNN
 	1    3750 5700
@@ -986,7 +986,7 @@ L Sensor_Current:ACS730xLCTR-20AB U1
 U 1 1 5F2DF71D
 P 4600 3600
 F 0 "U1" H 4600 4081 50  0000 C CNN
-F 1 "ACS730xLCTR-20AB" H 4600 3990 50  0000 C CNN
+F 1 "ACS730xLCTR-20AB" V 4980 3650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4950 3500 50  0001 L CIN
 F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en" H 4600 3600 50  0001 C CNN
 	1    4600 3600
@@ -994,17 +994,6 @@ F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?
 $EndComp
 Wire Wire Line
 	4500 4000 4500 3900
-$Comp
-L Device:C_Small C1
-U 1 1 5E9DBC83
-P 4500 4100
-F 0 "C1" H 4592 4146 50  0000 L CNN
-F 1 "1nF" H 4592 4055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4500 4100 50  0001 C CNN
-F 3 "~" H 4500 4100 50  0001 C CNN
-	1    4500 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 4200 4500 4350
 Wire Wire Line
@@ -1283,8 +1272,8 @@ AR Path="/5F08B67F" Ref="C3"  Part="1"
 AR Path="/5E91AAF4/5F08B67F" Ref="C?"  Part="1" 
 AR Path="/5E86B783/5F08B67F" Ref="C?"  Part="1" 
 AR Path="/5E99427A/5F08B67F" Ref="C27"  Part="1" 
-F 0 "C3" H 3315 3096 50  0000 L CNN
-F 1 "100nF" H 3315 3005 50  0000 L CNN
+F 0 "C3" H 3230 3140 50  0000 L CNN
+F 1 "100nF" H 3230 2960 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" H 3238 2900 50  0001 C CNN
 F 3 "~" H 3200 3050 50  0001 C CNN
 	1    3200 3050
@@ -1300,8 +1289,8 @@ AR Path="/5F08B686" Ref="C7"  Part="1"
 AR Path="/5E91AAF4/5F08B686" Ref="C?"  Part="1" 
 AR Path="/5E86B783/5F08B686" Ref="C?"  Part="1" 
 AR Path="/5E99427A/5F08B686" Ref="C28"  Part="1" 
-F 0 "C7" H 3615 3096 50  0000 L CNN
-F 1 "100nF" H 3615 3005 50  0000 L CNN
+F 0 "C7" H 3350 3130 50  0000 L CNN
+F 1 "100nF" H 3510 2960 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" H 3538 2900 50  0001 C CNN
 F 3 "~" H 3500 3050 50  0001 C CNN
 	1    3500 3050
@@ -1315,8 +1304,8 @@ AR Path="/5EA6B03B" Ref="C9"  Part="1"
 AR Path="/5E91AAF4/5EA6B03B" Ref="C?"  Part="1" 
 AR Path="/5E86B783/5EA6B03B" Ref="C?"  Part="1" 
 AR Path="/5E99427A/5EA6B03B" Ref="C3"  Part="1" 
-F 0 "C9" H 3965 3096 50  0000 L CNN
-F 1 "100nF" H 3965 3005 50  0000 L CNN
+F 0 "C9" H 3710 3130 50  0000 L CNN
+F 1 "100nF" H 3600 2970 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" H 3888 2900 50  0001 C CNN
 F 3 "~" H 3850 3050 50  0001 C CNN
 	1    3850 3050
@@ -1959,4 +1948,221 @@ F 3 "" H 8450 8450 50  0001 C CNN
 	1    8200 9400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E9DBC83
+P 4500 4100
+F 0 "C1" H 4320 4120 50  0000 L CNN
+F 1 "1nF" H 4300 4040 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4500 4100 50  0001 C CNN
+F 3 "~" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4240 4630 4620 4630
+Wire Notes Line
+	4620 4630 4620 4040
+Wire Notes Line
+	4620 4040 4240 4040
+Wire Notes Line
+	4240 4040 4240 4630
+Text Notes 4290 4590 0    50   ~ 0
+Bonne \nValeur ?
+Wire Notes Line
+	2910 3220 4170 3220
+Wire Notes Line
+	4170 3220 4170 2800
+Wire Notes Line
+	4170 2800 2910 2800
+Wire Notes Line
+	2910 2800 2910 3220
+Text Notes 3520 2970 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	2380 3490 2770 3490
+Wire Notes Line
+	2770 3490 2770 2640
+Wire Notes Line
+	2770 2640 2380 2640
+Wire Notes Line
+	2380 2640 2380 3490
+Text Notes 2410 2800 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	6770 3150 7220 3150
+Wire Notes Line
+	7220 2000 6770 2000
+Text Notes 6810 2660 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	6710 2020 6710 2430
+Wire Notes Line
+	6710 2430 6420 2430
+Wire Notes Line
+	6420 2430 6420 1660
+Wire Notes Line
+	6420 1660 6690 1660
+Wire Notes Line
+	6690 1660 6690 2020
+Wire Notes Line
+	6690 2020 6710 2020
+Text Notes 6450 1860 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	6770 4620 7220 4620
+Wire Notes Line
+	6770 2010 6770 4620
+Wire Notes Line
+	7220 2000 7220 4620
+Wire Notes Line
+	8200 4100 8950 4100
+Wire Notes Line
+	8950 4100 8950 1650
+Wire Notes Line
+	8950 1650 8200 1650
+Wire Notes Line
+	8200 1650 8200 4100
+Text Notes 8260 1860 0    50   ~ 0
+Valeurs à \ncalculer ?
+Wire Notes Line
+	9850 4200 13120 4200
+Wire Notes Line
+	13120 4200 13120 1300
+Wire Notes Line
+	13120 1300 9850 1300
+Wire Notes Line
+	9850 1300 9850 4200
+Text Notes 9920 1530 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	14700 2260 14700 3280
+Wire Notes Line
+	14700 3280 15770 3280
+Wire Notes Line
+	15770 3280 15770 2250
+Wire Notes Line
+	15770 2250 14700 2250
+Text Notes 15330 3220 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 11880 6550 0    50   ~ 0
+Bonnes Valeurs = Valeurs à revoir ou corriger
+Text Notes 3610 6060 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 2450 6950 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	2290 6490 3310 6490
+Wire Notes Line
+	3310 6490 3310 7420
+Wire Notes Line
+	3310 7420 2310 7420
+Wire Notes Line
+	2310 7420 2310 6480
+Wire Notes Line
+	2960 5470 2960 6350
+Wire Notes Line
+	2960 6350 4020 6350
+Wire Notes Line
+	4020 6350 4020 5470
+Wire Notes Line
+	4020 5470 2960 5470
+Wire Notes Line
+	4050 7710 5700 7710
+Wire Notes Line
+	5700 7710 5700 6870
+Wire Notes Line
+	5700 6870 4990 6870
+Wire Notes Line
+	4990 6870 4990 7250
+Wire Notes Line
+	4990 7250 4060 7250
+Wire Notes Line
+	4060 7250 4060 7700
+Text Notes 5260 7650 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	4360 8790 3470 8790
+Wire Notes Line
+	3470 8790 3470 8210
+Wire Notes Line
+	3470 8210 4690 8210
+Wire Notes Line
+	4690 8210 4690 8800
+Wire Notes Line
+	4690 8800 4340 8800
+Wire Notes Line
+	4340 8800 4340 8790
+Text Notes 4220 8470 0    50   ~ 0
+Reference ?
+Wire Notes Line
+	6880 5330 6880 6850
+Wire Notes Line
+	6880 6850 7380 6850
+Wire Notes Line
+	7380 6850 7380 5140
+Wire Notes Line
+	7380 5140 6900 5140
+Wire Notes Line
+	6900 5140 6900 5390
+Wire Notes Line
+	6900 5390 6880 5390
+Text Notes 6940 5260 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	7900 7950 7900 5120
+Wire Notes Line
+	7900 5120 7390 5120
+Wire Notes Line
+	7390 5120 7390 7950
+Wire Notes Line
+	7390 7950 7900 7950
+Text Notes 7440 7860 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	8890 7970 9550 7970
+Wire Notes Line
+	9550 7970 9550 4910
+Wire Notes Line
+	9550 4910 8890 4910
+Wire Notes Line
+	8890 4910 8890 7970
+Wire Notes Line
+	8270 7370 8740 7370
+Wire Notes Line
+	8740 7370 8740 4900
+Wire Notes Line
+	8740 4900 8270 4900
+Wire Notes Line
+	8270 4900 8270 7370
+Text Notes 8370 5060 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	9780 5540 9780 7280
+Wire Notes Line
+	9780 7280 10950 7280
+Wire Notes Line
+	10950 7280 10950 5540
+Wire Notes Line
+	10950 5540 9780 5540
+Text Notes 10700 5710 0    50   ~ 0
+Ref ?
+Text Notes 9080 7860 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 11880 6680 0    50   ~ 0
+Ref = References a renseigner ou corriger
+Wire Notes Line
+	5810 6210 5810 6600
+Wire Notes Line
+	5810 6600 4720 6600
+Wire Notes Line
+	4720 6600 4720 5970
+Wire Notes Line
+	4720 5970 5040 5970
+Wire Notes Line
+	5040 5970 5040 6210
+Wire Notes Line
+	5040 6210 5810 6210
+Text Notes 4800 6120 0    50   ~ 0
+Ref ?
 $EndSCHEMATC

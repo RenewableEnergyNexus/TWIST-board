@@ -88,7 +88,7 @@ L Device:R R_GL1
 U 1 1 5E9DBBB4
 P 6600 3900
 F 0 "R_GL1" V 6807 3900 50  0000 C CNN
-F 1 "2.2" V 6716 3900 50  0000 C CNN
+F 1 "2,2" V 6716 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 3900 50  0001 C CNN
 F 3 "~" H 6600 3900 50  0001 C CNN
 	1    6600 3900
@@ -99,7 +99,7 @@ L Device:R R_GH1
 U 1 1 5E9DBBBB
 P 6600 2750
 F 0 "R_GH1" V 6807 2750 50  0000 C CNN
-F 1 "2.2" V 6716 2750 50  0000 C CNN
+F 1 "2,2" V 6716 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 2750 50  0001 C CNN
 F 3 "~" H 6600 2750 50  0001 C CNN
 	1    6600 2750
@@ -261,17 +261,21 @@ Wire Wire Line
 Wire Wire Line
 	14200 2250 14200 2100
 Wire Wire Line
-	5950 3600 5640 3600
+	14200 2100 15000 2100
+Wire Wire Line
+	14200 3050 14200 3500
+Wire Wire Line
+	5950 3600 5500 3600
 Connection ~ 14200 3050
 $Comp
 L Device:C_Small C2
 U 1 1 5E9DBC76
-P 5220 3950
-F 0 "C2" H 5312 3996 50  0000 L CNN
-F 1 "100nF" H 5312 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5220 3950 50  0001 C CNN
-F 3 "~" H 5220 3950 50  0001 C CNN
-	1    5220 3950
+P 5500 3950
+F 0 "C2" H 5592 3996 50  0000 L CNN
+F 1 "100nF" H 5592 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 3950 50  0001 C CNN
+F 3 "~" H 5500 3950 50  0001 C CNN
+	1    5500 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -293,29 +297,31 @@ Wire Wire Line
 	13800 2850 13800 4150
 Wire Wire Line
 	14600 2650 14950 2650
-Text Label 14950 2650 2    50   ~ 0
+Text Label 14950 2650 0    50   ~ 0
 IIHigh
-Text Label 3900 9500 2    50   ~ 0
+Text Label 3900 9500 0    50   ~ 0
 VTh
-Text Label 9830 1720 2    50   ~ 0
+Text Label 9750 2100 0    50   ~ 0
 V_Out
 Text Label 3500 4300 0    50   ~ 0
 N
-Text Label 3300 4510 0    50   ~ 0
+Text Label 3500 4300 0    50   ~ 0
 N
 Wire Wire Line
 	15450 2100 15000 2100
 Connection ~ 15000 2100
-Text Label 15910 2450 2    50   ~ 0
+Text Label 15000 2100 0    50   ~ 0
 DGND
 Wire Wire Line
-	5220 4350 5220 4050
+	5500 4350 5500 4050
 Wire Wire Line
-	5220 4350 5640 4350
-Text Label 5980 4350 0    50   ~ 0
+	5500 4350 5600 4350
+Text Label 5600 4350 0    50   ~ 0
 DGND
-Text Label 3560 9970 2    50   ~ 0
+Text Label 3350 9900 0    50   ~ 0
 DGND
+Wire Wire Line
+	3350 9800 3350 9900
 Text Label 4000 8450 0    50   ~ 0
 N
 Wire Wire Line
@@ -387,9 +393,9 @@ PWM_H1
 Text Label 6000 3900 0    50   ~ 0
 PWM_L1
 Wire Wire Line
-	5220 3850 5220 3600
-Connection ~ 5220 3600
-Connection ~ 5220 4350
+	5500 3850 5500 3600
+Connection ~ 5500 3600
+Connection ~ 5500 4350
 Wire Wire Line
 	4300 3600 4100 3600
 Wire Wire Line
@@ -408,9 +414,9 @@ $EndComp
 Wire Wire Line
 	14200 3050 14700 3050
 Wire Wire Line
-	14900 3050 15080 3050
+	14900 3050 15450 3050
 Wire Wire Line
-	15450 2100 15450 2590
+	15450 2100 15450 3050
 Wire Wire Line
 	3750 9500 3900 9500
 Connection ~ 3500 3700
@@ -420,7 +426,7 @@ Wire Wire Line
 	9150 4500 10050 4500
 Connection ~ 10950 2100
 Wire Wire Line
-	9150 2100 9620 2100
+	9150 2100 10050 2100
 Connection ~ 10050 2100
 Wire Wire Line
 	10050 2100 10500 2100
@@ -549,7 +555,7 @@ F 3 "" H 5400 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 6750 5710 6750
+	5850 6750 5250 6750
 $Comp
 L Device:C_Small C24
 U 1 1 5F4613DF
@@ -576,7 +582,7 @@ Wire Wire Line
 	4350 7250 4350 7150
 Wire Wire Line
 	5250 7500 5250 7200
-Text Label 4900 7770 2    50   ~ 0
+Text Label 4800 7500 0    50   ~ 0
 DGND
 Text Label 4650 7250 0    50   ~ 0
 IILow2
@@ -786,7 +792,7 @@ Wire Wire Line
 	4100 4350 4500 4350
 Connection ~ 4500 4350
 Wire Wire Line
-	4500 4350 5220 4350
+	4500 4350 5500 4350
 Wire Wire Line
 	4600 4100 4600 4000
 Wire Wire Line
@@ -794,7 +800,7 @@ Wire Wire Line
 Text Label 4900 4100 0    50   ~ 0
 IILow1
 Wire Wire Line
-	4900 3600 5220 3600
+	4900 3600 5500 3600
 Wire Wire Line
 	4700 3200 5450 3200
 $Comp
@@ -814,7 +820,7 @@ Connection ~ 4250 7500
 Wire Wire Line
 	4250 7050 4250 7250
 Wire Wire Line
-	4250 7500 4540 7500
+	4250 7500 5250 7500
 Wire Wire Line
 	4650 6750 5250 6750
 Wire Wire Line
@@ -834,9 +840,9 @@ F 3 "~" H 2500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 3000 2500 3130
+	2500 3000 2500 3250
 Wire Wire Line
-	2500 4300 3210 4300
+	2500 4300 3500 4300
 Wire Wire Line
 	2500 2800 2500 2150
 Connection ~ 2500 2150
@@ -863,7 +869,7 @@ F 3 "~" H 2850 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 6750 2850 6920
+	2850 6750 2850 7000
 Wire Wire Line
 	2850 6550 2850 5300
 Connection ~ 2850 5300
@@ -871,7 +877,7 @@ Wire Wire Line
 	2850 5300 2100 5300
 Wire Wire Line
 	6400 2350 6400 2750
-Text Label 3880 1930 2    50   ~ 0
+Text Label 3800 2150 0    50   ~ 0
 V_In1
 Text Label 7000 10550 0    50   ~ 0
 VTh
@@ -889,10 +895,10 @@ Text Label 6900 9200 0    50   ~ 0
 IIHigh
 Wire Wire Line
 	7200 9200 6900 9200
-Text Label 2130 3130 0    50   ~ 0
+Text Label 2500 3150 0    50   ~ 0
 VILow1+
 Wire Wire Line
-	2500 3450 2500 3670
+	2500 3450 2500 4300
 $Comp
 L Device:R_Small Rv2
 U 1 1 5F693CB4
@@ -904,11 +910,11 @@ F 3 "~" H 2500 3350 50  0001 C CNN
 	1    2500 3350
 	1    0    0    -1  
 $EndComp
-Text Label 2120 3670 0    50   ~ 0
+Text Label 2500 3600 0    50   ~ 0
 VILow1-
-Text Label 2430 6920 0    50   ~ 0
+Text Label 2850 6900 0    50   ~ 0
 VILow2+
-Text Label 2450 7460 0    50   ~ 0
+Text Label 2850 7350 0    50   ~ 0
 VILow2-
 Text Label 6800 10250 0    50   ~ 0
 VILow2-
@@ -947,14 +953,14 @@ Wire Wire Line
 Wire Wire Line
 	9350 8700 9300 8700
 Wire Wire Line
-	5950 3200 6000 3200
+	5950 3200 7100 3200
 Wire Wire Line
 	6400 3900 6000 3900
 Connection ~ 6400 3900
 Wire Wire Line
 	6400 2750 6000 2750
 Connection ~ 6400 2750
-Text Label 6340 2990 2    50   ~ 0
+Text Label 6000 3200 0    50   ~ 0
 SW_Node1
 Text Label 9350 9200 0    50   ~ 0
 PWM_L1
@@ -1014,12 +1020,12 @@ Wire Wire Line
 Wire Wire Line
 	13250 2850 13800 2850
 Connection ~ 13800 2850
-Text Label 3270 7740 0    50   ~ 0
+Text Label 3500 7550 0    50   ~ 0
 N
 Text Label 3500 7550 0    50   ~ 0
 N
 Wire Wire Line
-	2850 7200 2850 7460
+	2850 7200 2850 7550
 Text Label 6950 8550 0    50   ~ 0
 DGND
 Text Label 6950 8950 0    50   ~ 0
@@ -1039,7 +1045,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 6550 3500 7550
 Wire Wire Line
-	2850 7550 3150 7550
+	2850 7550 3500 7550
 Connection ~ 2500 4300
 Wire Wire Line
 	3950 3200 3950 3700
@@ -1427,14 +1433,16 @@ Wire Wire Line
 $Comp
 L power:+5VD #PWR0110
 U 1 1 5F406701
-P 14690 3360
-F 0 "#PWR0110" H 14690 3210 50  0001 C CNN
-F 1 "+5VD" H 14705 3533 50  0000 C CNN
-F 2 "" H 14690 3360 50  0001 C CNN
-F 3 "" H 14690 3360 50  0001 C CNN
-	1    14690 3360
+P 14350 3500
+F 0 "#PWR0110" H 14350 3350 50  0001 C CNN
+F 1 "+5VD" H 14365 3673 50  0000 C CNN
+F 2 "" H 14350 3500 50  0001 C CNN
+F 3 "" H 14350 3500 50  0001 C CNN
+	1    14350 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	14350 3500 14200 3500
 $Comp
 L Sensor_Temperature:LM35-LP U2
 U 1 1 5F342246
@@ -1590,7 +1598,7 @@ Wire Wire Line
 	3500 2300 3500 2150
 Connection ~ 3500 2150
 Wire Wire Line
-	3500 2150 3710 2150
+	3500 2150 4500 2150
 Wire Wire Line
 	3500 2900 3500 2300
 Connection ~ 3500 2300
@@ -1957,250 +1965,4 @@ Wire Wire Line
 	3050 3200 3050 3700
 Wire Wire Line
 	3050 3700 3500 3700
-Wire Notes Line
-	2860 6670 4310 6670
-Wire Notes Line
-	4310 6670 4310 940 
-Wire Notes Line
-	4310 940  2860 940 
-Wire Notes Line
-	2860 940  2860 6670
-Text Notes 2900 1500 0    118  ~ 24
-Where's the film \ncapacitor?
-Wire Wire Line
-	2850 6920 2430 6920
-Connection ~ 2850 6920
-Wire Wire Line
-	2850 6920 2850 7000
-Wire Wire Line
-	2850 7460 2450 7460
-Connection ~ 2850 7460
-Wire Wire Line
-	2850 7460 2850 7550
-Wire Wire Line
-	3150 7550 3150 7740
-Wire Wire Line
-	3150 7740 3270 7740
-Connection ~ 3150 7550
-Wire Wire Line
-	3150 7550 3500 7550
-Wire Notes Line
-	3640 7740 3640 7420
-Wire Notes Line
-	3640 7420 2980 7420
-Wire Notes Line
-	2980 7420 2980 8000
-Wire Notes Line
-	2980 8000 3920 8000
-Wire Notes Line
-	3920 8000 3920 7740
-Wire Notes Line
-	3920 7740 3640 7740
-Text Notes 3270 7940 0    50   ~ 10
-Attention!\nDouble N label.
-Wire Wire Line
-	4540 7500 4540 7770
-Wire Wire Line
-	4540 7770 4900 7770
-Connection ~ 4540 7500
-Wire Wire Line
-	4540 7500 5250 7500
-Wire Wire Line
-	2500 3670 2120 3670
-Connection ~ 2500 3670
-Wire Wire Line
-	2500 3670 2500 4300
-Wire Wire Line
-	2500 3130 2130 3130
-Connection ~ 2500 3130
-Wire Wire Line
-	2500 3130 2500 3250
-Wire Wire Line
-	3710 2150 3710 1930
-Wire Wire Line
-	3710 1930 3880 1930
-Connection ~ 3710 2150
-Wire Wire Line
-	3710 2150 4500 2150
-Wire Wire Line
-	3210 4300 3210 4510
-Wire Wire Line
-	3210 4510 3300 4510
-Connection ~ 3210 4300
-Wire Wire Line
-	3210 4300 3500 4300
-Wire Notes Line
-	3130 4190 3130 4620
-Wire Notes Line
-	3640 4390 3640 4190
-Wire Notes Line
-	3640 4190 3130 4190
-Text Notes 3390 4580 0    50   ~ 10
-Attention!\nDouble N label.
-Wire Notes Line
-	4020 4390 4020 4620
-Wire Notes Line
-	3130 4620 4020 4620
-Wire Notes Line
-	3640 4390 4020 4390
-Wire Wire Line
-	9620 2100 9620 1720
-Wire Wire Line
-	9620 1720 9830 1720
-Connection ~ 9620 2100
-Wire Wire Line
-	9620 2100 10050 2100
-Wire Wire Line
-	3350 9800 3350 9970
-Wire Wire Line
-	3350 9970 3560 9970
-Wire Wire Line
-	6000 3200 6000 2990
-Wire Wire Line
-	6000 2990 6340 2990
-Connection ~ 6000 3200
-Wire Wire Line
-	6000 3200 7100 3200
-Wire Notes Line
-	7630 8390 6350 8390
-Wire Notes Line
-	6350 8390 6350 7650
-Wire Notes Line
-	6350 7650 6720 7650
-Wire Notes Line
-	6720 7650 6720 7920
-Wire Notes Line
-	6720 7920 7590 7920
-Wire Notes Line
-	7590 7920 7590 8390
-Text Notes 6530 8070 0    50   ~ 10
-+5VD !=  5DV
-Wire Notes Line
-	8830 7830 8830 4910
-Wire Notes Line
-	8830 4910 8200 4910
-Wire Notes Line
-	8200 4910 8200 -710
-Wire Notes Line
-	8200 -710 7520 -710
-Wire Notes Line
-	7520 -710 7520 5140
-Wire Notes Line
-	7520 5140 8290 5140
-Wire Notes Line
-	8290 5140 8290 7830
-Wire Notes Line
-	8290 7830 8830 7830
-Text Notes 8130 1890 1    118  ~ 24
-All the links of the \ntransistors datasheets\nare broken!
-$Comp
-L Diode:ESD9B5.0ST5G TVS1
-U 1 1 5F724DB3
-P 5640 3960
-F 0 "TVS1" V 5640 4039 50  0000 L CNN
-F 1 "ESD9B5.0ST5G" V 5685 4039 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-923" H 5640 3960 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 5640 3960 50  0001 C CNN
-	1    5640 3960
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5640 3600 5640 3810
-Connection ~ 5640 3600
-Wire Wire Line
-	5640 3600 5220 3600
-Wire Wire Line
-	5640 4110 5640 4350
-Connection ~ 5640 4350
-Wire Wire Line
-	5640 4350 5980 4350
-Wire Notes Line
-	5460 3490 5460 5420
-Wire Notes Line
-	5460 5420 5750 5420
-Wire Notes Line
-	5750 5420 5750 3500
-Wire Notes Line
-	5750 3500 5460 3500
-Text Notes 5680 5350 1    118  ~ 24
-ADDED!!!
-$Comp
-L Diode:ESD9B5.0ST5G TVS2
-U 1 1 5F7C9D83
-P 5710 7100
-F 0 "TVS2" V 5710 7179 50  0000 L CNN
-F 1 "ESD9B5.0ST5G" V 5755 7179 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-923" H 5710 7100 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 5710 7100 50  0001 C CNN
-	1    5710 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5710 6950 5710 6750
-Connection ~ 5710 6750
-Wire Wire Line
-	5710 6750 5250 6750
-Wire Wire Line
-	5250 7500 5710 7500
-Wire Wire Line
-	5710 7500 5710 7250
-Connection ~ 5250 7500
-Text Notes 5800 8390 1    118  ~ 24
-ADDED!!!
-Wire Notes Line
-	5560 8550 5860 8550
-Wire Notes Line
-	5860 8550 5860 6900
-Wire Notes Line
-	5860 6900 5560 6900
-Wire Notes Line
-	5560 6900 5560 8550
-Text Notes 15940 3680 2    118  ~ 24
-ADDED!!!
-$Comp
-L Diode:ESD9B5.0ST5G TVS3
-U 1 1 5F82DCFE
-P 15080 3240
-F 0 "TVS3" V 15080 3319 50  0000 L CNN
-F 1 "ESD9B5.0ST5G" V 15125 3319 50  0001 L CNN
-F 2 "Diode_SMD:D_SOD-923" H 15080 3240 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 15080 3240 50  0001 C CNN
-	1    15080 3240
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15080 3090 15080 3050
-Connection ~ 15080 3050
-Wire Wire Line
-	15080 3050 15450 3050
-Wire Wire Line
-	15080 3390 15080 3440
-Wire Wire Line
-	14200 3050 14200 3440
-Wire Wire Line
-	14200 3440 14690 3440
-Wire Wire Line
-	14690 3360 14690 3440
-Connection ~ 14690 3440
-Wire Wire Line
-	14690 3440 15080 3440
-Wire Wire Line
-	15450 2590 15650 2590
-Wire Wire Line
-	15650 2590 15650 2450
-Wire Wire Line
-	15650 2450 15910 2450
-Connection ~ 15450 2590
-Wire Wire Line
-	15450 2590 15450 3050
-Wire Wire Line
-	14200 2100 15000 2100
-Wire Notes Line
-	16800 3770 16800 2970
-Wire Notes Line
-	16800 2970 14940 2970
-Wire Notes Line
-	14940 3770 16800 3770
-Wire Notes Line
-	14940 2970 14940 3770
 $EndSCHEMATC

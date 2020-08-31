@@ -1762,6 +1762,7 @@ F 3 "" H 8450 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
 <<<<<<< bee23521282e49579cb7d8ae3bb6f8cddb4cffdb
 L Device:C C15
 U 1 1 5F6E9BF7
@@ -2290,6 +2291,8 @@ Wire Notes Line
 Wire Notes Line
 	14940 2970 14940 3770
 =======
+=======
+>>>>>>> 2e9046f40c7aeaac46a4efb763557527b26febee
 L Device:C_Small C1
 U 1 1 5E9DBC83
 P 4500 4100
@@ -2506,5 +2509,8 @@ Wire Notes Line
 	5040 6210 5810 6210
 Text Notes 4800 6120 0    50   ~ 0
 Ref ?
+<<<<<<< HEAD
 >>>>>>> First round of comments
+=======
+>>>>>>> 2e9046f40c7aeaac46a4efb763557527b26febee
 $EndSCHEMATC

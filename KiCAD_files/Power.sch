@@ -88,7 +88,7 @@ L Device:R R_GL1
 U 1 1 5E9DBBB4
 P 6600 3900
 F 0 "R_GL1" V 6807 3900 50  0000 C CNN
-F 1 "2,2" V 6716 3900 50  0000 C CNN
+F 1 "2.2" V 6716 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 3900 50  0001 C CNN
 F 3 "~" H 6600 3900 50  0001 C CNN
 	1    6600 3900
@@ -99,7 +99,7 @@ L Device:R R_GH1
 U 1 1 5E9DBBBB
 P 6600 2750
 F 0 "R_GH1" V 6807 2750 50  0000 C CNN
-F 1 "2,2" V 6716 2750 50  0000 C CNN
+F 1 "2.2" V 6716 2750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6530 2750 50  0001 C CNN
 F 3 "~" H 6600 2750 50  0001 C CNN
 	1    6600 2750
@@ -250,21 +250,17 @@ Wire Wire Line
 Wire Wire Line
 	14200 2250 14200 2100
 Wire Wire Line
-	14200 2100 15000 2100
-Wire Wire Line
-	14200 3050 14200 3500
-Wire Wire Line
-	5950 3600 5500 3600
+	5950 3600 5640 3600
 Connection ~ 14200 3050
 $Comp
 L Device:C_Small C2
 U 1 1 5E9DBC76
-P 5500 3950
-F 0 "C2" H 5592 3996 50  0000 L CNN
-F 1 "100nF" H 5592 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5500 3950 50  0001 C CNN
-F 3 "~" H 5500 3950 50  0001 C CNN
-	1    5500 3950
+P 5220 3950
+F 0 "C2" H 5312 3996 50  0000 L CNN
+F 1 "100nF" H 5312 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5220 3950 50  0001 C CNN
+F 3 "~" H 5220 3950 50  0001 C CNN
+	1    5220 3950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -286,29 +282,32 @@ Wire Wire Line
 	13800 2850 13800 4150
 Wire Wire Line
 	14600 2650 14950 2650
-Text Label 14950 2650 0    50   ~ 0
+Text Label 14950 2650 2    50   ~ 0
 IIHigh
-Text Label 3900 9500 0    50   ~ 0
+Text Label 3900 9500 2    50   ~ 0
 VTh
-Text Label 9750 2100 0    50   ~ 0
+Text Label 9830 1720 2    50   ~ 0
 V_Out
 Text Label 3500 4300 0    50   ~ 0
 N
+<<<<<<< HEAD
+=======
+Text Label 3300 4510 0    50   ~ 0
+N
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 Wire Wire Line
 	15450 2100 15000 2100
 Connection ~ 15000 2100
-Text Label 15000 2100 0    50   ~ 0
+Text Label 15910 2450 2    50   ~ 0
 DGND
 Wire Wire Line
-	5500 4350 5500 4050
+	5220 4350 5220 4050
 Wire Wire Line
-	5500 4350 5600 4350
-Text Label 5600 4350 0    50   ~ 0
+	5220 4350 5640 4350
+Text Label 5980 4350 0    50   ~ 0
 DGND
-Text Label 3350 9900 0    50   ~ 0
+Text Label 3560 9970 2    50   ~ 0
 DGND
-Wire Wire Line
-	3350 9800 3350 9900
 Text Label 4000 8450 0    50   ~ 0
 N
 Wire Wire Line
@@ -380,9 +379,9 @@ PWM_H1
 Text Label 6000 3900 0    50   ~ 0
 PWM_L1
 Wire Wire Line
-	5500 3850 5500 3600
-Connection ~ 5500 3600
-Connection ~ 5500 4350
+	5220 3850 5220 3600
+Connection ~ 5220 3600
+Connection ~ 5220 4350
 Wire Wire Line
 	4300 3600 4100 3600
 Wire Wire Line
@@ -401,9 +400,9 @@ $EndComp
 Wire Wire Line
 	14200 3050 14700 3050
 Wire Wire Line
-	14900 3050 15450 3050
+	14900 3050 15080 3050
 Wire Wire Line
-	15450 2100 15450 3050
+	15450 2100 15450 2590
 Wire Wire Line
 	3750 9500 3900 9500
 Connection ~ 3500 3700
@@ -413,7 +412,7 @@ Wire Wire Line
 	9150 4500 10050 4500
 Connection ~ 10950 2100
 Wire Wire Line
-	9150 2100 10050 2100
+	9150 2100 9620 2100
 Connection ~ 10050 2100
 Wire Wire Line
 	10050 2100 10500 2100
@@ -542,7 +541,7 @@ F 3 "https://www.we-online.com/catalog/datasheet/7443634700.pdf" H 5400 6350 50 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 6750 5250 6750
+	5850 6750 5710 6750
 $Comp
 L Device:C_Small C24
 U 1 1 5F4613DF
@@ -569,7 +568,7 @@ Wire Wire Line
 	4350 7250 4350 7150
 Wire Wire Line
 	5250 7500 5250 7200
-Text Label 4800 7500 0    50   ~ 0
+Text Label 4900 7770 2    50   ~ 0
 DGND
 Text Label 4650 7250 0    50   ~ 0
 IILow2
@@ -664,13 +663,56 @@ Wire Wire Line
 	3500 6550 3950 6550
 Connection ~ 3500 6550
 Wire Wire Line
+<<<<<<< bee23521282e49579cb7d8ae3bb6f8cddb4cffdb
 	3050 6550 3500 6550
+=======
+	3500 6200 3750 6200
+Connection ~ 3500 6200
+Wire Wire Line
+	3250 6200 3500 6200
+Wire Wire Line
+	3500 5850 3500 6200
+$Comp
+L Device:C C8
+U 1 1 5F461442
+P 3500 5700
+AR Path="/5F461442" Ref="C8"  Part="1" 
+AR Path="/5E91AAF4/5F461442" Ref="C?"  Part="1" 
+AR Path="/5E86B783/5F461442" Ref="C?"  Part="1" 
+AR Path="/5E99427A/5F461442" Ref="C9"  Part="1" 
+F 0 "C8" H 3370 5790 50  0000 L CNN
+F 1 "100nF" H 3270 5600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3538 5550 50  0001 C CNN
+F 3 "~" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	1    0    0    -1  
+$EndComp
+>>>>>>> First round of comments
 Wire Wire Line
 	3500 6350 3500 6550
 Wire Wire Line
 	3050 6350 3050 6550
 Wire Wire Line
+<<<<<<< bee23521282e49579cb7d8ae3bb6f8cddb4cffdb
 	3950 6350 3950 6550
+=======
+	3500 5550 3500 5300
+$Comp
+L Device:C C10
+U 1 1 5F4613FC
+P 3750 5700
+AR Path="/5F4613FC" Ref="C10"  Part="1" 
+AR Path="/5E91AAF4/5F4613FC" Ref="C?"  Part="1" 
+AR Path="/5E86B783/5F4613FC" Ref="C?"  Part="1" 
+AR Path="/5E99427A/5F4613FC" Ref="C10"  Part="1" 
+F 0 "C10" H 3590 5780 50  0000 L CNN
+F 1 "100nF" H 3500 5610 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3788 5550 50  0001 C CNN
+F 3 "~" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	-1   0    0    -1  
+$EndComp
+>>>>>>> First round of comments
 Text Label 3900 5300 0    50   ~ 0
 V_In2
 $Comp
@@ -749,6 +791,7 @@ Wire Wire Line
 	650  2150 1550 2150
 Wire Wire Line
 	650  5300 1550 5300
+<<<<<<< HEAD
 Wire Wire Line
 	4500 4000 4500 3900
 $Comp
@@ -762,13 +805,28 @@ F 3 "~" H 4500 4100 50  0001 C CNN
 	1    4500 4100
 	1    0    0    -1  
 $EndComp
+=======
+$Comp
+L Sensor_Current:ACS730xLCTR-20AB U1
+U 1 1 5F2DF71D
+P 4600 3600
+F 0 "U1" H 4600 4081 50  0000 C CNN
+F 1 "ACS730xLCTR-20AB" V 4980 3650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4950 3500 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/ACS730-Datasheet.ashx?la=en" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4000 4500 3900
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 Wire Wire Line
 	4500 4200 4500 4350
 Wire Wire Line
 	4100 4350 4500 4350
 Connection ~ 4500 4350
 Wire Wire Line
-	4500 4350 5500 4350
+	4500 4350 5220 4350
 Wire Wire Line
 	4600 4100 4600 4000
 Wire Wire Line
@@ -776,7 +834,7 @@ Wire Wire Line
 Text Label 4900 4100 0    50   ~ 0
 IILow1
 Wire Wire Line
-	4900 3600 5500 3600
+	4900 3600 5220 3600
 Wire Wire Line
 	4700 3200 5450 3200
 $Comp
@@ -796,7 +854,7 @@ Connection ~ 4250 7500
 Wire Wire Line
 	4250 7050 4250 7250
 Wire Wire Line
-	4250 7500 5250 7500
+	4250 7500 4540 7500
 Wire Wire Line
 	4650 6750 5250 6750
 Wire Wire Line
@@ -816,9 +874,9 @@ F 3 "~" H 2500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 3000 2500 3250
+	2500 3000 2500 3130
 Wire Wire Line
-	2500 4300 3500 4300
+	2500 4300 3210 4300
 Wire Wire Line
 	2500 2800 2500 2150
 Connection ~ 2500 2150
@@ -845,7 +903,11 @@ F 3 "~" H 2500 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+<<<<<<< HEAD
 	2500 6750 2500 7000
+=======
+	2850 6750 2850 6920
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 Wire Wire Line
 	2500 6550 2500 5300
 Connection ~ 2500 5300
@@ -853,7 +915,7 @@ Wire Wire Line
 	2500 5300 2100 5300
 Wire Wire Line
 	6400 2350 6400 2750
-Text Label 3800 2150 0    50   ~ 0
+Text Label 3880 1930 2    50   ~ 0
 V_In1
 Text Label 7000 10550 0    50   ~ 0
 VTh
@@ -871,10 +933,10 @@ Text Label 6900 9200 0    50   ~ 0
 IIHigh
 Wire Wire Line
 	7200 9200 6900 9200
-Text Label 2500 3150 0    50   ~ 0
+Text Label 2130 3130 0    50   ~ 0
 VILow1+
 Wire Wire Line
-	2500 3450 2500 4300
+	2500 3450 2500 3670
 $Comp
 L Device:R_Small Rv2
 U 1 1 5F693CB4
@@ -886,11 +948,17 @@ F 3 "~" H 2500 3350 50  0001 C CNN
 	1    2500 3350
 	1    0    0    -1  
 $EndComp
-Text Label 2500 3600 0    50   ~ 0
+Text Label 2120 3670 0    50   ~ 0
 VILow1-
+<<<<<<< HEAD
 Text Label 2500 6900 0    50   ~ 0
 VILow2+
 Text Label 2500 7350 0    50   ~ 0
+=======
+Text Label 2430 6920 0    50   ~ 0
+VILow2+
+Text Label 2450 7460 0    50   ~ 0
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 VILow2-
 Text Label 6800 10250 0    50   ~ 0
 VILow2-
@@ -929,14 +997,14 @@ Wire Wire Line
 Wire Wire Line
 	9350 8700 9300 8700
 Wire Wire Line
-	5950 3200 7100 3200
+	5950 3200 6000 3200
 Wire Wire Line
 	6400 3900 6000 3900
 Connection ~ 6400 3900
 Wire Wire Line
 	6400 2750 6000 2750
 Connection ~ 6400 2750
-Text Label 6000 3200 0    50   ~ 0
+Text Label 6340 2990 2    50   ~ 0
 SW_Node1
 Text Label 9350 9200 0    50   ~ 0
 PWM_L1
@@ -996,10 +1064,14 @@ Wire Wire Line
 Wire Wire Line
 	13250 2850 13800 2850
 Connection ~ 13800 2850
-Text Label 3500 7550 0    50   ~ 0
+Text Label 3270 7740 0    50   ~ 0
 N
 Wire Wire Line
+<<<<<<< HEAD
 	2500 7200 2500 7550
+=======
+	2850 7200 2850 7460
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 Text Label 6950 8550 0    50   ~ 0
 DGND
 Text Label 6950 8950 0    50   ~ 0
@@ -1019,12 +1091,69 @@ Wire Wire Line
 Wire Wire Line
 	3500 6550 3500 7550
 Wire Wire Line
+<<<<<<< HEAD
 	2500 7550 3500 7550
+=======
+	2850 7550 3150 7550
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 Connection ~ 2500 4300
 Wire Wire Line
+<<<<<<< bee23521282e49579cb7d8ae3bb6f8cddb4cffdb
 	3950 3200 3950 3700
 Wire Wire Line
 	3500 3200 3500 3700
+=======
+	3850 3200 3850 3700
+Wire Wire Line
+	3200 3200 3200 3700
+$Comp
+L Device:C C3
+U 1 1 5F08B67F
+P 3200 3050
+AR Path="/5F08B67F" Ref="C3"  Part="1" 
+AR Path="/5E91AAF4/5F08B67F" Ref="C?"  Part="1" 
+AR Path="/5E86B783/5F08B67F" Ref="C?"  Part="1" 
+AR Path="/5E99427A/5F08B67F" Ref="C27"  Part="1" 
+F 0 "C3" H 3230 3140 50  0000 L CNN
+F 1 "100nF" H 3230 2960 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3238 2900 50  0001 C CNN
+F 3 "~" H 3200 3050 50  0001 C CNN
+	1    3200 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3200 3500 3700
+$Comp
+L Device:C C7
+U 1 1 5F08B686
+P 3500 3050
+AR Path="/5F08B686" Ref="C7"  Part="1" 
+AR Path="/5E91AAF4/5F08B686" Ref="C?"  Part="1" 
+AR Path="/5E86B783/5F08B686" Ref="C?"  Part="1" 
+AR Path="/5E99427A/5F08B686" Ref="C28"  Part="1" 
+F 0 "C7" H 3350 3130 50  0000 L CNN
+F 1 "100nF" H 3510 2960 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3538 2900 50  0001 C CNN
+F 3 "~" H 3500 3050 50  0001 C CNN
+	1    3500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5EA6B03B
+P 3850 3050
+AR Path="/5EA6B03B" Ref="C9"  Part="1" 
+AR Path="/5E91AAF4/5EA6B03B" Ref="C?"  Part="1" 
+AR Path="/5E86B783/5EA6B03B" Ref="C?"  Part="1" 
+AR Path="/5E99427A/5EA6B03B" Ref="C3"  Part="1" 
+F 0 "C9" H 3710 3130 50  0000 L CNN
+F 1 "100nF" H 3600 2970 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3888 2900 50  0001 C CNN
+F 3 "~" H 3850 3050 50  0001 C CNN
+	1    3850 3050
+	-1   0    0    -1  
+$EndComp
+>>>>>>> First round of comments
 Connection ~ 6950 5900
 Wire Wire Line
 	6950 5900 6500 5900
@@ -1407,16 +1536,14 @@ Wire Wire Line
 $Comp
 L power:+5VD #PWR0110
 U 1 1 5F406701
-P 14350 3500
-F 0 "#PWR0110" H 14350 3350 50  0001 C CNN
-F 1 "+5VD" H 14365 3673 50  0000 C CNN
-F 2 "" H 14350 3500 50  0001 C CNN
-F 3 "" H 14350 3500 50  0001 C CNN
-	1    14350 3500
+P 14690 3360
+F 0 "#PWR0110" H 14690 3210 50  0001 C CNN
+F 1 "+5VD" H 14705 3533 50  0000 C CNN
+F 2 "" H 14690 3360 50  0001 C CNN
+F 3 "" H 14690 3360 50  0001 C CNN
+	1    14690 3360
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14350 3500 14200 3500
 $Comp
 L Sensor_Temperature:LM35-LP U2
 U 1 1 5F342246
@@ -1572,7 +1699,7 @@ Wire Wire Line
 	3500 2300 3500 2150
 Connection ~ 3500 2150
 Wire Wire Line
-	3500 2150 4500 2150
+	3500 2150 3710 2150
 Wire Wire Line
 	3500 2900 3500 2300
 Connection ~ 3500 2300
@@ -1659,6 +1786,8 @@ F 3 "" H 8450 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
+<<<<<<< bee23521282e49579cb7d8ae3bb6f8cddb4cffdb
 L Device:C C15
 U 1 1 5F6E9BF7
 P 10500 2700
@@ -1939,6 +2068,7 @@ Wire Wire Line
 	3050 3200 3050 3700
 Wire Wire Line
 	3050 3700 3500 3700
+<<<<<<< HEAD
 $Comp
 L Sensor_Current:ACS730xLCTR-20AB U1
 U 1 1 5F2DF71D
@@ -1961,4 +2091,475 @@ F 3 "~" H 7100 3000 50  0001 C CNN
 	1    7100 3000
 	-1   0    0    1   
 $EndComp
+=======
+Wire Notes Line
+	2860 6670 4310 6670
+Wire Notes Line
+	4310 6670 4310 940 
+Wire Notes Line
+	4310 940  2860 940 
+Wire Notes Line
+	2860 940  2860 6670
+Text Notes 2900 1500 0    118  ~ 24
+Where's the film \ncapacitor?
+Wire Wire Line
+	2850 6920 2430 6920
+Connection ~ 2850 6920
+Wire Wire Line
+	2850 6920 2850 7000
+Wire Wire Line
+	2850 7460 2450 7460
+Connection ~ 2850 7460
+Wire Wire Line
+	2850 7460 2850 7550
+Wire Wire Line
+	3150 7550 3150 7740
+Wire Wire Line
+	3150 7740 3270 7740
+Connection ~ 3150 7550
+Wire Wire Line
+	3150 7550 3500 7550
+Wire Notes Line
+	3640 7740 3640 7420
+Wire Notes Line
+	3640 7420 2980 7420
+Wire Notes Line
+	2980 7420 2980 8000
+Wire Notes Line
+	2980 8000 3920 8000
+Wire Notes Line
+	3920 8000 3920 7740
+Wire Notes Line
+	3920 7740 3640 7740
+Text Notes 3270 7940 0    50   ~ 10
+Attention!\nDouble N label.
+Wire Wire Line
+	4540 7500 4540 7770
+Wire Wire Line
+	4540 7770 4900 7770
+Connection ~ 4540 7500
+Wire Wire Line
+	4540 7500 5250 7500
+Wire Wire Line
+	2500 3670 2120 3670
+Connection ~ 2500 3670
+Wire Wire Line
+	2500 3670 2500 4300
+Wire Wire Line
+	2500 3130 2130 3130
+Connection ~ 2500 3130
+Wire Wire Line
+	2500 3130 2500 3250
+Wire Wire Line
+	3710 2150 3710 1930
+Wire Wire Line
+	3710 1930 3880 1930
+Connection ~ 3710 2150
+Wire Wire Line
+	3710 2150 4500 2150
+Wire Wire Line
+	3210 4300 3210 4510
+Wire Wire Line
+	3210 4510 3300 4510
+Connection ~ 3210 4300
+Wire Wire Line
+	3210 4300 3500 4300
+Wire Notes Line
+	3130 4190 3130 4620
+Wire Notes Line
+	3640 4390 3640 4190
+Wire Notes Line
+	3640 4190 3130 4190
+Text Notes 3390 4580 0    50   ~ 10
+Attention!\nDouble N label.
+Wire Notes Line
+	4020 4390 4020 4620
+Wire Notes Line
+	3130 4620 4020 4620
+Wire Notes Line
+	3640 4390 4020 4390
+Wire Wire Line
+	9620 2100 9620 1720
+Wire Wire Line
+	9620 1720 9830 1720
+Connection ~ 9620 2100
+Wire Wire Line
+	9620 2100 10050 2100
+Wire Wire Line
+	3350 9800 3350 9970
+Wire Wire Line
+	3350 9970 3560 9970
+Wire Wire Line
+	6000 3200 6000 2990
+Wire Wire Line
+	6000 2990 6340 2990
+Connection ~ 6000 3200
+Wire Wire Line
+	6000 3200 7100 3200
+Wire Notes Line
+	7630 8390 6350 8390
+Wire Notes Line
+	6350 8390 6350 7650
+Wire Notes Line
+	6350 7650 6720 7650
+Wire Notes Line
+	6720 7650 6720 7920
+Wire Notes Line
+	6720 7920 7590 7920
+Wire Notes Line
+	7590 7920 7590 8390
+Text Notes 6530 8070 0    50   ~ 10
++5VD !=  5DV
+Wire Notes Line
+	8830 7830 8830 4910
+Wire Notes Line
+	8830 4910 8200 4910
+Wire Notes Line
+	8200 4910 8200 -710
+Wire Notes Line
+	8200 -710 7520 -710
+Wire Notes Line
+	7520 -710 7520 5140
+Wire Notes Line
+	7520 5140 8290 5140
+Wire Notes Line
+	8290 5140 8290 7830
+Wire Notes Line
+	8290 7830 8830 7830
+Text Notes 8130 1890 1    118  ~ 24
+All the links of the \ntransistors datasheets\nare broken!
+$Comp
+L Diode:ESD9B5.0ST5G TVS1
+U 1 1 5F724DB3
+P 5640 3960
+F 0 "TVS1" V 5640 4039 50  0000 L CNN
+F 1 "ESD9B5.0ST5G" V 5685 4039 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-923" H 5640 3960 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 5640 3960 50  0001 C CNN
+	1    5640 3960
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5640 3600 5640 3810
+Connection ~ 5640 3600
+Wire Wire Line
+	5640 3600 5220 3600
+Wire Wire Line
+	5640 4110 5640 4350
+Connection ~ 5640 4350
+Wire Wire Line
+	5640 4350 5980 4350
+Wire Notes Line
+	5460 3490 5460 5420
+Wire Notes Line
+	5460 5420 5750 5420
+Wire Notes Line
+	5750 5420 5750 3500
+Wire Notes Line
+	5750 3500 5460 3500
+Text Notes 5680 5350 1    118  ~ 24
+ADDED!!!
+$Comp
+L Diode:ESD9B5.0ST5G TVS2
+U 1 1 5F7C9D83
+P 5710 7100
+F 0 "TVS2" V 5710 7179 50  0000 L CNN
+F 1 "ESD9B5.0ST5G" V 5755 7179 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-923" H 5710 7100 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 5710 7100 50  0001 C CNN
+	1    5710 7100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5710 6950 5710 6750
+Connection ~ 5710 6750
+Wire Wire Line
+	5710 6750 5250 6750
+Wire Wire Line
+	5250 7500 5710 7500
+Wire Wire Line
+	5710 7500 5710 7250
+Connection ~ 5250 7500
+Text Notes 5800 8390 1    118  ~ 24
+ADDED!!!
+Wire Notes Line
+	5560 8550 5860 8550
+Wire Notes Line
+	5860 8550 5860 6900
+Wire Notes Line
+	5860 6900 5560 6900
+Wire Notes Line
+	5560 6900 5560 8550
+Text Notes 15940 3680 2    118  ~ 24
+ADDED!!!
+$Comp
+L Diode:ESD9B5.0ST5G TVS3
+U 1 1 5F82DCFE
+P 15080 3240
+F 0 "TVS3" V 15080 3319 50  0000 L CNN
+F 1 "ESD9B5.0ST5G" V 15125 3319 50  0001 L CNN
+F 2 "Diode_SMD:D_SOD-923" H 15080 3240 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF" H 15080 3240 50  0001 C CNN
+	1    15080 3240
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15080 3090 15080 3050
+Connection ~ 15080 3050
+Wire Wire Line
+	15080 3050 15450 3050
+Wire Wire Line
+	15080 3390 15080 3440
+Wire Wire Line
+	14200 3050 14200 3440
+Wire Wire Line
+	14200 3440 14690 3440
+Wire Wire Line
+	14690 3360 14690 3440
+Connection ~ 14690 3440
+Wire Wire Line
+	14690 3440 15080 3440
+Wire Wire Line
+	15450 2590 15650 2590
+Wire Wire Line
+	15650 2590 15650 2450
+Wire Wire Line
+	15650 2450 15910 2450
+Connection ~ 15450 2590
+Wire Wire Line
+	15450 2590 15450 3050
+Wire Wire Line
+	14200 2100 15000 2100
+Wire Notes Line
+	16800 3770 16800 2970
+Wire Notes Line
+	16800 2970 14940 2970
+Wire Notes Line
+	14940 3770 16800 3770
+Wire Notes Line
+	14940 2970 14940 3770
+=======
+=======
+>>>>>>> 2e9046f40c7aeaac46a4efb763557527b26febee
+L Device:C_Small C1
+U 1 1 5E9DBC83
+P 4500 4100
+F 0 "C1" H 4320 4120 50  0000 L CNN
+F 1 "1nF" H 4300 4040 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4500 4100 50  0001 C CNN
+F 3 "~" H 4500 4100 50  0001 C CNN
+	1    4500 4100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4240 4630 4620 4630
+Wire Notes Line
+	4620 4630 4620 4040
+Wire Notes Line
+	4620 4040 4240 4040
+Wire Notes Line
+	4240 4040 4240 4630
+Text Notes 4290 4590 0    50   ~ 0
+Bonne \nValeur ?
+Wire Notes Line
+	2910 3220 4170 3220
+Wire Notes Line
+	4170 3220 4170 2800
+Wire Notes Line
+	4170 2800 2910 2800
+Wire Notes Line
+	2910 2800 2910 3220
+Text Notes 3520 2970 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	2380 3490 2770 3490
+Wire Notes Line
+	2770 3490 2770 2640
+Wire Notes Line
+	2770 2640 2380 2640
+Wire Notes Line
+	2380 2640 2380 3490
+Text Notes 2410 2800 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	6770 3150 7220 3150
+Wire Notes Line
+	7220 2000 6770 2000
+Text Notes 6810 2660 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	6710 2020 6710 2430
+Wire Notes Line
+	6710 2430 6420 2430
+Wire Notes Line
+	6420 2430 6420 1660
+Wire Notes Line
+	6420 1660 6690 1660
+Wire Notes Line
+	6690 1660 6690 2020
+Wire Notes Line
+	6690 2020 6710 2020
+Text Notes 6450 1860 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	6770 4620 7220 4620
+Wire Notes Line
+	6770 2010 6770 4620
+Wire Notes Line
+	7220 2000 7220 4620
+Wire Notes Line
+	8200 4100 8950 4100
+Wire Notes Line
+	8950 4100 8950 1650
+Wire Notes Line
+	8950 1650 8200 1650
+Wire Notes Line
+	8200 1650 8200 4100
+Text Notes 8260 1860 0    50   ~ 0
+Valeurs à \ncalculer ?
+Wire Notes Line
+	9850 4200 13120 4200
+Wire Notes Line
+	13120 4200 13120 1300
+Wire Notes Line
+	13120 1300 9850 1300
+Wire Notes Line
+	9850 1300 9850 4200
+Text Notes 9920 1530 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	14700 2260 14700 3280
+Wire Notes Line
+	14700 3280 15770 3280
+Wire Notes Line
+	15770 3280 15770 2250
+Wire Notes Line
+	15770 2250 14700 2250
+Text Notes 15330 3220 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 11880 6550 0    50   ~ 0
+Bonnes Valeurs = Valeurs à revoir ou corriger
+Text Notes 3610 6060 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 2450 6950 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	2290 6490 3310 6490
+Wire Notes Line
+	3310 6490 3310 7420
+Wire Notes Line
+	3310 7420 2310 7420
+Wire Notes Line
+	2310 7420 2310 6480
+Wire Notes Line
+	2960 5470 2960 6350
+Wire Notes Line
+	2960 6350 4020 6350
+Wire Notes Line
+	4020 6350 4020 5470
+Wire Notes Line
+	4020 5470 2960 5470
+Wire Notes Line
+	4050 7710 5700 7710
+Wire Notes Line
+	5700 7710 5700 6870
+Wire Notes Line
+	5700 6870 4990 6870
+Wire Notes Line
+	4990 6870 4990 7250
+Wire Notes Line
+	4990 7250 4060 7250
+Wire Notes Line
+	4060 7250 4060 7700
+Text Notes 5260 7650 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	4360 8790 3470 8790
+Wire Notes Line
+	3470 8790 3470 8210
+Wire Notes Line
+	3470 8210 4690 8210
+Wire Notes Line
+	4690 8210 4690 8800
+Wire Notes Line
+	4690 8800 4340 8800
+Wire Notes Line
+	4340 8800 4340 8790
+Text Notes 4220 8470 0    50   ~ 0
+Reference ?
+Wire Notes Line
+	6880 5330 6880 6850
+Wire Notes Line
+	6880 6850 7380 6850
+Wire Notes Line
+	7380 6850 7380 5140
+Wire Notes Line
+	7380 5140 6900 5140
+Wire Notes Line
+	6900 5140 6900 5390
+Wire Notes Line
+	6900 5390 6880 5390
+Text Notes 6940 5260 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	7900 7950 7900 5120
+Wire Notes Line
+	7900 5120 7390 5120
+Wire Notes Line
+	7390 5120 7390 7950
+Wire Notes Line
+	7390 7950 7900 7950
+Text Notes 7440 7860 0    50   ~ 0
+Bonnes\nValeurs ?
+Wire Notes Line
+	8890 7970 9550 7970
+Wire Notes Line
+	9550 7970 9550 4910
+Wire Notes Line
+	9550 4910 8890 4910
+Wire Notes Line
+	8890 4910 8890 7970
+Wire Notes Line
+	8270 7370 8740 7370
+Wire Notes Line
+	8740 7370 8740 4900
+Wire Notes Line
+	8740 4900 8270 4900
+Wire Notes Line
+	8270 4900 8270 7370
+Text Notes 8370 5060 0    50   ~ 0
+Ref ?
+Wire Notes Line
+	9780 5540 9780 7280
+Wire Notes Line
+	9780 7280 10950 7280
+Wire Notes Line
+	10950 7280 10950 5540
+Wire Notes Line
+	10950 5540 9780 5540
+Text Notes 10700 5710 0    50   ~ 0
+Ref ?
+Text Notes 9080 7860 0    50   ~ 0
+Bonnes\nValeurs ?
+Text Notes 11880 6680 0    50   ~ 0
+Ref = References a renseigner ou corriger
+Wire Notes Line
+	5810 6210 5810 6600
+Wire Notes Line
+	5810 6600 4720 6600
+Wire Notes Line
+	4720 6600 4720 5970
+Wire Notes Line
+	4720 5970 5040 5970
+Wire Notes Line
+	5040 5970 5040 6210
+Wire Notes Line
+	5040 6210 5810 6210
+Text Notes 4800 6120 0    50   ~ 0
+Ref ?
+<<<<<<< HEAD
+>>>>>>> First round of comments
+=======
+>>>>>>> 2e9046f40c7aeaac46a4efb763557527b26febee
+>>>>>>> 77c5ec09c429f5900a89ddea3c6496a9b41dbcc1
 $EndSCHEMATC

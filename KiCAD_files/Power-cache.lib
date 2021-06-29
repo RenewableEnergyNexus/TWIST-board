@@ -1,244 +1,71 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Amplifier_Operational_TLV6001DCK
+# Power-rescue_+5P-power
 #
-DEF Amplifier_Operational_TLV6001DCK U 0 5 Y Y 1 F N
-F0 "U" 300 100 50 H V C CNN
-F1 "Amplifier_Operational_TLV6001DCK" 450 -100 50 H V C CNN
-F2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" 200 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS TLV6001DCK TLV9001IDCK
-$FPLIST
- SOT*353*SC*70*
-$ENDFPLIST
-DRAW
-P 4 0 1 10 -100 200 -100 -200 300 0 -100 200 f
-X + 1 -200 100 100 R 50 50 1 1 I
-X V- 2 0 -300 150 U 50 50 1 1 W
-X - 3 -200 -100 100 R 50 50 1 1 I
-X ~ 4 400 0 100 L 50 50 1 1 O
-X V+ 5 0 300 150 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Connector_Generic_Conn_01x01
-#
-DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+DEF Power-rescue_+5P-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Power-rescue_+5P-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
 DRAW
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -50 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5P 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_C
+# Power-rescue_+5V-power
 #
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C_Small
-#
-DEF Device_C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
+DEF Power-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Power-rescue_+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
 DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 80 D 50 50 1 1 P
-X ~ 2 0 -100 80 U 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_D
+# Power-rescue_+5VD-power
 #
-DEF Device_D D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D" 0 -100 50 H V C CNN
+DEF Power-rescue_+5VD-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Power-rescue_+5VD-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
 DRAW
-P 2 0 1 10 -50 50 -50 -50 N
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5VD 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_D_Schottky_AKA
+# Power-rescue_ACS712xLCTR-20A-Sensor_Current
 #
-DEF Device_D_Schottky_AKA D 0 0 Y N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Schottky_AKA" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+DEF Power-rescue_ACS712xLCTR-20A-Sensor_Current U 0 20 Y Y 1 F N
+F0 "U" 100 450 50 H V L CNN
+F1 "Power-rescue_ACS712xLCTR-20A-Sensor_Current" 100 350 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 -350 50 H I L CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
+ SOIC*3.9x4.9m*P1.27mm*
 $ENDFPLIST
 DRAW
-C 100 0 10 0 1 0 F
-P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
-P 4 0 1 0 150 100 100 100 100 0 -50 0 N
-P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
-X A 1 200 100 100 L 50 50 1 1 I
-X K 2 -150 0 100 R 50 50 1 1 P
-X A 3 200 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Fuse
-#
-DEF Device_Fuse F 0 0 N Y 1 F N
-F0 "F" 80 0 50 V V C CNN
-F1 "Device_Fuse" -75 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- *Fuse*
-$ENDFPLIST
-DRAW
-S -30 -100 30 100 0 1 10 N
-P 2 0 1 0 0 100 0 -100 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Jumper_NO_Small
-#
-DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Open*
- Jumper*
- TestPoint*2Pads*
- TestPoint*Bridge*
-$ENDFPLIST
-DRAW
-C -40 0 20 0 1 0 N
-C 40 0 20 0 1 0 N
-X 1 1 -100 0 40 R 50 50 0 1 P
-X 2 2 100 0 40 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R
-#
-DEF Device_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R_Small
-#
-DEF Device_R_Small R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_Heatsink_Pad
-#
-DEF Mechanical_Heatsink_Pad HS 0 0 Y Y 1 F N
-F0 "HS" 0 225 50 H V C CNN
-F1 "Mechanical_Heatsink_Pad" 0 150 50 H V C CNN
-F2 "" 12 -50 50 H I C CNN
-F3 "" 12 -50 50 H I C CNN
-$FPLIST
- Heatsink_*
-$ENDFPLIST
-DRAW
-P 10 0 1 10 -13 0 -38 0 -38 100 -63 100 -63 0 -88 0 -88 100 -113 100 -113 -50 -38 -50 f
-P 13 0 1 10 -13 0 -13 100 12 100 12 0 37 0 37 100 62 100 62 0 87 0 87 100 112 100 112 -50 -38 -50 f
-X ~ 1 0 -100 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole
-#
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# Mechanical_MountingHole_Pad
-#
-DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
-F0 "H" 0 250 50 H V C CNN
-F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*Pad*
-$ENDFPLIST
-DRAW
-C 0 50 50 0 1 50 N
-X 1 1 0 -100 100 U 50 50 1 1 I
+S -300 300 300 -300 0 1 10 f
+X IP+ 1 -400 200 100 R 50 50 1 1 P
+X IP+ 2 -400 200 100 R 50 50 1 1 P N
+X IP- 3 -400 -200 100 R 50 50 1 1 P
+X IP- 4 -400 -200 100 R 50 50 1 1 P N
+X GND 5 0 -400 100 U 50 50 1 1 W
+X FILTER 6 400 -100 100 L 50 50 1 1 P
+X VIOUT 7 400 0 100 L 50 50 1 1 O
+X VCC 8 0 400 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -265,27 +92,307 @@ X VCC 8 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Sensor_Current_ACS712xLCTR-20A
+# Power-rescue_C-Device
 #
-DEF Sensor_Current_ACS712xLCTR-20A U 0 20 Y Y 1 F N
-F0 "U" 100 450 50 H V L CNN
-F1 "Sensor_Current_ACS712xLCTR-20A" 100 350 50 H V L CNN
-F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 -350 50 H I L CIN
+DEF Power-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Power-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS ACS712xLCTR-20A ACS712xLCTR-30A ACS713xLCTR-20A ACS713xLCTR-30A ACS714xLCTR-05B ACS714xLCTR-20A ACS714xLCTR-30A ACS714xLCTR-50A ACS715xLCTR-20A ACS715xLCTR-30A ACS724xLCTR-05AB ACS724xLCTR-10AB ACS724xLCTR-10AU ACS724xLCTR-20AB ACS724xLCTR-20AU ACS724xLCTR-30AB ACS724xLCTR-30AU ACS724xLCTR-50AB ACS725xLCTR-10AU ACS725xLCTR-20AB ACS725xLCTR-20AU ACS725xLCTR-30AB ACS725xLCTR-30AU ACS725xLCTR-40AB ACS725xLCTR-50AB
 $FPLIST
- SOIC*3.9x4.9m*P1.27mm*
+ C_*
 $ENDFPLIST
 DRAW
-S -300 300 300 -300 0 1 10 f
-X IP+ 1 -400 200 100 R 50 50 1 1 P
-X IP+ 2 -400 200 100 R 50 50 1 1 P N
-X IP- 3 -400 -200 100 R 50 50 1 1 P
-X IP- 4 -400 -200 100 R 50 50 1 1 P N
-X GND 5 0 -400 100 U 50 50 1 1 W
-X FILTER 6 400 -100 100 L 50 50 1 1 P
-X VIOUT 7 400 0 100 L 50 50 1 1 O
-X VCC 8 0 400 100 D 50 50 1 1 W
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_C_Small-Device
+#
+DEF Power-rescue_C_Small-Device C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Power-rescue_C_Small-Device" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_Conn_01x01-Connector_Generic
+#
+DEF Power-rescue_Conn_01x01-Connector_Generic J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Power-rescue_Conn_01x01-Connector_Generic" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_D-Device
+#
+DEF Power-rescue_D-Device D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Power-rescue_D-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 10 -50 50 -50 -50 N
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_D_Schottky_AKA-Device
+#
+DEF Power-rescue_D_Schottky_AKA-Device D 0 0 Y N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Power-rescue_D_Schottky_AKA-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+C 100 0 10 0 1 0 F
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 0 150 100 100 100 100 0 -50 0 N
+P 6 0 1 10 -75 25 -75 50 -50 50 -50 -50 -25 -50 -25 -25 N
+X A 1 200 100 100 L 50 50 1 1 I
+X K 2 -150 0 100 R 50 50 1 1 P
+X A 3 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_Fuse-Device
+#
+DEF Power-rescue_Fuse-Device F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Power-rescue_Fuse-Device" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_GNDREF-power
+#
+DEF Power-rescue_GNDREF-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Power-rescue_GNDREF-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X GNDREF 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_Heatsink_Pad-Mechanical
+#
+DEF Power-rescue_Heatsink_Pad-Mechanical HS 0 0 Y Y 1 F N
+F0 "HS" 0 225 50 H V C CNN
+F1 "Power-rescue_Heatsink_Pad-Mechanical" 0 150 50 H V C CNN
+F2 "" 12 -50 50 H I C CNN
+F3 "" 12 -50 50 H I C CNN
+$FPLIST
+ Heatsink_*
+$ENDFPLIST
+DRAW
+P 10 0 1 10 -13 0 -38 0 -38 100 -63 100 -63 0 -88 0 -88 100 -113 100 -113 -50 -38 -50 f
+P 13 0 1 10 -13 0 -13 100 12 100 12 0 37 0 37 100 62 100 62 0 87 0 87 100 112 100 112 -50 -38 -50 f
+X ~ 1 0 -100 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_INDUCTOR-pspice
+#
+DEF Power-rescue_INDUCTOR-pspice L 0 0 N Y 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "Power-rescue_INDUCTOR-pspice" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+X 1 1 -250 0 50 R 30 30 1 1 I
+X 2 2 250 0 50 L 30 30 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_Jumper_NO_Small-Device
+#
+DEF Power-rescue_Jumper_NO_Small-Device JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Power-rescue_Jumper_NO_Small-Device" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+ Jumper*
+ TestPoint*2Pads*
+ TestPoint*Bridge*
+$ENDFPLIST
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_MountingHole-Mechanical
+#
+DEF Power-rescue_MountingHole-Mechanical H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Power-rescue_MountingHole-Mechanical" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_MountingHole_Pad-Mechanical
+#
+DEF Power-rescue_MountingHole_Pad-Mechanical H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Power-rescue_MountingHole_Pad-Mechanical" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_QM6006D-Transistor_FET
+#
+DEF Power-rescue_QM6006D-Transistor_FET Q 0 20 Y N 1 F N
+F0 "Q" 200 75 50 H V L CNN
+F1 "Power-rescue_QM6006D-Transistor_FET" 200 0 50 H V L CNN
+F2 "Package_TO_SOT_SMD:TO-252-2" 200 -75 50 H I L CIN
+F3 "" 0 0 50 H I L CNN
+$FPLIST
+ TO?252*
+$ENDFPLIST
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X G 1 -200 0 100 R 50 50 1 1 I
+X D 2 100 200 100 D 50 50 1 1 P
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_R-Device
+#
+DEF Power-rescue_R-Device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Power-rescue_R-Device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_R_Small-Device
+#
+DEF Power-rescue_R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Power-rescue_R_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Power-rescue_TLV6001DCK-Amplifier_Operational
+#
+DEF Power-rescue_TLV6001DCK-Amplifier_Operational U 0 5 Y Y 1 F N
+F0 "U" 300 100 50 H V C CNN
+F1 "Power-rescue_TLV6001DCK-Amplifier_Operational" 450 -100 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" 200 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SOT*353*SC*70*
+$ENDFPLIST
+DRAW
+P 4 0 1 10 -100 200 -100 -200 300 0 -100 200 f
+X + 1 -200 100 100 R 50 50 1 1 I
+X V- 2 0 -300 150 U 50 50 1 1 W
+X - 3 -200 -100 100 R 50 50 1 1 I
+X ~ 4 400 0 100 L 50 50 1 1 O
+X V+ 5 0 300 150 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -374,116 +481,6 @@ X GND2 5 550 -150 100 L 50 50 1 1 W
 X VOUTN 6 550 0 100 L 50 50 1 1 O
 X VOUTP 7 550 150 100 L 50 50 1 1 O
 X VDD2 8 550 300 100 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Transistor_FET_QM6006D
-#
-DEF Transistor_FET_QM6006D Q 0 20 Y N 1 F N
-F0 "Q" 200 75 50 H V L CNN
-F1 "Transistor_FET_QM6006D" 200 0 50 H V L CNN
-F2 "Package_TO_SOT_SMD:TO-252-2" 200 -75 50 H I L CIN
-F3 "" 0 0 50 H I L CNN
-ALIAS IPD50R3K0CE QM6006D
-$FPLIST
- TO?252*
-$ENDFPLIST
-DRAW
-C 65 0 110 0 1 10 N
-C 100 -70 10 0 1 0 F
-C 100 70 10 0 1 0 F
-P 2 0 1 0 10 0 -100 0 N
-P 2 0 1 10 10 75 10 -75 N
-P 2 0 1 10 30 -50 30 -90 N
-P 2 0 1 10 30 20 30 -20 N
-P 2 0 1 10 30 90 30 50 N
-P 2 0 1 0 100 100 100 70 N
-P 3 0 1 0 100 -100 100 0 30 0 N
-P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
-P 4 0 1 0 40 0 80 15 80 -15 40 0 F
-P 4 0 1 0 110 20 115 15 145 15 150 10 N
-P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X D 2 100 200 100 D 50 50 1 1 P
-X S 3 100 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+5P
-#
-DEF power_+5P #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5P" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5P 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5VD
-#
-DEF power_+5VD #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5VD" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5VD 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDREF
-#
-DEF power_GNDREF #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDREF" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X GNDREF 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# pspice_INDUCTOR
-#
-DEF pspice_INDUCTOR L 0 0 N Y 1 F N
-F0 "L" 0 100 50 H V C CNN
-F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
-A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
-A 50 0 50 1 1799 0 1 0 N 100 0 0 0
-A 150 0 50 1 1799 0 1 0 N 200 0 100 0
-X 1 1 -250 0 50 R 30 30 1 1 I
-X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #

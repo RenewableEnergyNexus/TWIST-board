@@ -14,7 +14,7 @@ Comment3 "Villa"
 Comment4 "GFE"
 $EndDescr
 $Comp
-L Transistor_FET:QM6006D Q1
+L Power-rescue:QM6006D-Transistor_FET Q1
 U 1 1 5E9DBB6F
 P 8500 2975
 AR Path="/5E9DBB6F" Ref="Q1"  Part="1" 
@@ -44,7 +44,7 @@ Wire Wire Line
 	10125 4725 10125 4175
 Connection ~ 10125 4725
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 5E9DBB91
 P 11700 4825
 AR Path="/5E91AAF4/5E9DBB91" Ref="#PWR?"  Part="1" 
@@ -70,7 +70,7 @@ Wire Wire Line
 	8600 3425 8600 3925
 Connection ~ 8600 4725
 $Comp
-L Transistor_FET:QM6006D Q2
+L Power-rescue:QM6006D-Transistor_FET Q2
 U 1 1 5E9DBBAD
 P 8500 4125
 AR Path="/5E9DBBAD" Ref="Q2"  Part="1" 
@@ -86,7 +86,7 @@ F 4 "IPD200N15N3GATMA1" H 8500 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L Power-rescue:R-Device R2
 U 1 1 5E9DBBB4
 P 7350 4125
 F 0 "R2" V 7557 4125 50  0000 C CNN
@@ -98,7 +98,7 @@ F 4 "CR0805AF/-2R20EAS" H 7350 4125 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R1
+L Power-rescue:R-Device R1
 U 1 1 5E9DBBBB
 P 7350 2975
 F 0 "R1" V 7557 2975 50  0000 C CNN
@@ -110,7 +110,7 @@ F 4 "CR0805AF/-2R20EAS" H 7350 2975 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R32
+L Power-rescue:R-Device R32
 U 1 1 5E9DBBC2
 P 7850 4425
 F 0 "R32" H 8100 4375 50  0000 R CNN
@@ -145,7 +145,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 4125 7150 4125
 $Comp
-L Device:R_Small Rs1
+L Power-rescue:R_Small-Device Rs1
 U 1 1 5E9DBBEF
 P 9375 2875
 F 0 "Rs1" H 9434 2921 50  0000 L CNN
@@ -157,7 +157,7 @@ F 4 "x" H 9375 2875 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small Rs2
+L Power-rescue:R_Small-Device Rs2
 U 1 1 5E9DBBF6
 P 9375 3675
 F 0 "Rs2" H 9434 3721 50  0000 L CNN
@@ -169,7 +169,7 @@ F 4 "x" H 9375 3675 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small Cs2
+L Power-rescue:C_Small-Device Cs2
 U 1 1 5E9DBBFD
 P 9375 4025
 F 0 "Cs2" H 9467 4071 50  0000 L CNN
@@ -182,7 +182,7 @@ F 5 "x" H 9375 4025 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small Cs1
+L Power-rescue:C_Small-Device Cs1
 U 1 1 5E9DBC04
 P 9375 3175
 F 0 "Cs1" H 9467 3221 50  0000 L CNN
@@ -218,7 +218,7 @@ Connection ~ 9375 4725
 Wire Wire Line
 	9375 4725 10125 4725
 $Comp
-L Device:D_Schottky_AKA D_H1
+L Power-rescue:D_Schottky_AKA-Device D_H1
 U 1 1 5E9DBC26
 P 10125 2925
 F 0 "D_H1" V 10104 3066 50  0000 L CNN
@@ -230,7 +230,7 @@ F 4 "STTH1002CB" H 10125 2925 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Schottky_AKA D_L1
+L Power-rescue:D_Schottky_AKA-Device D_L1
 U 1 1 5E9DBC2D
 P 10125 3975
 F 0 "D_L1" V 10104 4116 50  0000 L CNN
@@ -248,7 +248,7 @@ Wire Wire Line
 Connection ~ 10125 3125
 Connection ~ 10125 4175
 $Comp
-L Sensor_Current:ACS712xLCTR-20A U3
+L Power-rescue:ACS712xLCTR-20A-Sensor_Current U3
 U 1 1 5E9DBC38
 P 14625 1675
 F 0 "U3" V 14450 675 50  0000 C CNN
@@ -264,7 +264,7 @@ Wire Wire Line
 Wire Wire Line
 	15025 1675 15200 1675
 $Comp
-L Device:C_Small C2
+L Power-rescue:C_Small-Device C2
 U 1 1 5E9DBC76
 P 5525 3000
 F 0 "C2" H 5617 3046 50  0000 L CNN
@@ -276,7 +276,7 @@ F 4 "CC0805KRX7R9BB104" H 5525 3000 50  0001 C CNN "manf#"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C5
+L Power-rescue:C_Small-Device C5
 U 1 1 5E9DBC8A
 P 14175 1350
 F 0 "C5" H 14267 1396 50  0000 L CNN
@@ -306,7 +306,7 @@ N
 Wire Wire Line
 	6175 7800 6175 7975
 $Comp
-L power:GNDREF #PWR02
+L Power-rescue:GNDREF-power #PWR02
 U 1 1 5EBD4EE3
 P 6175 8475
 F 0 "#PWR02" H 6175 8225 50  0001 C CNN
@@ -323,7 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	6175 8375 6175 8475
 $Comp
-L Device:D D3
+L Power-rescue:D-Device D3
 U 1 1 5EB2DCFC
 P 7350 3725
 F 0 "D3" H 7350 3941 50  0000 C CNN
@@ -335,7 +335,7 @@ F 4 "STPS0520Z" H 7350 3725 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D2
+L Power-rescue:D-Device D2
 U 1 1 5EB2EADE
 P 7350 2575
 F 0 "D2" H 7350 2791 50  0000 C CNN
@@ -379,7 +379,7 @@ Wire Wire Line
 	11475 2325 11925 2325
 Connection ~ 11475 2325
 $Comp
-L Device:C C13
+L Power-rescue:C-Device C13
 U 1 1 5EAD2879
 P 11025 2925
 AR Path="/5EAD2879" Ref="C13"  Part="1" 
@@ -453,7 +453,7 @@ Wire Wire Line
 Wire Wire Line
 	13225 4275 13225 4725
 $Comp
-L Device:C C11
+L Power-rescue:C-Device C11
 U 1 1 5F2F867A
 P 8100 3725
 AR Path="/5F2F867A" Ref="C11"  Part="1" 
@@ -483,7 +483,7 @@ Wire Wire Line
 	8100 2775 8600 2775
 Connection ~ 8600 2775
 $Comp
-L pspice:INDUCTOR L2
+L Power-rescue:INDUCTOR-pspice L2
 U 1 1 5F46133C
 P 6175 6575
 AR Path="/5F46133C" Ref="L2"  Part="1" 
@@ -499,7 +499,7 @@ F 4 "7443634700" H 6175 6575 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C24
+L Power-rescue:C_Small-Device C24
 U 1 1 5F4613DF
 P 5500 5875
 F 0 "C24" H 5592 5921 50  0000 L CNN
@@ -511,7 +511,7 @@ F 4 "CC0805KRX7R9BB104" H 5500 5875 50  0001 C CNN "manf#"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C22
+L Power-rescue:C_Small-Device C22
 U 1 1 5F4613E5
 P 4425 5925
 F 0 "C22" H 4125 6025 50  0000 L CNN
@@ -544,7 +544,7 @@ Wire Wire Line
 Text Label 2725 6575 0    98   ~ 0
 VI_LOW2
 $Comp
-L pspice:INDUCTOR L1
+L Power-rescue:INDUCTOR-pspice L1
 U 1 1 5E9DBB76
 P 6275 3425
 AR Path="/5E9DBB76" Ref="L1"  Part="1" 
@@ -586,7 +586,7 @@ Connection ~ 13225 3575
 Wire Wire Line
 	11925 3575 12325 3575
 $Comp
-L Device:R R4
+L Power-rescue:R-Device R4
 U 1 1 5F4A5A01
 P 7700 3725
 F 0 "R4" V 7907 3725 50  0000 C CNN
@@ -598,7 +598,7 @@ F 4 "RC0805FR-070RL" H 7700 3725 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R3
+L Power-rescue:R-Device R3
 U 1 1 5F4BB27D
 P 7700 2575
 F 0 "R3" V 7907 2575 50  0000 C CNN
@@ -616,7 +616,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 2475 4725 2725
 $Comp
-L Device:C_Small C1
+L Power-rescue:C_Small-Device C1
 U 1 1 5E9DBC83
 P 4425 2725
 F 0 "C1" H 4150 2675 50  0000 L CNN
@@ -645,7 +645,7 @@ Wire Wire Line
 	4725 5850 4725 5650
 Connection ~ 13225 4725
 $Comp
-L Device:R_Small Rv1
+L Power-rescue:R_Small-Device Rv1
 U 1 1 5F67C22A
 P 2725 4175
 F 0 "Rv1" H 2784 4221 50  0000 L CNN
@@ -663,7 +663,7 @@ Wire Wire Line
 Wire Wire Line
 	2725 4075 2725 3425
 $Comp
-L Device:R_Small Rv3
+L Power-rescue:R_Small-Device Rv3
 U 1 1 5F70547C
 P 2725 7325
 F 0 "Rv3" H 2784 7371 50  0000 L CNN
@@ -675,7 +675,7 @@ F 4 "PCF-W0805LF-03-1503-B-P-LT" H 2725 7325 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small Rv4
+L Power-rescue:R_Small-Device Rv4
 U 1 1 5F705482
 P 2725 8000
 F 0 "Rv4" H 2784 8046 50  0000 L CNN
@@ -697,7 +697,7 @@ VILow1+
 Wire Wire Line
 	2725 4950 2725 5775
 $Comp
-L Device:R_Small Rv2
+L Power-rescue:R_Small-Device Rv2
 U 1 1 5F693CB4
 P 2725 4850
 F 0 "Rv2" H 2784 4896 50  0000 L CNN
@@ -721,7 +721,7 @@ Wire Wire Line
 Text Label 14225 4300 0    50   ~ 0
 VIHigh-
 $Comp
-L Device:R_Small Rv6
+L Power-rescue:R_Small-Device Rv6
 U 1 1 5F5D7CCC
 P 14225 3975
 F 0 "Rv6" H 14284 4021 50  0000 L CNN
@@ -737,7 +737,7 @@ VIHigh+
 Wire Wire Line
 	14225 3075 14225 3875
 $Comp
-L Device:R_Small Rv5
+L Power-rescue:R_Small-Device Rv5
 U 1 1 5F5D7CC2
 P 14225 2975
 F 0 "Rv5" H 14284 3021 50  0000 L CNN
@@ -779,7 +779,7 @@ Wire Wire Line
 Wire Wire Line
 	7925 5725 7875 5725
 $Comp
-L Device:R R33
+L Power-rescue:R-Device R33
 U 1 1 5F2CA9AA
 P 8075 5725
 F 0 "R33" V 8282 5725 50  0000 C CNN
@@ -800,7 +800,7 @@ Wire Wire Line
 	8225 6125 7875 6125
 Connection ~ 8225 6125
 $Comp
-L Device:R R35
+L Power-rescue:R-Device R35
 U 1 1 5F461376
 P 8225 6375
 F 0 "R35" H 8450 6350 50  0000 R CNN
@@ -826,7 +826,7 @@ Wire Wire Line
 Wire Wire Line
 	8475 6925 8475 7475
 $Comp
-L Device:C C12
+L Power-rescue:C-Device C12
 U 1 1 5F46146C
 P 8475 6775
 AR Path="/5F46146C" Ref="C12"  Part="1" 
@@ -846,7 +846,7 @@ PWM_H2
 Wire Wire Line
 	7575 5725 7525 5725
 $Comp
-L Device:D D4
+L Power-rescue:D-Device D4
 U 1 1 5F46141E
 P 7725 5725
 F 0 "D4" H 7725 5941 50  0000 C CNN
@@ -864,7 +864,7 @@ Wire Wire Line
 Wire Wire Line
 	10725 7325 10625 7325
 $Comp
-L Device:D_Schottky_AKA D_L2
+L Power-rescue:D_Schottky_AKA-Device D_L2
 U 1 1 5F4613C3
 P 10625 7125
 F 0 "D_L2" V 10604 7266 50  0000 L CNN
@@ -876,7 +876,7 @@ F 4 "STTH1002CB" H 10625 7125 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Schottky_AKA D_H2
+L Power-rescue:D_Schottky_AKA-Device D_H2
 U 1 1 5F4613BD
 P 10625 6075
 F 0 "D_H2" V 10604 6216 50  0000 L CNN
@@ -911,7 +911,7 @@ Connection ~ 9875 5475
 Wire Wire Line
 	9875 5775 9875 5475
 $Comp
-L Device:C_Small Cs3
+L Power-rescue:C_Small-Device Cs3
 U 1 1 5F4613AA
 P 9875 6175
 F 0 "Cs3" H 9967 6221 50  0000 L CNN
@@ -924,7 +924,7 @@ F 5 "x" H 9875 6175 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small Cs4
+L Power-rescue:C_Small-Device Cs4
 U 1 1 5F4613A4
 P 9875 7325
 F 0 "Cs4" H 9967 7371 50  0000 L CNN
@@ -937,7 +937,7 @@ F 5 "x" H 9875 7325 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small Rs4
+L Power-rescue:R_Small-Device Rs4
 U 1 1 5F46139E
 P 9875 6975
 F 0 "Rs4" H 9934 7021 50  0000 L CNN
@@ -949,7 +949,7 @@ F 4 "x" H 9875 6975 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small Rs3
+L Power-rescue:R_Small-Device Rs3
 U 1 1 5F461398
 P 9875 5875
 F 0 "Rs3" H 9934 5921 50  0000 L CNN
@@ -966,7 +966,7 @@ Wire Wire Line
 	8225 6575 9125 6575
 Connection ~ 8225 6575
 $Comp
-L Device:R R5
+L Power-rescue:R-Device R5
 U 1 1 5F46136A
 P 7725 6125
 F 0 "R5" V 7932 6125 50  0000 C CNN
@@ -978,7 +978,7 @@ F 4 "CR0805AF/-2R20EAS" H 7725 6125 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Transistor_FET:QM6006D Q5
+L Power-rescue:QM6006D-Transistor_FET Q5
 U 1 1 5F46135E
 P 9025 7275
 AR Path="/5F46135E" Ref="Q5"  Part="1" 
@@ -1004,7 +1004,7 @@ Wire Wire Line
 Wire Wire Line
 	9125 5475 9875 5475
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 5F46134A
 P 10625 7875
 AR Path="/5E91AAF4/5F46134A" Ref="#PWR?"  Part="1" 
@@ -1033,7 +1033,7 @@ Wire Wire Line
 Wire Wire Line
 	10625 6275 10625 6575
 $Comp
-L Transistor_FET:QM6006D Q4
+L Power-rescue:QM6006D-Transistor_FET Q4
 U 1 1 5F461336
 P 9025 6125
 AR Path="/5F461336" Ref="Q4"  Part="1" 
@@ -1086,7 +1086,7 @@ Connection ~ 16050 2375
 Wire Wire Line
 	16050 2375 16050 2475
 $Comp
-L power:+5VD #PWR0102
+L Power-rescue:+5VD-power #PWR0102
 U 1 1 5F3B06A4
 P 5275 2925
 F 0 "#PWR0102" H 5275 2775 50  0001 C CNN
@@ -1097,7 +1097,7 @@ F 3 "" H 5275 2925 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0103
+L Power-rescue:+5VD-power #PWR0103
 U 1 1 5F3BC29C
 P 5225 6050
 F 0 "#PWR0103" H 5225 5900 50  0001 C CNN
@@ -1108,7 +1108,7 @@ F 3 "" H 5225 6050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0110
+L Power-rescue:+5VD-power #PWR0110
 U 1 1 5F406701
 P 15200 1475
 F 0 "#PWR0110" H 15200 1325 50  0001 C CNN
@@ -1121,7 +1121,7 @@ $EndComp
 Wire Wire Line
 	15200 1475 15200 1675
 $Comp
-L Device:R_Small Rbleed1
+L Power-rescue:R_Small-Device Rbleed1
 U 1 1 5F4A93BC
 P 13625 2925
 F 0 "Rbleed1" H 13684 2971 50  0000 L CNN
@@ -1133,7 +1133,7 @@ F 4 "CMP0805-FX-1004ELF" H 13625 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small Rbleed2
+L Power-rescue:R_Small-Device Rbleed2
 U 1 1 5F4F12A1
 P 13625 4125
 F 0 "Rbleed2" H 13684 4171 50  0000 L CNN
@@ -1175,7 +1175,7 @@ Wire Wire Line
 	3725 4450 3725 4075
 Connection ~ 3725 4075
 $Comp
-L Device:R R6
+L Power-rescue:R-Device R6
 U 1 1 5F461364
 P 7725 7275
 F 0 "R6" V 7932 7275 50  0000 C CNN
@@ -1187,7 +1187,7 @@ F 4 "CR0805AF/-2R20EAS" H 7725 7275 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R36
+L Power-rescue:R-Device R36
 U 1 1 5F461370
 P 8225 7575
 F 0 "R36" H 8425 7550 50  0000 R CNN
@@ -1208,7 +1208,7 @@ Connection ~ 8225 7275
 Wire Wire Line
 	7575 7275 7525 7275
 $Comp
-L Device:D D5
+L Power-rescue:D-Device D5
 U 1 1 5F461418
 P 7725 6875
 F 0 "D5" H 7725 7091 50  0000 C CNN
@@ -1232,7 +1232,7 @@ Wire Wire Line
 Wire Wire Line
 	8225 7875 9125 7875
 $Comp
-L Device:R R34
+L Power-rescue:R-Device R34
 U 1 1 5F312A56
 P 8075 6875
 F 0 "R34" V 8282 6875 50  0000 C CNN
@@ -1249,7 +1249,7 @@ Wire Wire Line
 	7525 7275 7075 7275
 Connection ~ 7525 7275
 $Comp
-L Device:C C15
+L Power-rescue:C-Device C15
 U 1 1 5F6E9BF7
 P 11475 2925
 AR Path="/5F6E9BF7" Ref="C15"  Part="1" 
@@ -1265,7 +1265,7 @@ F 4 "12101C475K4Z2A" H 11475 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C17
+L Power-rescue:C-Device C17
 U 1 1 5F701CFC
 P 11925 2925
 AR Path="/5F701CFC" Ref="C17"  Part="1" 
@@ -1281,7 +1281,7 @@ F 4 "12101C475K4Z2A" H 11925 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C19
+L Power-rescue:C-Device C19
 U 1 1 5F719DF1
 P 12325 2925
 AR Path="/5F719DF1" Ref="C19"  Part="1" 
@@ -1297,7 +1297,7 @@ F 4 "12101C475K4Z2A" H 12325 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C21
+L Power-rescue:C-Device C21
 U 1 1 5F731F99
 P 12775 2925
 AR Path="/5F731F99" Ref="C21"  Part="1" 
@@ -1313,7 +1313,7 @@ F 4 "12101C475K4Z2A" H 12775 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L Power-rescue:C-Device C25
 U 1 1 5F749FBA
 P 13225 2925
 AR Path="/5F749FBA" Ref="C25"  Part="1" 
@@ -1329,7 +1329,7 @@ F 4 "12101C475K4Z2A" H 13225 2925 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L Power-rescue:C-Device C14
 U 1 1 5F798F0D
 P 11025 4125
 AR Path="/5F798F0D" Ref="C14"  Part="1" 
@@ -1345,7 +1345,7 @@ F 4 "12101C475K4Z2A" H 11025 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C16
+L Power-rescue:C-Device C16
 U 1 1 5F7B0FF2
 P 11475 4125
 AR Path="/5F7B0FF2" Ref="C16"  Part="1" 
@@ -1361,7 +1361,7 @@ F 4 "12101C475K4Z2A" H 11475 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C18
+L Power-rescue:C-Device C18
 U 1 1 5F7C90F5
 P 11925 4125
 AR Path="/5F7C90F5" Ref="C18"  Part="1" 
@@ -1377,7 +1377,7 @@ F 4 "12101C475K4Z2A" H 11925 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C20
+L Power-rescue:C-Device C20
 U 1 1 5F7E1128
 P 12325 4125
 AR Path="/5F7E1128" Ref="C20"  Part="1" 
@@ -1393,7 +1393,7 @@ F 4 "12101C475K4Z2A" H 12325 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C23
+L Power-rescue:C-Device C23
 U 1 1 5F7F9272
 P 12775 4125
 AR Path="/5F7F9272" Ref="C23"  Part="1" 
@@ -1409,7 +1409,7 @@ F 4 "12101C475K4Z2A" H 12775 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C26
+L Power-rescue:C-Device C26
 U 1 1 5F811350
 P 13225 4125
 AR Path="/5F811350" Ref="C26"  Part="1" 
@@ -1425,7 +1425,7 @@ F 4 "12101C475K4Z2A" H 13225 4125 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L Power-rescue:C-Device C7
 U 1 1 5F8805C4
 P 3725 4600
 AR Path="/5F8805C4" Ref="C7"  Part="1" 
@@ -1441,7 +1441,7 @@ F 4 "12101C475K4Z2A" H 3725 4600 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C9
+L Power-rescue:C-Device C9
 U 1 1 5F8985C2
 P 4175 4600
 AR Path="/5F8985C2" Ref="C9"  Part="1" 
@@ -1459,7 +1459,7 @@ $EndComp
 Wire Wire Line
 	2725 6575 3875 6575
 $Comp
-L Device:C C6
+L Power-rescue:C-Device C6
 U 1 1 5F8E4CE5
 P 3425 7650
 AR Path="/5F8E4CE5" Ref="C6"  Part="1" 
@@ -1475,7 +1475,7 @@ F 4 "12101C475K4Z2A" H 3425 7650 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Power-rescue:C-Device C8
 U 1 1 5F8FC0CE
 P 3875 7650
 AR Path="/5F8FC0CE" Ref="C8"  Part="1" 
@@ -1491,7 +1491,7 @@ F 4 "12101C475K4Z2A" H 3875 7650 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L Power-rescue:C-Device C10
 U 1 1 5F913455
 P 4325 7650
 AR Path="/5F913455" Ref="C10"  Part="1" 
@@ -1521,7 +1521,7 @@ Wire Wire Line
 	3875 7100 3875 6575
 Connection ~ 3875 6575
 $Comp
-L Device:C C3
+L Power-rescue:C-Device C3
 U 1 1 5F8685F8
 P 3275 4600
 AR Path="/5F8685F8" Ref="C3"  Part="1" 
@@ -1557,7 +1557,7 @@ F 4 "ACS730KLCTR-20AB-T" H 4825 3025 50  0001 C CNN "manf#"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R R31
+L Power-rescue:R-Device R31
 U 1 1 5E9DBBC9
 P 7850 3225
 F 0 "R31" H 8050 3200 50  0000 R CNN
@@ -1569,7 +1569,7 @@ F 4 "RC0805FR-071KL" H 7850 3225 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:Heatsink_Pad HS1
+L Power-rescue:Heatsink_Pad-Mechanical HS1
 U 1 1 605D1ED1
 P 20850 8525
 F 0 "HS1" V 21125 8250 50  0000 L CNN
@@ -1581,7 +1581,7 @@ F 4 "x" H 20850 8525 50  0001 C CNN "DNP"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP1
+L Power-rescue:Jumper_NO_Small-Device JP1
 U 1 1 605D310C
 P 19525 8200
 F 0 "JP1" H 19525 8293 50  0000 C CNN
@@ -1593,7 +1593,7 @@ F 4 "THJP0612AST1" H 19525 8200 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP3
+L Power-rescue:Jumper_NO_Small-Device JP3
 U 1 1 605ECE98
 P 19525 8800
 F 0 "JP3" H 19525 8893 50  0000 C CNN
@@ -1610,7 +1610,7 @@ Connection ~ 20075 8200
 Wire Wire Line
 	20075 8800 19625 8800
 $Comp
-L Device:Jumper_NO_Small JP4
+L Power-rescue:Jumper_NO_Small-Device JP4
 U 1 1 606A81B1
 P 19525 9375
 F 0 "JP4" H 19525 9468 50  0000 C CNN
@@ -1628,7 +1628,7 @@ Wire Wire Line
 Wire Wire Line
 	20075 8025 20075 8200
 $Comp
-L Connector_Generic:Conn_01x01 J6
+L Power-rescue:Conn_01x01-Connector_Generic J6
 U 1 1 607CF92A
 P 15125 14250
 F 0 "J6" H 15200 14150 50  0000 R CNN
@@ -1640,7 +1640,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 15125 14250 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J7
+L Power-rescue:Conn_01x01-Connector_Generic J7
 U 1 1 607D5CCC
 P 15125 14975
 F 0 "J7" H 15200 14875 50  0000 R CNN
@@ -1652,7 +1652,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 15125 14975 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J8
+L Power-rescue:Conn_01x01-Connector_Generic J8
 U 1 1 607D66CE
 P 15125 14475
 F 0 "J8" H 15200 14375 50  0000 R CNN
@@ -1672,7 +1672,7 @@ Wire Wire Line
 	6575 4125 7150 4125
 Connection ~ 7150 4125
 $Comp
-L Connector_Generic:Conn_01x01 J20
+L Power-rescue:Conn_01x01-Connector_Generic J20
 U 1 1 60709568
 P 9925 14875
 F 0 "J20" H 10000 14775 50  0000 R CNN
@@ -1684,7 +1684,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 9925 14875 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J21
+L Power-rescue:Conn_01x01-Connector_Generic J21
 U 1 1 60748D55
 P 16025 14250
 F 0 "J21" H 16100 14150 50  0000 R CNN
@@ -1696,7 +1696,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16025 14250 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J23
+L Power-rescue:Conn_01x01-Connector_Generic J23
 U 1 1 60748D5B
 P 16025 14975
 F 0 "J23" H 16100 14875 50  0000 R CNN
@@ -1708,7 +1708,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16025 14975 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J22
+L Power-rescue:Conn_01x01-Connector_Generic J22
 U 1 1 60748D61
 P 16025 14475
 F 0 "J22" H 16100 14375 50  0000 R CNN
@@ -1720,7 +1720,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16025 14475 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J24
+L Power-rescue:Conn_01x01-Connector_Generic J24
 U 1 1 60748D67
 P 16025 15175
 F 0 "J24" H 16100 15075 50  0000 R CNN
@@ -1732,7 +1732,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16025 15175 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J25
+L Power-rescue:Conn_01x01-Connector_Generic J25
 U 1 1 6076B4C6
 P 16950 14250
 F 0 "J25" H 17025 14150 50  0000 R CNN
@@ -1744,7 +1744,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16950 14250 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J26
+L Power-rescue:Conn_01x01-Connector_Generic J26
 U 1 1 6076B4CC
 P 16950 14475
 F 0 "J26" H 17025 14375 50  0000 R CNN
@@ -1756,7 +1756,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 16950 14475 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 60834B78
 P 17200 14475
 AR Path="/5E91AAF4/60834B78" Ref="#PWR?"  Part="1" 
@@ -1797,7 +1797,7 @@ PWM_L2
 Wire Wire Line
 	16350 14975 16225 14975
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 60AAB15D
 P 16350 15175
 AR Path="/5E91AAF4/60AAB15D" Ref="#PWR?"  Part="1" 
@@ -1818,7 +1818,7 @@ PWM_L1
 Wire Wire Line
 	15450 14975 15325 14975
 $Comp
-L Connector_Generic:Conn_01x01 J9
+L Power-rescue:Conn_01x01-Connector_Generic J9
 U 1 1 60B7E6FA
 P 6725 11225
 F 0 "J9" H 6800 11125 50  0000 R CNN
@@ -1830,7 +1830,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 6725 11225 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J10
+L Power-rescue:Conn_01x01-Connector_Generic J10
 U 1 1 60B7E700
 P 6725 13000
 F 0 "J10" H 6800 12900 50  0000 R CNN
@@ -1842,7 +1842,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 6725 13000 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J11
+L Power-rescue:Conn_01x01-Connector_Generic J11
 U 1 1 60B9C8E2
 P 6725 14725
 F 0 "J11" H 6800 14625 50  0000 R CNN
@@ -1854,7 +1854,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 6725 14725 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J12
+L Power-rescue:Conn_01x01-Connector_Generic J12
 U 1 1 60B9C8E8
 P 6725 11525
 F 0 "J12" H 6800 11425 50  0000 R CNN
@@ -1868,7 +1868,7 @@ $EndComp
 Wire Wire Line
 	6425 11525 6525 11525
 $Comp
-L Connector_Generic:Conn_01x01 J13
+L Power-rescue:Conn_01x01-Connector_Generic J13
 U 1 1 60BC16DF
 P 6725 13275
 F 0 "J13" H 6800 13175 50  0000 R CNN
@@ -1880,7 +1880,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 6725 13275 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J14
+L Power-rescue:Conn_01x01-Connector_Generic J14
 U 1 1 60BC16E5
 P 6725 15000
 F 0 "J14" H 6800 14900 50  0000 R CNN
@@ -1896,7 +1896,7 @@ Wire Wire Line
 Wire Wire Line
 	6325 15000 6525 15000
 $Comp
-L Connector_Generic:Conn_01x01 J15
+L Power-rescue:Conn_01x01-Connector_Generic J15
 U 1 1 60DAEBF2
 P 9950 11300
 F 0 "J15" H 10025 11200 50  0000 R CNN
@@ -1908,7 +1908,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 9950 11300 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J16
+L Power-rescue:Conn_01x01-Connector_Generic J16
 U 1 1 60DECDE8
 P 9925 12975
 F 0 "J16" H 10000 12875 50  0000 R CNN
@@ -1920,7 +1920,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 9925 12975 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J17
+L Power-rescue:Conn_01x01-Connector_Generic J17
 U 1 1 60E1B22F
 P 9925 14600
 F 0 "J17" H 10000 14500 50  0000 R CNN
@@ -1932,7 +1932,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 9925 14600 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J18
+L Power-rescue:Conn_01x01-Connector_Generic J18
 U 1 1 60E45B00
 P 9950 11575
 F 0 "J18" H 10025 11475 50  0000 R CNN
@@ -1948,7 +1948,7 @@ Wire Wire Line
 Text Label 9625 11575 2    50   ~ 0
 DGND
 $Comp
-L Connector_Generic:Conn_01x01 J19
+L Power-rescue:Conn_01x01-Connector_Generic J19
 U 1 1 60E6BACB
 P 9925 13275
 F 0 "J19" H 10000 13400 50  0000 R CNN
@@ -1960,7 +1960,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 9925 13275 50  0001 C CNN "manf#"
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J31
+L Power-rescue:Conn_01x01-Connector_Generic J31
 U 1 1 60EC268A
 P 15125 15225
 F 0 "J31" H 15200 15125 50  0000 R CNN
@@ -1974,7 +1974,7 @@ $EndComp
 Wire Wire Line
 	15325 15225 15450 15225
 $Comp
-L Connector_Generic:Conn_01x01 J29
+L Power-rescue:Conn_01x01-Connector_Generic J29
 U 1 1 60F524D7
 P 10775 14900
 F 0 "J29" H 10850 14800 50  0000 R CNN
@@ -1990,7 +1990,7 @@ Wire Wire Line
 Text Label 11100 14900 0    50   ~ 0
 DGND
 $Comp
-L Connector_Generic:Conn_01x01 J28
+L Power-rescue:Conn_01x01-Connector_Generic J28
 U 1 1 61007D7B
 P 10775 14625
 F 0 "J28" H 10850 14525 50  0000 R CNN
@@ -2002,7 +2002,7 @@ F 4 "0906-0-15-20-76-14-11-0" H 10775 14625 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5VD #PWR0117
+L Power-rescue:+5VD-power #PWR0117
 U 1 1 6114CAC0
 P 11100 14600
 F 0 "#PWR0117" H 11100 14450 50  0001 C CNN
@@ -2029,7 +2029,7 @@ V_Out
 Wire Wire Line
 	18825 8325 19200 8325
 $Comp
-L Device:Jumper_NO_Small JP5
+L Power-rescue:Jumper_NO_Small-Device JP5
 U 1 1 6139CFC4
 P 19525 8025
 F 0 "JP5" H 19525 8118 50  0000 C CNN
@@ -2058,7 +2058,7 @@ Wire Wire Line
 Wire Wire Line
 	20075 8425 19625 8425
 $Comp
-L Device:Jumper_NO_Small JP2
+L Power-rescue:Jumper_NO_Small-Device JP2
 U 1 1 605D42A3
 P 19525 8425
 F 0 "JP2" H 19525 8518 50  0000 C CNN
@@ -2070,7 +2070,7 @@ F 4 "THJP0612AST1" H 19525 8425 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP6
+L Power-rescue:Jumper_NO_Small-Device JP6
 U 1 1 614BDA47
 P 19525 8625
 F 0 "JP6" H 19525 8718 50  0000 C CNN
@@ -2115,7 +2115,7 @@ F 4 "AMC1100DUB" H 3375 11300 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R11
+L Power-rescue:R_Small-Device R11
 U 1 1 6096EC5A
 P 4475 11125
 F 0 "R11" V 4550 11050 50  0000 L CNN
@@ -2127,7 +2127,7 @@ F 4 "RC0805FR-0727KL" H 4475 11125 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R12
+L Power-rescue:R_Small-Device R12
 U 1 1 6096EC60
 P 4475 11325
 F 0 "R12" V 4375 11250 50  0000 L CNN
@@ -2149,7 +2149,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 11325 5350 11325
 $Comp
-L Amplifier_Operational:TLV6001DCK U10
+L Power-rescue:TLV6001DCK-Amplifier_Operational U10
 U 1 1 6108D061
 P 5550 11225
 F 0 "U10" H 5750 11475 50  0000 L CNN
@@ -2175,7 +2175,7 @@ Wire Wire Line
 Wire Wire Line
 	4575 11325 5025 11325
 $Comp
-L Device:R_Small R15
+L Power-rescue:R_Small-Device R15
 U 1 1 612ACE2B
 P 5025 10900
 F 0 "R15" H 4825 10925 50  0000 L CNN
@@ -2187,7 +2187,7 @@ F 4 "RC0805FR-0712KL" H 5025 10900 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R18
+L Power-rescue:R_Small-Device R18
 U 1 1 613D6667
 P 5250 11700
 F 0 "R18" V 5150 11625 50  0000 L CNN
@@ -2225,7 +2225,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 10675 4850 10675
 $Comp
-L Device:R_Small R7
+L Power-rescue:R_Small-Device R7
 U 1 1 618F273E
 P 4475 14625
 F 0 "R7" V 4550 14675 50  0000 L CNN
@@ -2237,7 +2237,7 @@ F 4 "RC0805FR-0727KL" H 4475 14625 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R8
+L Power-rescue:R_Small-Device R8
 U 1 1 618F2744
 P 4475 14825
 F 0 "R8" V 4550 14875 50  0000 L CNN
@@ -2259,7 +2259,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 14825 5350 14825
 $Comp
-L Amplifier_Operational:TLV6001DCK U8
+L Power-rescue:TLV6001DCK-Amplifier_Operational U8
 U 1 1 618F274F
 P 5550 14725
 F 0 "U8" H 5750 14975 50  0000 L CNN
@@ -2285,7 +2285,7 @@ Wire Wire Line
 Wire Wire Line
 	4575 14825 5025 14825
 $Comp
-L Device:R_Small R13
+L Power-rescue:R_Small-Device R13
 U 1 1 618F276A
 P 5025 14400
 F 0 "R13" H 4825 14425 50  0000 L CNN
@@ -2297,7 +2297,7 @@ F 4 "RC0805FR-0712KL" H 5025 14400 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R16
+L Power-rescue:R_Small-Device R16
 U 1 1 618F2770
 P 5250 15200
 F 0 "R16" V 5175 15125 50  0000 L CNN
@@ -2333,7 +2333,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 14300 5025 14175
 $Comp
-L Device:C_Small C35
+L Power-rescue:C_Small-Device C35
 U 1 1 619664B7
 P 4350 12425
 F 0 "C35" H 4442 12471 50  0000 L CNN
@@ -2345,7 +2345,7 @@ F 4 "CC0805KRX7R9BB104" H 4350 12425 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R9
+L Power-rescue:R_Small-Device R9
 U 1 1 619664BD
 P 4475 12900
 F 0 "R9" V 4550 12975 50  0000 L CNN
@@ -2357,7 +2357,7 @@ F 4 "RC0805FR-0727KL" H 4475 12900 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R10
+L Power-rescue:R_Small-Device R10
 U 1 1 619664C3
 P 4475 13100
 F 0 "R10" V 4550 13150 50  0000 L CNN
@@ -2379,7 +2379,7 @@ Wire Wire Line
 Wire Wire Line
 	5025 13100 5350 13100
 $Comp
-L Amplifier_Operational:TLV6001DCK U9
+L Power-rescue:TLV6001DCK-Amplifier_Operational U9
 U 1 1 619664CE
 P 5550 13000
 F 0 "U9" H 5725 13225 50  0000 L CNN
@@ -2407,7 +2407,7 @@ Wire Wire Line
 Wire Wire Line
 	4575 13100 5025 13100
 $Comp
-L Device:R_Small R14
+L Power-rescue:R_Small-Device R14
 U 1 1 619664E9
 P 5025 12675
 F 0 "R14" H 4825 12700 50  0000 L CNN
@@ -2419,7 +2419,7 @@ F 4 "RC0805FR-0712KL" H 5025 12675 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R17
+L Power-rescue:R_Small-Device R17
 U 1 1 619664EF
 P 5250 13475
 F 0 "R17" V 5350 13425 50  0000 L CNN
@@ -2455,7 +2455,7 @@ Wire Wire Line
 Text Label 4475 12650 0    50   ~ 0
 DGND
 $Comp
-L power:+5V #PWR0127
+L Power-rescue:+5V-power #PWR0127
 U 1 1 61B6891E
 P 2725 12650
 F 0 "#PWR0127" H 2725 12500 50  0001 C CNN
@@ -2486,7 +2486,7 @@ Wire Wire Line
 Wire Wire Line
 	2575 13075 2575 13125
 $Comp
-L Device:C_Small C29
+L Power-rescue:C_Small-Device C29
 U 1 1 61F0899C
 P 2075 10800
 F 0 "C29" H 2167 10846 50  0000 L CNN
@@ -2498,7 +2498,7 @@ F 4 "CC0805KRX7R9BB104" H 2075 10800 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0128
+L Power-rescue:+5V-power #PWR0128
 U 1 1 61F089A2
 P 2075 10650
 F 0 "#PWR0128" H 2075 10500 50  0001 C CNN
@@ -2511,7 +2511,7 @@ $EndComp
 Wire Wire Line
 	2075 10650 2075 10700
 $Comp
-L power:+5V #PWR0129
+L Power-rescue:+5V-power #PWR0129
 U 1 1 61F089A9
 P 2725 10875
 F 0 "#PWR0129" H 2725 10725 50  0001 C CNN
@@ -2566,7 +2566,7 @@ Wire Wire Line
 Wire Wire Line
 	2575 14800 2575 14850
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 61FFAD1E
 P 1925 14225
 AR Path="/5E91AAF4/61FFAD1E" Ref="#PWR?"  Part="1" 
@@ -2581,7 +2581,7 @@ F 3 "" H 1925 14225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C27
+L Power-rescue:C_Small-Device C27
 U 1 1 61F51032
 P 1925 14075
 F 0 "C27" H 2017 14121 50  0000 L CNN
@@ -2595,7 +2595,7 @@ $EndComp
 Wire Wire Line
 	1925 14175 1925 14225
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 621612B1
 P 2750 15000
 AR Path="/5E91AAF4/621612B1" Ref="#PWR?"  Part="1" 
@@ -2616,7 +2616,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 12525 4350 12650
 $Comp
-L Device:C_Small C36
+L Power-rescue:C_Small-Device C36
 U 1 1 6231868C
 P 4350 10675
 F 0 "C36" H 4442 10721 50  0000 L CNN
@@ -2636,7 +2636,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 10775 4350 10900
 $Comp
-L Device:C_Small C37
+L Power-rescue:C_Small-Device C37
 U 1 1 6236382A
 P 4350 14150
 F 0 "C37" H 4442 14196 50  0000 L CNN
@@ -2664,7 +2664,7 @@ Vref
 Text Label 4850 12450 0    50   ~ 0
 Vref
 $Comp
-L Connector_Generic:Conn_01x01 J32
+L Power-rescue:Conn_01x01-Connector_Generic J32
 U 1 1 60C7846F
 P 10775 14000
 F 0 "J32" H 10850 13900 50  0000 R CNN
@@ -2686,7 +2686,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 13475 6025 13475
 $Comp
-L Amplifier_Operational:TLV6001DCK U11
+L Power-rescue:TLV6001DCK-Amplifier_Operational U11
 U 1 1 60E6582C
 P 8625 12975
 F 0 "U11" H 8825 13200 50  0000 L CNN
@@ -2714,7 +2714,7 @@ Wire Wire Line
 Wire Wire Line
 	8625 10950 8625 11000
 $Comp
-L Amplifier_Operational:TLV6001DCK U13
+L Power-rescue:TLV6001DCK-Amplifier_Operational U13
 U 1 1 60F08D0E
 P 8600 14600
 F 0 "U13" H 8775 14825 50  0000 L CNN
@@ -2734,7 +2734,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 14250 8600 14300
 $Comp
-L Device:R_Small R24
+L Power-rescue:R_Small-Device R24
 U 1 1 60FFE1AF
 P 7975 13075
 F 0 "R24" V 7900 13175 50  0000 L CNN
@@ -2758,7 +2758,7 @@ Wire Wire Line
 Text Label 7650 14500 2    50   ~ 0
 IIHigh
 $Comp
-L Device:R_Small R20
+L Power-rescue:R_Small-Device R20
 U 1 1 6138BB5C
 P 7950 11400
 F 0 "R20" V 7850 11550 50  0000 L CNN
@@ -2772,7 +2772,7 @@ $EndComp
 Wire Wire Line
 	8050 11400 8250 11400
 $Comp
-L Device:R_Small R22
+L Power-rescue:R_Small-Device R22
 U 1 1 613DAC0F
 P 7900 14700
 F 0 "R22" V 7800 14825 50  0000 L CNN
@@ -2786,7 +2786,7 @@ $EndComp
 Wire Wire Line
 	8000 14700 8175 14700
 $Comp
-L Device:R_Small R28
+L Power-rescue:R_Small-Device R28
 U 1 1 6142D426
 P 8650 13625
 F 0 "R28" V 8725 13575 50  0000 L CNN
@@ -2798,7 +2798,7 @@ F 4 "CR0805-FX-8202ELF" H 8650 13625 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R29
+L Power-rescue:R_Small-Device R29
 U 1 1 6147D5AD
 P 8700 11875
 F 0 "R29" V 8775 11825 50  0000 L CNN
@@ -2810,7 +2810,7 @@ F 4 "CR0805-FX-8202ELF" H 8700 11875 50  0001 C CNN "manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R30
+L Power-rescue:R_Small-Device R30
 U 1 1 614CD246
 P 8650 15150
 F 0 "R30" V 8550 15075 50  0000 L CNN
@@ -2876,7 +2876,7 @@ DGND
 Wire Wire Line
 	7500 13075 7875 13075
 $Comp
-L Amplifier_Operational:TLV6001DCK U12
+L Power-rescue:TLV6001DCK-Amplifier_Operational U12
 U 1 1 60EB4C0B
 P 8625 11300
 F 0 "U12" H 8800 11525 50  0000 L CNN
@@ -2888,7 +2888,7 @@ F 4 "OPA316IDCKT" H 8625 11300 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R19
+L Power-rescue:R_Small-Device R19
 U 1 1 6238E298
 P 7950 11200
 F 0 "R19" V 7850 11350 50  0000 L CNN
@@ -2904,7 +2904,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 11200 7450 11200
 $Comp
-L Device:R_Small R27
+L Power-rescue:R_Small-Device R27
 U 1 1 624E56D9
 P 8250 10975
 F 0 "R27" H 8050 10925 50  0000 L CNN
@@ -2925,7 +2925,7 @@ Connection ~ 8250 11200
 Wire Wire Line
 	8050 11200 8250 11200
 $Comp
-L Device:R_Small R26
+L Power-rescue:R_Small-Device R26
 U 1 1 62748F9F
 P 8250 12650
 F 0 "R26" H 8050 12625 50  0000 L CNN
@@ -2941,7 +2941,7 @@ DGND
 Wire Wire Line
 	8250 12475 8250 12550
 $Comp
-L Device:R_Small R25
+L Power-rescue:R_Small-Device R25
 U 1 1 627A0E96
 P 8175 14275
 F 0 "R25" H 7975 14225 50  0000 L CNN
@@ -2961,7 +2961,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 12750 8250 12875
 $Comp
-L Device:R_Small R23
+L Power-rescue:R_Small-Device R23
 U 1 1 629AF92C
 P 7975 12875
 F 0 "R23" V 7900 12975 50  0000 L CNN
@@ -2978,7 +2978,7 @@ Connection ~ 8250 12875
 Wire Wire Line
 	7875 12875 7500 12875
 $Comp
-L Device:R_Small R21
+L Power-rescue:R_Small-Device R21
 U 1 1 62B11BFC
 P 7900 14500
 F 0 "R21" V 7850 14625 50  0000 L CNN
@@ -2995,7 +2995,7 @@ Connection ~ 8175 14500
 Wire Wire Line
 	7800 14500 7650 14500
 $Comp
-L Device:Fuse F1
+L Power-rescue:Fuse-Device F1
 U 1 1 607C7A39
 P 15150 2325
 F 0 "F1" V 14953 2325 50  0000 C CNN
@@ -3007,7 +3007,7 @@ F 4 "0154008.DRL" H 15150 2325 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F2
+L Power-rescue:Fuse-Device F2
 U 1 1 607C8A94
 P 2300 3425
 F 0 "F2" V 2103 3425 50  0000 C CNN
@@ -3019,7 +3019,7 @@ F 4 "0154008.DRL" H 2300 3425 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Fuse F3
+L Power-rescue:Fuse-Device F3
 U 1 1 607C93D1
 P 2250 6575
 F 0 "F3" V 2053 6575 50  0000 C CNN
@@ -3031,7 +3031,7 @@ F 4 "0154008.DRL" H 2250 6575 50  0001 C CNN "manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_FET:QM6006D Q3
+L Power-rescue:QM6006D-Transistor_FET Q3
 U 1 1 60834AE0
 P 6075 8175
 AR Path="/60834AE0" Ref="Q3"  Part="1" 
@@ -3063,7 +3063,7 @@ Wire Wire Line
 Wire Wire Line
 	4125 12775 4125 12650
 $Comp
-L power:+5VD #PWR0115
+L Power-rescue:+5VD-power #PWR0115
 U 1 1 6099E5DD
 P 4125 12650
 F 0 "#PWR0115" H 4125 12500 50  0001 C CNN
@@ -3078,7 +3078,7 @@ Wire Wire Line
 Wire Wire Line
 	3925 11000 4100 11000
 $Comp
-L power:+5VD #PWR0119
+L Power-rescue:+5VD-power #PWR0119
 U 1 1 60ADB3CE
 P 4100 10875
 F 0 "#PWR0119" H 4100 10725 50  0001 C CNN
@@ -3093,7 +3093,7 @@ Wire Wire Line
 Wire Wire Line
 	4075 14500 4075 14350
 $Comp
-L power:+5VD #PWR0120
+L Power-rescue:+5VD-power #PWR0120
 U 1 1 60D56C76
 P 4075 14350
 F 0 "#PWR0120" H 4075 14200 50  0001 C CNN
@@ -3104,7 +3104,7 @@ F 3 "" H 4075 14350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0121
+L Power-rescue:+5VD-power #PWR0121
 U 1 1 60E97A94
 P 4350 13975
 F 0 "#PWR0121" H 4350 13825 50  0001 C CNN
@@ -3115,7 +3115,7 @@ F 3 "" H 4350 13975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0122
+L Power-rescue:+5VD-power #PWR0122
 U 1 1 60F36D45
 P 4350 10500
 F 0 "#PWR0122" H 4350 10350 50  0001 C CNN
@@ -3128,7 +3128,7 @@ $EndComp
 Wire Wire Line
 	4350 12325 4350 12250
 $Comp
-L power:+5VD #PWR0123
+L Power-rescue:+5VD-power #PWR0123
 U 1 1 61024302
 P 4350 12250
 F 0 "#PWR0123" H 4350 12100 50  0001 C CNN
@@ -3139,7 +3139,7 @@ F 3 "" H 4350 12250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0124
+L Power-rescue:+5VD-power #PWR0124
 U 1 1 610C2CF5
 P 8625 12625
 F 0 "#PWR0124" H 8625 12475 50  0001 C CNN
@@ -3150,7 +3150,7 @@ F 3 "" H 8625 12625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0126
+L Power-rescue:+5VD-power #PWR0126
 U 1 1 61160F77
 P 8625 10950
 F 0 "#PWR0126" H 8625 10800 50  0001 C CNN
@@ -3161,7 +3161,7 @@ F 3 "" H 8625 10950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0130
+L Power-rescue:+5VD-power #PWR0130
 U 1 1 612009C7
 P 8600 14250
 F 0 "#PWR0130" H 8600 14100 50  0001 C CNN
@@ -3172,7 +3172,7 @@ F 3 "" H 8600 14250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0131
+L Power-rescue:+5VD-power #PWR0131
 U 1 1 612AE274
 P 5550 14375
 F 0 "#PWR0131" H 5550 14225 50  0001 C CNN
@@ -3183,7 +3183,7 @@ F 3 "" H 5550 14375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0134
+L Power-rescue:+5VD-power #PWR0134
 U 1 1 6134C69F
 P 5550 10875
 F 0 "#PWR0134" H 5550 10725 50  0001 C CNN
@@ -3194,7 +3194,7 @@ F 3 "" H 5550 10875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0135
+L Power-rescue:+5VD-power #PWR0135
 U 1 1 613EAF19
 P 5550 12650
 F 0 "#PWR0135" H 5550 12500 50  0001 C CNN
@@ -3217,7 +3217,7 @@ F 4 "AMC1311DWVR" H 3375 14800 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5P #PWR0136
+L Power-rescue:+5P-power #PWR0136
 U 1 1 6166C6B1
 P 2725 14375
 F 0 "#PWR0136" H 2725 14225 50  0001 C CNN
@@ -3228,7 +3228,7 @@ F 3 "" H 2725 14375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5P #PWR0137
+L Power-rescue:+5P-power #PWR0137
 U 1 1 6166CE29
 P 1925 13925
 F 0 "#PWR0137" H 1925 13775 50  0001 C CNN
@@ -3262,7 +3262,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 12350 2050 12400
 $Comp
-L power:+5V #PWR0125
+L Power-rescue:+5V-power #PWR0125
 U 1 1 619C3982
 P 2050 12350
 F 0 "#PWR0125" H 2050 12200 50  0001 C CNN
@@ -3273,7 +3273,7 @@ F 3 "" H 2050 12350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C28
+L Power-rescue:C_Small-Device C28
 U 1 1 6075FB76
 P 2050 12500
 F 0 "C28" H 2142 12546 50  0000 L CNN
@@ -3297,7 +3297,7 @@ Connection ~ 16050 2325
 Wire Wire Line
 	16050 2325 16050 2375
 $Comp
-L Device:C_Small C4
+L Power-rescue:C_Small-Device C4
 U 1 1 5E9DBC6A
 P 15625 1650
 F 0 "C4" H 15750 1600 50  0000 L CNN
@@ -3322,7 +3322,7 @@ Wire Wire Line
 Wire Wire Line
 	14550 1000 14625 1000
 $Comp
-L power:+5VD #PWR0138
+L Power-rescue:+5VD-power #PWR0138
 U 1 1 632D9BBD
 P 15625 1475
 F 0 "#PWR0138" H 15625 1325 50  0001 C CNN
@@ -3394,7 +3394,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 5525 4825 5525
 $Comp
-L power:+5VD #PWR0139
+L Power-rescue:+5VD-power #PWR0139
 U 1 1 64490E8D
 P 5500 5700
 F 0 "#PWR0139" H 5500 5550 50  0001 C CNN
@@ -3441,7 +3441,7 @@ Wire Wire Line
 Wire Wire Line
 	5625 3300 5525 3300
 $Comp
-L power:+5VD #PWR0140
+L Power-rescue:+5VD-power #PWR0140
 U 1 1 651A49BB
 P 5525 2750
 F 0 "#PWR0140" H 5525 2600 50  0001 C CNN
@@ -3572,7 +3572,7 @@ Wire Wire Line
 Wire Wire Line
 	15300 2325 15450 2325
 $Comp
-L Connector_Generic:Conn_01x01 J27
+L Power-rescue:Conn_01x01-Connector_Generic J27
 U 1 1 61D11BD8
 P 10775 14225
 F 0 "J27" H 10850 14125 50  0000 R CNN
@@ -3588,7 +3588,7 @@ Wire Wire Line
 Text Label 11100 14225 0    50   ~ 0
 DGND
 $Comp
-L Connector_Generic:Conn_01x01 J30
+L Power-rescue:Conn_01x01-Connector_Generic J30
 U 1 1 61D79594
 P 16900 11525
 F 0 "J30" H 16975 11425 50  0000 R CNN
@@ -3602,7 +3602,7 @@ $EndComp
 Wire Wire Line
 	17200 11525 17100 11525
 $Comp
-L Connector_Generic:Conn_01x01 J33
+L Power-rescue:Conn_01x01-Connector_Generic J33
 U 1 1 61DC583D
 P 16900 11750
 F 0 "J33" H 16975 11650 50  0000 R CNN
@@ -3618,7 +3618,7 @@ Wire Wire Line
 Text Label 17200 11525 0    50   ~ 0
 VI_High
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 61EB7A1B
 P 17200 11750
 AR Path="/5E91AAF4/61EB7A1B" Ref="#PWR?"  Part="1" 
@@ -3663,7 +3663,7 @@ Wire Notes Line
 Text Notes 18725 9700 0    50   ~ 0
 Thermal jumpers connecting the mosfets and diode\nto the heatsink with electrical insulation
 $Comp
-L Connector_Generic:Conn_01x01 J34
+L Power-rescue:Conn_01x01-Connector_Generic J34
 U 1 1 607307F0
 P 10800 12300
 F 0 "J34" H 10875 12200 50  0000 R CNN
@@ -3679,7 +3679,7 @@ Wire Wire Line
 Text Label 11125 12300 0    50   ~ 0
 N
 $Comp
-L Connector_Generic:Conn_01x01 J3
+L Power-rescue:Conn_01x01-Connector_Generic J3
 U 1 1 607307F8
 P 10800 12025
 F 0 "J3" H 10875 11925 50  0000 R CNN
@@ -3695,7 +3695,7 @@ Wire Wire Line
 Wire Wire Line
 	11125 12025 11000 12025
 $Comp
-L power:+5V #PWR03
+L Power-rescue:+5V-power #PWR03
 U 1 1 607D5F0C
 P 11125 12000
 F 0 "#PWR03" H 11125 11850 50  0001 C CNN
@@ -3706,7 +3706,7 @@ F 3 "" H 11125 12000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C30
+L Power-rescue:C_Small-Device C30
 U 1 1 6074AC28
 P 8925 10625
 F 0 "C30" H 9017 10671 50  0000 L CNN
@@ -3726,7 +3726,7 @@ Wire Wire Line
 Wire Wire Line
 	8925 10725 8925 10850
 $Comp
-L power:+5VD #PWR0104
+L Power-rescue:+5VD-power #PWR0104
 U 1 1 6074AC32
 P 8925 10450
 F 0 "#PWR0104" H 8925 10300 50  0001 C CNN
@@ -3737,7 +3737,7 @@ F 3 "" H 8925 10450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C31
+L Power-rescue:C_Small-Device C31
 U 1 1 6078FCF0
 P 9000 12400
 F 0 "C31" H 9092 12446 50  0000 L CNN
@@ -3757,7 +3757,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 12500 9000 12625
 $Comp
-L power:+5VD #PWR0105
+L Power-rescue:+5VD-power #PWR0105
 U 1 1 6078FCFA
 P 9000 12225
 F 0 "#PWR0105" H 9000 12075 50  0001 C CNN
@@ -3768,7 +3768,7 @@ F 3 "" H 9000 12225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C32
+L Power-rescue:C_Small-Device C32
 U 1 1 607D5C95
 P 9100 14125
 F 0 "C32" H 9192 14171 50  0000 L CNN
@@ -3788,7 +3788,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 14225 9100 14350
 $Comp
-L power:+5VD #PWR0106
+L Power-rescue:+5VD-power #PWR0106
 U 1 1 607D5C9F
 P 9100 13950
 F 0 "#PWR0106" H 9100 13800 50  0001 C CNN
@@ -3799,7 +3799,7 @@ F 3 "" H 9100 13950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L Power-rescue:MountingHole-Mechanical H1
 U 1 1 61DFFD6E
 P 20925 9600
 F 0 "H1" H 21025 9646 50  0000 L CNN
@@ -3811,7 +3811,7 @@ F 4 "x" H 20925 9600 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Fuse F4
+L Power-rescue:Fuse-Device F4
 U 1 1 61E651FD
 P 15150 2475
 F 0 "F4" V 15350 2475 50  0000 C CNN
@@ -3837,7 +3837,7 @@ Connection ~ 15450 2325
 Wire Wire Line
 	15450 2325 16050 2325
 $Comp
-L Device:C_Small C33
+L Power-rescue:C_Small-Device C33
 U 1 1 62044A82
 P 6025 10575
 F 0 "C33" H 6117 10621 50  0000 L CNN
@@ -3857,7 +3857,7 @@ Wire Wire Line
 Wire Wire Line
 	6025 10675 6025 10800
 $Comp
-L power:+5VD #PWR04
+L Power-rescue:+5VD-power #PWR04
 U 1 1 62044A8C
 P 6025 10400
 F 0 "#PWR04" H 6025 10250 50  0001 C CNN
@@ -3868,7 +3868,7 @@ F 3 "" H 6025 10400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C34
+L Power-rescue:C_Small-Device C34
 U 1 1 6208D6A2
 P 6025 12375
 F 0 "C34" H 6117 12421 50  0000 L CNN
@@ -3888,7 +3888,7 @@ Wire Wire Line
 Wire Wire Line
 	6025 12475 6025 12600
 $Comp
-L power:+5VD #PWR05
+L Power-rescue:+5VD-power #PWR05
 U 1 1 6208D6AC
 P 6025 12200
 F 0 "#PWR05" H 6025 12050 50  0001 C CNN
@@ -3899,7 +3899,7 @@ F 3 "" H 6025 12200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C38
+L Power-rescue:C_Small-Device C38
 U 1 1 620D797C
 P 6075 14100
 F 0 "C38" H 6167 14146 50  0000 L CNN
@@ -3919,7 +3919,7 @@ Wire Wire Line
 Wire Wire Line
 	6075 14200 6075 14325
 $Comp
-L power:+5VD #PWR06
+L Power-rescue:+5VD-power #PWR06
 U 1 1 620D7986
 P 6075 13925
 F 0 "#PWR06" H 6075 13775 50  0001 C CNN
@@ -3930,7 +3930,7 @@ F 3 "" H 6075 13925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDREF #PWR?
+L Power-rescue:GNDREF-power #PWR?
 U 1 1 62226301
 P 15450 15225
 AR Path="/5E91AAF4/62226301" Ref="#PWR?"  Part="1" 
@@ -3945,7 +3945,7 @@ F 3 "" H 15450 15225 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP8
+L Power-rescue:Jumper_NO_Small-Device JP8
 U 1 1 623B4FC0
 P 19525 7825
 F 0 "JP8" H 19525 7918 50  0000 C CNN
@@ -3957,7 +3957,7 @@ F 4 "THJP0612AST1" H 19525 7825 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP7
+L Power-rescue:Jumper_NO_Small-Device JP7
 U 1 1 623B4FC6
 P 19525 7650
 F 0 "JP7" H 19525 7743 50  0000 C CNN
@@ -3989,7 +3989,7 @@ Wire Wire Line
 	20075 7650 20075 7825
 Connection ~ 20075 7825
 $Comp
-L Device:Jumper_NO_Small JP10
+L Power-rescue:Jumper_NO_Small-Device JP10
 U 1 1 608DCDA1
 P 19525 9175
 F 0 "JP10" H 19525 9268 50  0000 C CNN
@@ -4007,7 +4007,7 @@ SW_Node1
 Wire Wire Line
 	18825 9175 19425 9175
 $Comp
-L Device:Jumper_NO_Small JP9
+L Power-rescue:Jumper_NO_Small-Device JP9
 U 1 1 60929ADE
 P 19525 8975
 F 0 "JP9" H 19525 9068 50  0000 C CNN
@@ -4032,7 +4032,7 @@ Wire Wire Line
 Wire Wire Line
 	20075 8800 20075 8975
 $Comp
-L Mechanical:MountingHole_Pad H2
+L Power-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 6098CB23
 P 10825 10700
 F 0 "H2" H 10925 10749 50  0000 L CNN
@@ -4044,7 +4044,7 @@ F 4 "x" H 10825 10700 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Power-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 609911D2
 P 11125 10550
 F 0 "H3" H 11225 10599 50  0000 L CNN
@@ -4056,7 +4056,7 @@ F 4 "x" H 11125 10550 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L Power-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 609DD5CE
 P 11425 10400
 F 0 "H4" H 11525 10449 50  0000 L CNN
@@ -4115,4 +4115,6 @@ Text Notes 6225 12175 0    49   ~ 0
 VILow1_op and VILow2_op \nhave 2,048V amplitude \ncentered around 1,048V\n
 Text Notes 6250 14525 0    49   ~ 0
 VI_High_op has a 2,048V \namplitude without offset
+Text Notes 7375 11700 0    50   ~ 0
+R19 and R20 were replaced \nwith 100kΩ resistor
 $EndSCHEMATC

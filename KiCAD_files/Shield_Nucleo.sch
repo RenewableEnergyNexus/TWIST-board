@@ -14,7 +14,7 @@ Comment3 "Villa"
 Comment4 "GFE"
 $EndDescr
 $Comp
-L Device:Battery_Cell BT1
+L Shield_Nucleo-rescue:Battery_Cell-Device BT1
 U 1 1 5F54E278
 P 1450 10525
 F 0 "BT1" V 1650 10425 50  0000 L CNN
@@ -26,7 +26,7 @@ F 4 "97384199" H 1450 10525 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+BATT #PWR0101
+L Shield_Nucleo-rescue:+BATT-power #PWR0101
 U 1 1 5F54F1D4
 P 2650 10425
 F 0 "#PWR0101" H 2650 10275 50  0001 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 2650 10425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0102
+L Shield_Nucleo-rescue:GNDD-power #PWR0102
 U 1 1 5F551569
 P 1100 10625
 F 0 "#PWR0102" H 1100 10375 50  0001 C CNN
@@ -52,7 +52,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 10425 2650 10525
 $Comp
-L power:+BATT #PWR0103
+L Shield_Nucleo-rescue:+BATT-power #PWR0103
 U 1 1 5F558A3C
 P 3500 1650
 F 0 "#PWR0103" H 3500 1500 50  0001 C CNN
@@ -131,7 +131,7 @@ Temp_mcu
 Text Label 5025 3875 2    50   ~ 0
 EEPROM_HOLD
 $Comp
-L Interface_CAN_LIN:TCAN334 U3
+L Shield_Nucleo-rescue:TCAN334-Interface_CAN_LIN U3
 U 1 1 6051D100
 P 6725 9275
 F 0 "U3" H 6425 9825 50  0000 C CNN
@@ -143,7 +143,7 @@ F 4 "TCAN334GDR" H 6725 9275 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L Shield_Nucleo-rescue:R-Device R1
 U 1 1 6051E55D
 P 7775 9625
 F 0 "R1" H 7845 9671 50  0000 L CNN
@@ -155,7 +155,7 @@ F 4 "CR0805-FX-1200ELF" H 7775 9625 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L Shield_Nucleo-rescue:C_Small-Device C2
 U 1 1 6051F185
 P 6975 8525
 F 0 "C2" H 7067 8571 50  0000 L CNN
@@ -167,7 +167,7 @@ F 4 "CC0805KRX7R9BB104" H 6975 8525 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP1
+L Shield_Nucleo-rescue:Jumper-Device JP1
 U 1 1 6053C1CC
 P 7775 9125
 F 0 "JP1" V 7729 9252 50  0000 L CNN
@@ -204,7 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	6725 8325 6725 8875
 $Comp
-L power:GNDD #PWR0104
+L Shield_Nucleo-rescue:GNDD-power #PWR0104
 U 1 1 6063A3AE
 P 3700 5800
 F 0 "#PWR0104" H 3700 5550 50  0001 C CNN
@@ -223,7 +223,7 @@ HRTIM_EEV2
 Wire Wire Line
 	3000 4975 2450 4975
 $Comp
-L Device:D_Schottky_Small D1
+L Shield_Nucleo-rescue:D_Schottky_Small-Device D1
 U 1 1 60720972
 P 7775 7325
 F 0 "D1" V 7821 7255 50  0000 R CNN
@@ -235,7 +235,7 @@ F 4 "RBR2MM60ATFTR" H 7775 7325 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Schottky_Small D2
+L Shield_Nucleo-rescue:D_Schottky_Small-Device D2
 U 1 1 607216AF
 P 8875 7325
 F 0 "D2" V 8921 7255 50  0000 R CNN
@@ -247,7 +247,7 @@ F 4 "RBR2MM60ATFTR" H 8875 7325 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Polyfuse_Small F1
+L Shield_Nucleo-rescue:Polyfuse_Small-Device F1
 U 1 1 6072210F
 P 8125 7875
 F 0 "F1" V 8330 7875 50  0000 C CNN
@@ -259,7 +259,7 @@ F 4 "0ZCJ0050AF2E" H 8125 7875 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Polyfuse_Small F2
+L Shield_Nucleo-rescue:Polyfuse_Small-Device F2
 U 1 1 60722BE6
 P 8125 8175
 F 0 "F2" V 7920 8175 50  0000 C CNN
@@ -275,7 +275,7 @@ GND_CAN
 Wire Wire Line
 	8875 7225 8875 7125
 $Comp
-L power:GNDD #PWR0107
+L Shield_Nucleo-rescue:GNDD-power #PWR0107
 U 1 1 60779D49
 P 8875 7525
 F 0 "#PWR0107" H 8875 7275 50  0001 C CNN
@@ -390,7 +390,7 @@ Wire Notes Line
 Wire Notes Line
 	11775 11025 4175 11025
 $Comp
-L power:+3.3V #PWR0108
+L Shield_Nucleo-rescue:+3.3V-power #PWR0108
 U 1 1 6086ECDB
 P 3700 1650
 F 0 "#PWR0108" H 3700 1500 50  0001 C CNN
@@ -401,7 +401,7 @@ F 3 "" H 3700 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0109
+L Shield_Nucleo-rescue:+3.3V-power #PWR0109
 U 1 1 6087743D
 P 6725 8225
 F 0 "#PWR0109" H 6725 8075 50  0001 C CNN
@@ -415,7 +415,7 @@ Wire Wire Line
 	6725 8225 6725 8325
 Connection ~ 6725 8325
 $Comp
-L power:GNDD #PWR0110
+L Shield_Nucleo-rescue:GNDD-power #PWR0110
 U 1 1 60889269
 P 6725 9875
 F 0 "#PWR0110" H 6725 9625 50  0001 C CNN
@@ -426,7 +426,7 @@ F 3 "" H 6725 9875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0111
+L Shield_Nucleo-rescue:GNDD-power #PWR0111
 U 1 1 6088E1A9
 P 6975 8725
 F 0 "#PWR0111" H 6975 8475 50  0001 C CNN
@@ -473,7 +473,7 @@ Connection ~ 5825 9075
 Wire Wire Line
 	5825 9075 6225 9075
 $Comp
-L Connector:TestPoint TP13
+L Shield_Nucleo-rescue:TestPoint-Connector TP13
 U 1 1 60B9FBC5
 P 5825 8925
 F 0 "TP13" H 5875 8975 50  0000 L CNN
@@ -485,7 +485,7 @@ F 4 "5001" H 5825 8925 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP14
+L Shield_Nucleo-rescue:TestPoint-Connector TP14
 U 1 1 60BB536A
 P 5825 9225
 F 0 "TP14" H 5875 9275 50  0000 L CNN
@@ -497,7 +497,7 @@ F 4 "5001" H 5825 9225 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP15
+L Shield_Nucleo-rescue:TestPoint-Connector TP15
 U 1 1 60BC3390
 P 5825 9575
 F 0 "TP15" H 5875 9625 50  0000 L CNN
@@ -509,7 +509,7 @@ F 4 "5001" H 5825 9575 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:TestPoint TP2
+L Shield_Nucleo-rescue:TestPoint-Connector TP2
 U 1 1 60BDDC66
 P 3900 1700
 F 0 "TP2" H 3950 1750 50  0000 L CNN
@@ -521,7 +521,7 @@ F 4 "5001" H 3900 1700 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0112
+L Shield_Nucleo-rescue:GNDD-power #PWR0112
 U 1 1 60BFC48F
 P 5650 6150
 F 0 "#PWR0112" H 5650 5900 50  0001 C CNN
@@ -534,7 +534,7 @@ $EndComp
 Wire Wire Line
 	5650 6150 5650 6100
 $Comp
-L power:GNDD #PWR0113
+L Shield_Nucleo-rescue:GNDD-power #PWR0113
 U 1 1 60C06989
 P 5250 6150
 F 0 "#PWR0113" H 5250 5900 50  0001 C CNN
@@ -547,7 +547,7 @@ $EndComp
 Wire Wire Line
 	5250 6150 5250 6100
 $Comp
-L Connector:TestPoint TP3
+L Shield_Nucleo-rescue:TestPoint-Connector TP3
 U 1 1 60C3CFCB
 P 3275 1700
 F 0 "TP3" H 3100 1750 50  0000 L CNN
@@ -581,7 +581,7 @@ Real Time Clock \nBattery\n
 Text Notes 2700 6975 0    98   ~ 0
 EEPROM - SPI\n
 $Comp
-L Memory_EEPROM:AT25xxx U2
+L Shield_Nucleo-rescue:AT25xxx-Memory_EEPROM U2
 U 1 1 60D65E5A
 P 2150 8175
 F 0 "U2" H 1850 8675 50  0000 C CNN
@@ -617,7 +617,7 @@ SPI3_CS
 Wire Wire Line
 	1150 8275 1750 8275
 $Comp
-L power:GNDD #PWR0114
+L Shield_Nucleo-rescue:GNDD-power #PWR0114
 U 1 1 60E2D434
 P 2150 8575
 F 0 "#PWR0114" H 2150 8325 50  0001 C CNN
@@ -630,7 +630,7 @@ $EndComp
 Wire Wire Line
 	2150 8475 2150 8575
 $Comp
-L Device:C_Small C1
+L Shield_Nucleo-rescue:C_Small-Device C1
 U 1 1 60E4324B
 P 2500 7525
 F 0 "C1" H 2592 7571 50  0000 L CNN
@@ -644,7 +644,7 @@ $EndComp
 Wire Wire Line
 	2500 7425 2500 7375
 $Comp
-L power:GNDD #PWR0115
+L Shield_Nucleo-rescue:GNDD-power #PWR0115
 U 1 1 60E43252
 P 2500 7675
 F 0 "#PWR0115" H 2500 7425 50  0001 C CNN
@@ -659,7 +659,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 7375 2500 7375
 $Comp
-L power:+3.3V #PWR0116
+L Shield_Nucleo-rescue:+3.3V-power #PWR0116
 U 1 1 60E5B310
 P 2150 7275
 F 0 "#PWR0116" H 2150 7125 50  0001 C CNN
@@ -689,7 +689,7 @@ Text Notes 9275 3550 0    98   ~ 0
 Text Notes 875  975  0    98   ~ 0
 STM32G474RE LQFP64\nPin Mapping
 $Comp
-L Device:Jumper JP2
+L Shield_Nucleo-rescue:Jumper-Device JP2
 U 1 1 604AA020
 P 2100 10525
 F 0 "JP2" H 2100 10325 50  0000 C CNN
@@ -705,7 +705,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 10525 2650 10525
 $Comp
-L Connector:TestPoint TP1
+L Shield_Nucleo-rescue:TestPoint-Connector TP1
 U 1 1 60C12F4B
 P 5650 6100
 F 0 "TP1" H 5700 6150 50  0000 L CNN
@@ -717,7 +717,7 @@ F 4 "5001" H 5650 6100 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP12
+L Shield_Nucleo-rescue:TestPoint-Connector TP12
 U 1 1 60C23937
 P 5250 6100
 F 0 "TP12" H 5300 6150 50  0000 L CNN
@@ -729,7 +729,7 @@ F 4 "5001" H 5250 6100 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP7
+L Shield_Nucleo-rescue:TestPoint-Connector TP7
 U 1 1 60B7361A
 P 5050 3375
 F 0 "TP7" V 5050 3625 50  0000 L CNN
@@ -741,7 +741,7 @@ F 4 "5001" H 5050 3375 50  0001 C CNN "Manf#"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP6
+L Shield_Nucleo-rescue:TestPoint-Connector TP6
 U 1 1 60B73620
 P 5050 3275
 F 0 "TP6" V 5050 3525 50  0000 L CNN
@@ -753,7 +753,7 @@ F 4 "5001" H 5050 3275 50  0001 C CNN "Manf#"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP5
+L Shield_Nucleo-rescue:TestPoint-Connector TP5
 U 1 1 60B6C36F
 P 5050 3175
 F 0 "TP5" V 5050 3425 50  0000 L CNN
@@ -765,7 +765,7 @@ F 4 "5001" H 5050 3175 50  0001 C CNN "Manf#"
 	0    1    -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP4
+L Shield_Nucleo-rescue:TestPoint-Connector TP4
 U 1 1 60B6C375
 P 5050 3075
 F 0 "TP4" V 5050 3325 50  0000 L CNN
@@ -781,7 +781,7 @@ HRTIM1_FLT2
 Wire Wire Line
 	5025 2675 4400 2675
 $Comp
-L Connector:TestPoint TP32
+L Shield_Nucleo-rescue:TestPoint-Connector TP32
 U 1 1 6075AFB6
 P 7475 7075
 F 0 "TP32" H 7525 7125 50  0000 L CNN
@@ -793,7 +793,7 @@ F 4 "5001" H 7475 7075 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP33
+L Shield_Nucleo-rescue:TestPoint-Connector TP33
 U 1 1 60765C2E
 P 8625 7075
 F 0 "TP33" H 8675 7125 50  0000 L CNN
@@ -851,7 +851,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 10525 1100 10625
 $Comp
-L Connector:RJ45_LED_Shielded J2
+L Shield_Nucleo-rescue:RJ45_LED_Shielded-Connector J2
 U 1 1 6062F6C1
 P 10025 8525
 F 0 "J2" H 10025 9100 50  0000 C CNN
@@ -863,7 +863,7 @@ F 4 "RJE721881411" H 10025 8525 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:RJ45_LED_Shielded J3
+L Shield_Nucleo-rescue:RJ45_LED_Shielded-Connector J3
 U 1 1 606310E3
 P 10025 10175
 F 0 "J3" H 10025 10750 50  0000 C CNN
@@ -875,7 +875,7 @@ F 4 "RJE721881411" H 10025 10175 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GNDD #PWR0127
+L Shield_Nucleo-rescue:GNDD-power #PWR0127
 U 1 1 60661AA6
 P 10375 9525
 F 0 "#PWR0127" H 10375 9275 50  0001 C CNN
@@ -890,7 +890,7 @@ Wire Wire Line
 Wire Wire Line
 	10025 9525 10025 9675
 $Comp
-L power:GNDD #PWR0128
+L Shield_Nucleo-rescue:GNDD-power #PWR0128
 U 1 1 60698D0C
 P 10375 7825
 F 0 "#PWR0128" H 10375 7575 50  0001 C CNN
@@ -905,7 +905,7 @@ Wire Wire Line
 Wire Wire Line
 	10025 7825 10025 8025
 $Comp
-L power:+3.3V #PWR0129
+L Shield_Nucleo-rescue:+3.3V-power #PWR0129
 U 1 1 606B841E
 P 10625 8125
 F 0 "#PWR0129" H 10625 7975 50  0001 C CNN
@@ -916,7 +916,7 @@ F 3 "" H 10625 8125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0130
+L Shield_Nucleo-rescue:+3.3V-power #PWR0130
 U 1 1 606D231D
 P 10625 9825
 F 0 "#PWR0130" H 10625 9675 50  0001 C CNN
@@ -935,7 +935,7 @@ Wire Wire Line
 Wire Wire Line
 	10625 8225 10425 8225
 $Comp
-L Device:R_Small R10
+L Shield_Nucleo-rescue:R_Small-Device R10
 U 1 1 6079DEB8
 P 10825 8325
 F 0 "R10" V 10629 8325 50  0000 C CNN
@@ -947,7 +947,7 @@ F 4 "CRCW0805330RFKEAC" H 10825 8325 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R11
+L Shield_Nucleo-rescue:R_Small-Device R11
 U 1 1 6079F09A
 P 10825 8925
 F 0 "R11" V 11025 8925 50  0000 C CNN
@@ -959,7 +959,7 @@ F 4 "CR0805-FX-3001ELF" H 10825 8925 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R12
+L Shield_Nucleo-rescue:R_Small-Device R12
 U 1 1 607A1F72
 P 10825 9975
 F 0 "R12" V 10629 9975 50  0000 C CNN
@@ -971,7 +971,7 @@ F 4 "CRCW0805330RFKEAC" H 10825 9975 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R13
+L Shield_Nucleo-rescue:R_Small-Device R13
 U 1 1 607A1F78
 P 10825 10575
 F 0 "R13" V 11025 10575 50  0000 C CNN
@@ -1056,7 +1056,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1800 4000 2075
 $Comp
-L power:+3.3VA #PWR03
+L Shield_Nucleo-rescue:+3.3VA-power #PWR03
 U 1 1 60C1314E
 P 4250 1650
 F 0 "#PWR03" H 4250 1500 50  0001 C CNN
@@ -1072,7 +1072,7 @@ Wire Wire Line
 	3900 1700 3900 1800
 Connection ~ 3900 1800
 $Comp
-L Device:C_Small C6
+L Shield_Nucleo-rescue:C_Small-Device C6
 U 1 1 60D032A7
 P 4725 1375
 F 0 "C6" H 4817 1421 50  0000 L CNN
@@ -1084,7 +1084,7 @@ F 4 "CGA4J1X7R1H475K125AE" H 4725 1375 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C10
+L Shield_Nucleo-rescue:C_Small-Device C10
 U 1 1 60CF3157
 P 6400 1375
 F 0 "C10" H 6492 1421 50  0000 L CNN
@@ -1096,7 +1096,7 @@ F 4 "CC0805KRX7R9BB104" H 6400 1375 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L Shield_Nucleo-rescue:C_Small-Device C9
 U 1 1 60CE3747
 P 5975 1375
 F 0 "C9" H 6067 1421 50  0000 L CNN
@@ -1108,7 +1108,7 @@ F 4 "CC0805KRX7R9BB104" H 5975 1375 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L Shield_Nucleo-rescue:C_Small-Device C8
 U 1 1 60CD4189
 P 5575 1375
 F 0 "C8" H 5667 1421 50  0000 L CNN
@@ -1124,7 +1124,7 @@ Wire Wire Line
 Wire Wire Line
 	4725 1175 4725 1075
 $Comp
-L Device:C_Small C7
+L Shield_Nucleo-rescue:C_Small-Device C7
 U 1 1 60C939A5
 P 5150 1375
 F 0 "C7" H 5242 1421 50  0000 L CNN
@@ -1136,7 +1136,7 @@ F 4 "CC0805KRX7R9BB104" H 5150 1375 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR04
+L Shield_Nucleo-rescue:+3.3V-power #PWR04
 U 1 1 60C77864
 P 4725 1075
 F 0 "#PWR04" H 4725 925 50  0001 C CNN
@@ -1188,7 +1188,7 @@ Connection ~ 5575 1650
 Wire Wire Line
 	5575 1650 5975 1650
 $Comp
-L power:+3.3VA #PWR06
+L Shield_Nucleo-rescue:+3.3VA-power #PWR06
 U 1 1 60EB8033
 P 7250 1100
 F 0 "#PWR06" H 7250 950 50  0001 C CNN
@@ -1199,7 +1199,7 @@ F 3 "" H 7250 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C14
+L Shield_Nucleo-rescue:C_Small-Device C14
 U 1 1 60ECCBF4
 P 7675 1400
 F 0 "C14" H 7767 1446 50  0000 L CNN
@@ -1211,7 +1211,7 @@ F 4 "C0805X103K5RAC3316" H 7675 1400 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L Shield_Nucleo-rescue:C_Small-Device C12
 U 1 1 60ECCBFA
 P 7250 1400
 F 0 "C12" H 7342 1446 50  0000 L CNN
@@ -1236,7 +1236,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 1500 7250 1675
 $Comp
-L Device:Ferrite_Bead_Small FB1
+L Shield_Nucleo-rescue:Ferrite_Bead_Small-Device FB1
 U 1 1 60F3113E
 P 6725 1175
 F 0 "FB1" V 6488 1175 50  0000 C CNN
@@ -1276,7 +1276,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 5800 3700 5725
 $Comp
-L Device:C_Small C3
+L Shield_Nucleo-rescue:C_Small-Device C3
 U 1 1 6110106A
 P 1325 6025
 F 0 "C3" H 1025 6025 50  0000 L CNN
@@ -1288,7 +1288,7 @@ F 4 "C0805C120K5HACTU" H 1325 6025 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L Shield_Nucleo-rescue:C_Small-Device C4
 U 1 1 6118360F
 P 2100 6025
 F 0 "C4" H 2200 6025 50  0000 L CNN
@@ -1300,7 +1300,7 @@ F 4 "C0805C120K5HACTU" H 2100 6025 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR01
+L Shield_Nucleo-rescue:GNDD-power #PWR01
 U 1 1 611DFE7E
 P 1675 6250
 F 0 "#PWR01" H 1675 6000 50  0001 C CNN
@@ -1313,7 +1313,7 @@ $EndComp
 Wire Wire Line
 	1675 6200 1675 6250
 $Comp
-L power:GNDD #PWR05
+L Shield_Nucleo-rescue:GNDD-power #PWR05
 U 1 1 6123DF2C
 P 5575 1700
 F 0 "#PWR05" H 5575 1450 50  0001 C CNN
@@ -1326,7 +1326,7 @@ $EndComp
 Wire Wire Line
 	5575 1650 5575 1700
 $Comp
-L power:GNDD #PWR07
+L Shield_Nucleo-rescue:GNDD-power #PWR07
 U 1 1 6127025F
 P 7450 1725
 F 0 "#PWR07" H 7450 1475 50  0001 C CNN
@@ -1346,7 +1346,7 @@ Wire Wire Line
 Text Notes 4650 825  0    50   ~ 0
 Decoupling capacitors choosen as per datasheet 5.16 Power supply scheme fig.16\n
 $Comp
-L Device:C_Small C5
+L Shield_Nucleo-rescue:C_Small-Device C5
 U 1 1 61485F92
 P 2675 2450
 F 0 "C5" H 2767 2496 50  0000 L CNN
@@ -1362,7 +1362,7 @@ Wire Wire Line
 Wire Wire Line
 	2675 2275 2675 2350
 $Comp
-L Switch:SW_Push SW1
+L Shield_Nucleo-rescue:SW_Push-Switch SW1
 U 1 1 614B9634
 P 2250 2525
 F 0 "SW1" V 2296 2477 50  0000 R CNN
@@ -1385,7 +1385,7 @@ Wire Wire Line
 Wire Wire Line
 	2675 2550 2675 2775
 $Comp
-L power:GNDD #PWR02
+L Shield_Nucleo-rescue:GNDD-power #PWR02
 U 1 1 6159F49D
 P 2450 2825
 F 0 "#PWR02" H 2450 2575 50  0001 C CNN
@@ -1413,7 +1413,7 @@ F 4 "STM32G474RET6" H 3700 3775 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener_Small D8
+L Shield_Nucleo-rescue:D_Zener_Small-Device D8
 U 1 1 61F579F4
 P 11650 1675
 F 0 "D8" V 11604 1745 50  0000 L CNN
@@ -1425,7 +1425,7 @@ F 4 "MMSZ5226C-HE3-08" H 11650 1675 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Zener_Small D7
+L Shield_Nucleo-rescue:D_Zener_Small-Device D7
 U 1 1 61F833A8
 P 10825 1375
 F 0 "D7" V 10779 1445 50  0000 L CNN
@@ -1437,7 +1437,7 @@ F 4 "MMSZ5226C-HE3-08" H 10825 1375 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:D_Zener_Small D4
+L Shield_Nucleo-rescue:D_Zener_Small-Device D4
 U 1 1 61F26114
 P 10000 1100
 F 0 "D4" V 9954 1170 50  0000 L CNN
@@ -1449,7 +1449,7 @@ F 4 "MMSZ5226C-HE3-08" H 10000 1100 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR013
+L Shield_Nucleo-rescue:GNDD-power #PWR013
 U 1 1 621CF424
 P 13875 2825
 F 0 "#PWR013" H 13875 2575 50  0001 C CNN
@@ -1462,7 +1462,7 @@ $EndComp
 Wire Wire Line
 	13875 2775 13875 2825
 $Comp
-L power:GNDD #PWR015
+L Shield_Nucleo-rescue:GNDD-power #PWR015
 U 1 1 622C7E21
 P 11650 1825
 F 0 "#PWR015" H 11650 1575 50  0001 C CNN
@@ -1475,7 +1475,7 @@ $EndComp
 Wire Wire Line
 	11650 1775 11650 1825
 $Comp
-L power:GNDD #PWR014
+L Shield_Nucleo-rescue:GNDD-power #PWR014
 U 1 1 62326422
 P 10825 1550
 F 0 "#PWR014" H 10825 1300 50  0001 C CNN
@@ -1488,7 +1488,7 @@ $EndComp
 Wire Wire Line
 	10825 1475 10825 1550
 $Comp
-L power:GNDD #PWR010
+L Shield_Nucleo-rescue:GNDD-power #PWR010
 U 1 1 62353EC3
 P 10000 1250
 F 0 "#PWR010" H 10000 1000 50  0001 C CNN
@@ -1525,7 +1525,7 @@ Wire Notes Line
 Wire Notes Line
 	22750 650  20050 650 
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Shield_Nucleo-rescue:Conn_01x02-Connector_Generic J6
 U 1 1 630CC4DC
 P 22000 2400
 F 0 "J6" H 22080 2392 50  0000 L CNN
@@ -1537,7 +1537,7 @@ F 4 "1814919" H 22000 2400 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C16
+L Shield_Nucleo-rescue:CP1_Small-Device C16
 U 1 1 630E722B
 P 21025 2450
 F 0 "C16" H 21116 2496 50  0000 L CNN
@@ -1565,7 +1565,7 @@ Wire Wire Line
 Wire Wire Line
 	21650 2500 21800 2500
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L Shield_Nucleo-rescue:Conn_01x02-Connector_Generic J1
 U 1 1 6317F960
 P 22000 1300
 F 0 "J1" H 22080 1292 50  0000 L CNN
@@ -1577,7 +1577,7 @@ F 4 "1814919" H 22000 1300 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1_Small C15
+L Shield_Nucleo-rescue:CP1_Small-Device C15
 U 1 1 6317F966
 P 21025 1350
 F 0 "C15" H 21116 1396 50  0000 L CNN
@@ -1663,7 +1663,7 @@ Wire Notes Line
 Text Notes 18700 9950 0    98   ~ 0
 Only one footprint to be populated depending\nif the converter is powered\nfrom a DAB module or is standalone\n
 $Comp
-L power:GNDD #PWR025
+L Shield_Nucleo-rescue:GNDD-power #PWR025
 U 1 1 608A6438
 P 18375 8175
 F 0 "#PWR025" H 18375 7925 50  0001 C CNN
@@ -1676,7 +1676,7 @@ $EndComp
 Wire Wire Line
 	18375 8175 18375 8025
 $Comp
-L power:+5VD #PWR024
+L Shield_Nucleo-rescue:+5VD-power #PWR024
 U 1 1 608F259A
 P 18375 7550
 F 0 "#PWR024" H 18375 7400 50  0001 C CNN
@@ -1689,7 +1689,7 @@ $EndComp
 Wire Wire Line
 	18375 7550 18375 7625
 $Comp
-L power:+3.3V #PWR019
+L Shield_Nucleo-rescue:+3.3V-power #PWR019
 U 1 1 6091CD2D
 P 16550 7550
 F 0 "#PWR019" H 16550 7400 50  0001 C CNN
@@ -1704,7 +1704,7 @@ Wire Wire Line
 Wire Wire Line
 	19550 7625 19400 7625
 $Comp
-L power:+5VD #PWR026
+L Shield_Nucleo-rescue:+5VD-power #PWR026
 U 1 1 609A9132
 P 19450 8350
 F 0 "#PWR026" H 19450 8200 50  0001 C CNN
@@ -1719,7 +1719,7 @@ Wire Wire Line
 Wire Wire Line
 	19550 8425 19450 8425
 $Comp
-L power:GNDD #PWR027
+L Shield_Nucleo-rescue:GNDD-power #PWR027
 U 1 1 609F9FAF
 P 21075 8925
 F 0 "#PWR027" H 21075 8675 50  0001 C CNN
@@ -1734,7 +1734,7 @@ Wire Wire Line
 Wire Wire Line
 	20950 8825 21075 8825
 $Comp
-L power:+5VD #PWR017
+L Shield_Nucleo-rescue:+5VD-power #PWR017
 U 1 1 60AE266F
 P 15150 8125
 F 0 "#PWR017" H 15150 7975 50  0001 C CNN
@@ -1745,7 +1745,7 @@ F 3 "" H 15150 8125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR022
+L Shield_Nucleo-rescue:+5VD-power #PWR022
 U 1 1 60B18915
 P 15175 9100
 F 0 "#PWR022" H 15175 8950 50  0001 C CNN
@@ -1760,7 +1760,7 @@ Wire Wire Line
 Wire Wire Line
 	15175 9100 15175 9150
 $Comp
-L power:GNDD #PWR018
+L Shield_Nucleo-rescue:GNDD-power #PWR018
 U 1 1 60C55F26
 P 15175 8625
 F 0 "#PWR018" H 15175 8375 50  0001 C CNN
@@ -1771,7 +1771,7 @@ F 3 "" H 15175 8625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR023
+L Shield_Nucleo-rescue:GNDD-power #PWR023
 U 1 1 60C72F20
 P 15175 9600
 F 0 "#PWR023" H 15175 9350 50  0001 C CNN
@@ -1782,7 +1782,7 @@ F 3 "" H 15175 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR020
+L Shield_Nucleo-rescue:+12V-power #PWR020
 U 1 1 60D32256
 P 13900 9100
 F 0 "#PWR020" H 13900 8950 50  0001 C CNN
@@ -1795,7 +1795,7 @@ $EndComp
 Wire Wire Line
 	13900 9100 13900 9150
 $Comp
-L power:GNDREF #PWR021
+L Shield_Nucleo-rescue:GNDREF-power #PWR021
 U 1 1 60D76A36
 P 13900 9600
 F 0 "#PWR021" H 13900 9350 50  0001 C CNN
@@ -1808,7 +1808,7 @@ $EndComp
 Text Label 13875 8525 0    50   ~ 0
 N
 $Comp
-L power:+5V #PWR012
+L Shield_Nucleo-rescue:+5V-power #PWR012
 U 1 1 60F77420
 P 13900 8175
 F 0 "#PWR012" H 13900 8025 50  0001 C CNN
@@ -1821,7 +1821,7 @@ $EndComp
 Wire Wire Line
 	13900 8175 13900 8225
 $Comp
-L Regulator_Linear:AP1117-33 U4
+L Shield_Nucleo-rescue:AP1117-33-Regulator_Linear U4
 U 1 1 60681423
 P 17100 7625
 F 0 "U4" H 17100 7867 50  0000 C CNN
@@ -1848,7 +1848,7 @@ Wire Wire Line
 Wire Wire Line
 	21050 8025 21050 8075
 $Comp
-L power:GNDREF #PWR0105
+L Shield_Nucleo-rescue:GNDREF-power #PWR0105
 U 1 1 6086AB56
 P 21050 8075
 F 0 "#PWR0105" H 21050 7825 50  0001 C CNN
@@ -1861,7 +1861,7 @@ $EndComp
 Wire Wire Line
 	20950 8425 21250 8425
 $Comp
-L Driver_FET:UCC21520DW U5
+L Shield_Nucleo-rescue:UCC21520DW-Driver_FET U5
 U 1 1 60B71C86
 P 4000 13175
 F 0 "U5" H 4000 13840 50  0000 C CNN
@@ -1873,7 +1873,7 @@ F 4 "UCC21222DR" H 4000 13175 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0123
+L Shield_Nucleo-rescue:GNDD-power #PWR0123
 U 1 1 60B7A89E
 P 3275 14025
 F 0 "#PWR0123" H 3275 13775 50  0001 C CNN
@@ -1886,7 +1886,7 @@ $EndComp
 Wire Wire Line
 	3500 13575 3425 13575
 $Comp
-L Device:C_Small C17
+L Shield_Nucleo-rescue:C_Small-Device C17
 U 1 1 60BBEFAE
 P 2525 12900
 F 0 "C17" H 2617 12946 50  0000 L CNN
@@ -1898,7 +1898,7 @@ F 4 "C0805C330J5GACTU" H 2525 12900 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C18
+L Shield_Nucleo-rescue:C_Small-Device C18
 U 1 1 60BDBA9E
 P 2525 13375
 F 0 "C18" H 2617 13421 50  0000 L CNN
@@ -1910,7 +1910,7 @@ F 4 "C0805C330J5GACTU" H 2525 13375 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R9
+L Shield_Nucleo-rescue:R-Device R9
 U 1 1 60C0AE42
 P 2050 13075
 F 0 "R9" V 2200 13050 50  0000 L CNN
@@ -1922,7 +1922,7 @@ F 4 "RT0805FRE0751RL" H 2050 13075 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R14
+L Shield_Nucleo-rescue:R-Device R14
 U 1 1 60C2794D
 P 2050 13175
 F 0 "R14" V 1875 13150 50  0000 L CNN
@@ -1948,7 +1948,7 @@ Connection ~ 2525 13175
 Wire Wire Line
 	2525 13175 3500 13175
 $Comp
-L power:GNDD #PWR0124
+L Shield_Nucleo-rescue:GNDD-power #PWR0124
 U 1 1 60CF8F97
 P 2525 13525
 F 0 "#PWR0124" H 2525 13275 50  0001 C CNN
@@ -1959,7 +1959,7 @@ F 3 "" H 2525 13525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0125
+L Shield_Nucleo-rescue:GNDD-power #PWR0125
 U 1 1 60D172A4
 P 2525 12750
 F 0 "#PWR0125" H 2525 12500 50  0001 C CNN
@@ -1974,7 +1974,7 @@ Wire Wire Line
 Wire Wire Line
 	2525 13475 2525 13525
 $Comp
-L Device:R R15
+L Shield_Nucleo-rescue:R-Device R15
 U 1 1 60DB6DF7
 P 3075 13700
 F 0 "R15" H 3150 13675 50  0000 L CNN
@@ -1990,7 +1990,7 @@ Wire Wire Line
 Wire Wire Line
 	3075 13475 3075 13550
 $Comp
-L Device:C_Small C20
+L Shield_Nucleo-rescue:C_Small-Device C20
 U 1 1 60E378BD
 P 3275 13700
 F 0 "C20" H 3450 13650 50  0000 L CNN
@@ -2020,7 +2020,7 @@ Wire Wire Line
 Wire Wire Line
 	3275 13950 3275 14025
 $Comp
-L power:+5VD #PWR0126
+L Shield_Nucleo-rescue:+5VD-power #PWR0126
 U 1 1 60F94268
 P 3325 12700
 F 0 "#PWR0126" H 3325 12550 50  0001 C CNN
@@ -2042,7 +2042,7 @@ Wire Wire Line
 	2900 13950 3075 13950
 Connection ~ 3075 13950
 $Comp
-L Device:C_Small C13
+L Shield_Nucleo-rescue:C_Small-Device C13
 U 1 1 6103EC43
 P 2350 12025
 F 0 "C13" H 2442 12071 50  0000 L CNN
@@ -2054,7 +2054,7 @@ F 4 "CC0805KRX7R9BB104" H 2350 12025 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C11
+L Shield_Nucleo-rescue:C_Small-Device C11
 U 1 1 61060584
 P 1925 12025
 F 0 "C11" H 2017 12071 50  0000 L CNN
@@ -2066,7 +2066,7 @@ F 4 "CC0805KRX7R9BB104" H 1925 12025 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0131
+L Shield_Nucleo-rescue:+5VD-power #PWR0131
 U 1 1 61112C1E
 P 2125 11725
 F 0 "#PWR0131" H 2125 11575 50  0001 C CNN
@@ -2083,7 +2083,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 11925 2350 11825
 $Comp
-L power:GNDD #PWR0132
+L Shield_Nucleo-rescue:GNDD-power #PWR0132
 U 1 1 6119E48E
 P 2125 12300
 F 0 "#PWR0132" H 2125 12050 50  0001 C CNN
@@ -2106,7 +2106,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 13175 1475 13175
 $Comp
-L power:GNDREF #PWR0133
+L Shield_Nucleo-rescue:GNDREF-power #PWR0133
 U 1 1 612D95DB
 P 5275 13650
 F 0 "#PWR0133" H 5275 13400 50  0001 C CNN
@@ -2117,7 +2117,7 @@ F 3 "" H 5275 13650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0134
+L Shield_Nucleo-rescue:+12V-power #PWR0134
 U 1 1 6130DD3A
 P 4650 13325
 F 0 "#PWR0134" H 4650 13175 50  0001 C CNN
@@ -2134,7 +2134,7 @@ Wire Wire Line
 Wire Wire Line
 	5275 13575 5275 13650
 $Comp
-L Device:D_Schottky D10
+L Shield_Nucleo-rescue:D_Schottky-Device D10
 U 1 1 61492021
 P 4925 12375
 F 0 "D10" V 4971 12295 50  0000 R CNN
@@ -2146,7 +2146,7 @@ F 4 "STTH4R02U" H 4925 12375 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R16
+L Shield_Nucleo-rescue:R-Device R16
 U 1 1 61495D90
 P 4925 12000
 F 0 "R16" H 4725 11975 50  0000 L CNN
@@ -2164,7 +2164,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 12775 4925 12775
 $Comp
-L Device:C_Small C24
+L Shield_Nucleo-rescue:C_Small-Device C24
 U 1 1 6153A8E6
 P 6175 14225
 F 0 "C24" H 6267 14271 50  0000 L CNN
@@ -2176,7 +2176,7 @@ F 4 "CL32B106KBJZW6E" H 6175 14225 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C22
+L Shield_Nucleo-rescue:C_Small-Device C22
 U 1 1 61561ACC
 P 5775 14225
 F 0 "C22" H 5867 14271 50  0000 L CNN
@@ -2200,7 +2200,7 @@ Wire Wire Line
 Wire Wire Line
 	6175 14425 6175 14325
 $Comp
-L power:GNDREF #PWR0135
+L Shield_Nucleo-rescue:GNDREF-power #PWR0135
 U 1 1 6162B548
 P 5975 14475
 F 0 "#PWR0135" H 5975 14225 50  0001 C CNN
@@ -2216,7 +2216,7 @@ Connection ~ 5975 14425
 Wire Wire Line
 	5975 14425 6175 14425
 $Comp
-L power:+12V #PWR0136
+L Shield_Nucleo-rescue:+12V-power #PWR0136
 U 1 1 616A681C
 P 5975 14000
 F 0 "#PWR0136" H 5975 13850 50  0001 C CNN
@@ -2232,7 +2232,7 @@ Connection ~ 5975 14050
 Wire Wire Line
 	5975 14050 6175 14050
 $Comp
-L power:+12V #PWR0137
+L Shield_Nucleo-rescue:+12V-power #PWR0137
 U 1 1 6175040D
 P 4925 11775
 F 0 "#PWR0137" H 4925 11625 50  0001 C CNN
@@ -2245,7 +2245,7 @@ $EndComp
 Wire Wire Line
 	4925 11775 4925 11850
 $Comp
-L Device:C_Small C23
+L Shield_Nucleo-rescue:C_Small-Device C23
 U 1 1 617D2DFF
 P 6075 12725
 F 0 "C23" H 6167 12771 50  0000 L CNN
@@ -2257,7 +2257,7 @@ F 4 "CL21B105KBFNFNE" H 6075 12725 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C21
+L Shield_Nucleo-rescue:C_Small-Device C21
 U 1 1 617D2E05
 P 5675 12725
 F 0 "C21" H 5767 12771 50  0000 L CNN
@@ -2300,7 +2300,7 @@ SW_Node1
 Text Label 5250 13475 0    50   ~ 0
 PWM_L1
 $Comp
-L Driver_FET:UCC21520DW U6
+L Shield_Nucleo-rescue:UCC21520DW-Driver_FET U6
 U 1 1 61AC70B8
 P 11300 13275
 F 0 "U6" H 11300 13940 50  0000 C CNN
@@ -2312,7 +2312,7 @@ F 4 "UCC21222DR" H 11300 13275 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0138
+L Shield_Nucleo-rescue:GNDD-power #PWR0138
 U 1 1 61AC70BE
 P 10575 14125
 F 0 "#PWR0138" H 10575 13875 50  0001 C CNN
@@ -2325,7 +2325,7 @@ $EndComp
 Wire Wire Line
 	10800 13675 10725 13675
 $Comp
-L Device:C_Small C27
+L Shield_Nucleo-rescue:C_Small-Device C27
 U 1 1 61AC70C5
 P 9825 13000
 F 0 "C27" H 9917 13046 50  0000 L CNN
@@ -2337,7 +2337,7 @@ F 4 "C0805C330J5GACTU" H 9825 13000 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C28
+L Shield_Nucleo-rescue:C_Small-Device C28
 U 1 1 61AC70CB
 P 9825 13475
 F 0 "C28" H 9917 13521 50  0000 L CNN
@@ -2349,7 +2349,7 @@ F 4 "C0805C330J5GACTU" H 9825 13475 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R17
+L Shield_Nucleo-rescue:R-Device R17
 U 1 1 61AC70D1
 P 9350 13175
 F 0 "R17" V 9500 13150 50  0000 L CNN
@@ -2361,7 +2361,7 @@ F 4 "RT0805FRE0751RL" H 9350 13175 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R18
+L Shield_Nucleo-rescue:R-Device R18
 U 1 1 61AC70D7
 P 9350 13275
 F 0 "R18" V 9175 13250 50  0000 L CNN
@@ -2387,7 +2387,7 @@ Connection ~ 9825 13275
 Wire Wire Line
 	9825 13275 10800 13275
 $Comp
-L power:GNDD #PWR0139
+L Shield_Nucleo-rescue:GNDD-power #PWR0139
 U 1 1 61AC70E5
 P 9825 13625
 F 0 "#PWR0139" H 9825 13375 50  0001 C CNN
@@ -2398,7 +2398,7 @@ F 3 "" H 9825 13625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR0140
+L Shield_Nucleo-rescue:GNDD-power #PWR0140
 U 1 1 61AC70EB
 P 9825 12850
 F 0 "#PWR0140" H 9825 12600 50  0001 C CNN
@@ -2413,7 +2413,7 @@ Wire Wire Line
 Wire Wire Line
 	9825 13575 9825 13625
 $Comp
-L Device:R R19
+L Shield_Nucleo-rescue:R-Device R19
 U 1 1 61AC70F3
 P 10375 13800
 F 0 "R19" H 10475 13875 50  0000 L CNN
@@ -2429,7 +2429,7 @@ Wire Wire Line
 Wire Wire Line
 	10375 13575 10375 13650
 $Comp
-L Device:C_Small C30
+L Shield_Nucleo-rescue:C_Small-Device C30
 U 1 1 61AC70FB
 P 10575 13800
 F 0 "C30" H 10750 13750 50  0000 L CNN
@@ -2459,7 +2459,7 @@ Wire Wire Line
 Wire Wire Line
 	10575 14050 10575 14125
 $Comp
-L power:+5VD #PWR0141
+L Shield_Nucleo-rescue:+5VD-power #PWR0141
 U 1 1 61AC710B
 P 10625 12800
 F 0 "#PWR0141" H 10625 12650 50  0001 C CNN
@@ -2481,7 +2481,7 @@ Wire Wire Line
 	10200 14050 10375 14050
 Connection ~ 10375 14050
 $Comp
-L Device:C_Small C26
+L Shield_Nucleo-rescue:C_Small-Device C26
 U 1 1 61AC711D
 P 9650 12125
 F 0 "C26" H 9742 12171 50  0000 L CNN
@@ -2493,7 +2493,7 @@ F 4 "CC0805KRX7R9BB104" H 9650 12125 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C25
+L Shield_Nucleo-rescue:C_Small-Device C25
 U 1 1 61AC7123
 P 9225 12125
 F 0 "C25" H 9317 12171 50  0000 L CNN
@@ -2505,7 +2505,7 @@ F 4 "CC0805KRX7R9BB104" H 9225 12125 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VD #PWR0142
+L Shield_Nucleo-rescue:+5VD-power #PWR0142
 U 1 1 61AC7129
 P 9450 11825
 F 0 "#PWR0142" H 9450 11675 50  0001 C CNN
@@ -2524,7 +2524,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 12025 9650 11925
 $Comp
-L power:GNDD #PWR0143
+L Shield_Nucleo-rescue:GNDD-power #PWR0143
 U 1 1 61AC7136
 P 9450 12400
 F 0 "#PWR0143" H 9450 12150 50  0001 C CNN
@@ -2547,7 +2547,7 @@ Wire Wire Line
 Wire Wire Line
 	9200 13275 8775 13275
 $Comp
-L power:GNDREF #PWR0144
+L Shield_Nucleo-rescue:GNDREF-power #PWR0144
 U 1 1 61AC7145
 P 12425 13750
 F 0 "#PWR0144" H 12425 13500 50  0001 C CNN
@@ -2558,7 +2558,7 @@ F 3 "" H 12425 13750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0145
+L Shield_Nucleo-rescue:+12V-power #PWR0145
 U 1 1 61AC714B
 P 11950 13425
 F 0 "#PWR0145" H 11950 13275 50  0001 C CNN
@@ -2575,7 +2575,7 @@ Wire Wire Line
 Wire Wire Line
 	12425 13675 12425 13750
 $Comp
-L Device:D_Schottky D11
+L Shield_Nucleo-rescue:D_Schottky-Device D11
 U 1 1 61AC7155
 P 12225 12400
 F 0 "D11" V 12271 12320 50  0000 R CNN
@@ -2587,7 +2587,7 @@ F 4 "STTH4R02U" H 12225 12400 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R20
+L Shield_Nucleo-rescue:R-Device R20
 U 1 1 61AC715B
 P 12225 12025
 F 0 "R20" H 12050 12000 50  0000 L CNN
@@ -2605,7 +2605,7 @@ Wire Wire Line
 Wire Wire Line
 	11800 12875 12225 12875
 $Comp
-L Device:C_Small C34
+L Shield_Nucleo-rescue:C_Small-Device C34
 U 1 1 61AC7164
 P 13250 14400
 F 0 "C34" H 13342 14446 50  0000 L CNN
@@ -2617,7 +2617,7 @@ F 4 "CL32B106KBJZW6E" H 13250 14400 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C32
+L Shield_Nucleo-rescue:C_Small-Device C32
 U 1 1 61AC716A
 P 12850 14400
 F 0 "C32" H 12942 14446 50  0000 L CNN
@@ -2641,7 +2641,7 @@ Wire Wire Line
 Wire Wire Line
 	13250 14600 13250 14500
 $Comp
-L power:GNDREF #PWR0146
+L Shield_Nucleo-rescue:GNDREF-power #PWR0146
 U 1 1 61AC7176
 P 13050 14650
 F 0 "#PWR0146" H 13050 14400 50  0001 C CNN
@@ -2657,7 +2657,7 @@ Connection ~ 13050 14600
 Wire Wire Line
 	13050 14600 13250 14600
 $Comp
-L power:+12V #PWR0147
+L Shield_Nucleo-rescue:+12V-power #PWR0147
 U 1 1 61AC717F
 P 13050 14175
 F 0 "#PWR0147" H 13050 14025 50  0001 C CNN
@@ -2673,7 +2673,7 @@ Connection ~ 13050 14225
 Wire Wire Line
 	13050 14225 13250 14225
 $Comp
-L power:+12V #PWR0148
+L Shield_Nucleo-rescue:+12V-power #PWR0148
 U 1 1 61AC7188
 P 12225 11800
 F 0 "#PWR0148" H 12225 11650 50  0001 C CNN
@@ -2686,7 +2686,7 @@ $EndComp
 Wire Wire Line
 	12225 11800 12225 11875
 $Comp
-L Device:C_Small C33
+L Shield_Nucleo-rescue:C_Small-Device C33
 U 1 1 61AC718F
 P 13350 12800
 F 0 "C33" H 13442 12846 50  0000 L CNN
@@ -2698,7 +2698,7 @@ F 4 "CL21B105KBFNFNE" H 13350 12800 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C31
+L Shield_Nucleo-rescue:C_Small-Device C31
 U 1 1 61AC7195
 P 12950 12800
 F 0 "C31" H 13042 12846 50  0000 L CNN
@@ -2743,7 +2743,7 @@ Connection ~ 13350 13075
 Text Label 12400 13575 0    50   ~ 0
 PWM_L2
 $Comp
-L Isolator:SFH617A-2X009T U7
+L Shield_Nucleo-rescue:SFH617A-2X009T-Isolator U7
 U 1 1 61FFCF32
 P 15475 13075
 F 0 "U7" H 15475 13400 50  0000 C CNN
@@ -2761,7 +2761,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 12975 15175 12975
 $Comp
-L Device:R R21
+L Shield_Nucleo-rescue:R-Device R21
 U 1 1 6208B657
 P 15000 13375
 F 0 "R21" H 15050 13325 50  0000 L CNN
@@ -2777,7 +2777,7 @@ Wire Wire Line
 Wire Wire Line
 	15000 13175 15000 13225
 $Comp
-L power:GNDD #PWR0149
+L Shield_Nucleo-rescue:GNDD-power #PWR0149
 U 1 1 62102D12
 P 15000 13600
 F 0 "#PWR0149" H 15000 13350 50  0001 C CNN
@@ -2792,7 +2792,7 @@ Wire Wire Line
 Wire Wire Line
 	14900 12775 15000 12775
 $Comp
-L power:+12V #PWR0150
+L Shield_Nucleo-rescue:+12V-power #PWR0150
 U 1 1 621ED992
 P 16000 12825
 F 0 "#PWR0150" H 16000 12675 50  0001 C CNN
@@ -2809,7 +2809,7 @@ Wire Wire Line
 Wire Wire Line
 	15775 13175 16000 13175
 $Comp
-L Device:R R22
+L Shield_Nucleo-rescue:R-Device R22
 U 1 1 62356230
 P 16000 13400
 F 0 "R22" H 16075 13350 50  0000 L CNN
@@ -2824,7 +2824,7 @@ Wire Wire Line
 	16000 13250 16000 13175
 Connection ~ 16000 13175
 $Comp
-L power:GNDREF #PWR0151
+L Shield_Nucleo-rescue:GNDREF-power #PWR0151
 U 1 1 6240A7B4
 P 16000 13600
 F 0 "#PWR0151" H 16000 13350 50  0001 C CNN
@@ -2873,7 +2873,7 @@ Wire Notes Line
 Text Notes 9350 3750 0    50   ~ 0
 Zener diodes protect from potential overvoltages while resistors prevent accidental high current flow\n\n
 $Comp
-L power:GNDREF #PWR033
+L Shield_Nucleo-rescue:GNDREF-power #PWR033
 U 1 1 62884D14
 P 16600 13325
 F 0 "#PWR033" H 16600 13075 50  0001 C CNN
@@ -2884,7 +2884,7 @@ F 3 "" H 16600 13325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Crystal_GND24 Y1
+L Shield_Nucleo-rescue:Crystal_GND24-Device Y1
 U 1 1 62A5FC15
 P 1675 5850
 F 0 "Y1" H 950 6300 50  0000 L CNN
@@ -2942,7 +2942,7 @@ Wire Wire Line
 	1200 5850 1325 5850
 Connection ~ 1325 5850
 $Comp
-L Device:R R23
+L Shield_Nucleo-rescue:R-Device R23
 U 1 1 634D9AA5
 P 2300 5850
 F 0 "R23" V 2475 5800 50  0000 L CNN
@@ -2980,7 +2980,7 @@ STLINK_TX
 Text Label 2775 2275 0    50   ~ 0
 NRST
 $Comp
-L power:+3.3V #PWR035
+L Shield_Nucleo-rescue:+3.3V-power #PWR035
 U 1 1 63CBE6E8
 P 6775 2800
 F 0 "#PWR035" H 6775 2650 50  0001 C CNN
@@ -2995,7 +2995,7 @@ Wire Wire Line
 Wire Wire Line
 	6775 2875 7200 2875
 $Comp
-L power:GNDD #PWR037
+L Shield_Nucleo-rescue:GNDD-power #PWR037
 U 1 1 63DBAB46
 P 7025 3025
 F 0 "#PWR037" H 7025 2775 50  0001 C CNN
@@ -3017,7 +3017,7 @@ Connection ~ 7125 3025
 Wire Wire Line
 	7125 3025 7125 3075
 $Comp
-L power:GNDD #PWR034
+L Shield_Nucleo-rescue:GNDD-power #PWR034
 U 1 1 63EAFBE7
 P 6525 3325
 F 0 "#PWR034" H 6525 3075 50  0001 C CNN
@@ -3048,7 +3048,7 @@ NRST
 Wire Wire Line
 	8075 3275 7700 3275
 $Comp
-L Connector:Conn_01x06_Female SWD1
+L Shield_Nucleo-rescue:Conn_01x06_Female-Connector SWD1
 U 1 1 643AFACC
 P 7325 4350
 F 0 "SWD1" H 7375 4325 50  0000 L CNN
@@ -3060,7 +3060,7 @@ F 4 "TSW-106-07-T-S" H 7325 4350 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR038
+L Shield_Nucleo-rescue:+3.3V-power #PWR038
 U 1 1 64438AFE
 P 6900 4075
 F 0 "#PWR038" H 6900 3925 50  0001 C CNN
@@ -3079,7 +3079,7 @@ SWCLK
 Wire Wire Line
 	6900 4250 7125 4250
 $Comp
-L power:GNDD #PWR036
+L Shield_Nucleo-rescue:GNDD-power #PWR036
 U 1 1 645B9E89
 P 6675 4350
 F 0 "#PWR036" H 6675 4100 50  0001 C CNN
@@ -3116,7 +3116,7 @@ Wire Wire Line
 Text Label 7125 3500 2    50   ~ 0
 STLINK_RX
 $Comp
-L Device:R R24
+L Shield_Nucleo-rescue:R-Device R24
 U 1 1 60A76F89
 P 6875 3275
 F 0 "R24" V 7025 3250 50  0000 L CNN
@@ -3148,7 +3148,7 @@ Wire Notes Line
 Text Notes 6350 2250 0    50   ~ 0
 STDC14 / ARM10 connector for debugger connection\nCompatible with STLINKV3\n
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J8
+L Shield_Nucleo-rescue:Conn_02x07_Odd_Even-Connector_Generic J8
 U 1 1 61254F7E
 P 7400 3075
 F 0 "J8" H 7450 3592 50  0000 C CNN
@@ -3164,7 +3164,7 @@ RS3-21001D1A
 Text Notes 8850 10825 0    50   ~ 0
 RJE721881411 
 $Comp
-L power:GNDD #PWR0118
+L Shield_Nucleo-rescue:GNDD-power #PWR0118
 U 1 1 617F0E76
 P 21025 1650
 F 0 "#PWR0118" H 21025 1400 50  0001 C CNN
@@ -3178,7 +3178,7 @@ Connection ~ 21025 1550
 Wire Wire Line
 	21025 1550 21025 1650
 $Comp
-L power:GNDREF #PWR0119
+L Shield_Nucleo-rescue:GNDREF-power #PWR0119
 U 1 1 6199F622
 P 21025 2775
 F 0 "#PWR0119" H 21025 2525 50  0001 C CNN
@@ -3202,7 +3202,7 @@ B = 3450\n
 Wire Wire Line
 	17725 1600 17725 1675
 $Comp
-L power:+3.3V #PWR039
+L Shield_Nucleo-rescue:+3.3V-power #PWR039
 U 1 1 627A9EC5
 P 17725 1600
 F 0 "#PWR039" H 17725 1450 50  0001 C CNN
@@ -3216,7 +3216,7 @@ Connection ~ 17725 2100
 Wire Wire Line
 	17725 1975 17725 2100
 $Comp
-L Device:R R25
+L Shield_Nucleo-rescue:R-Device R25
 U 1 1 62718547
 P 17725 1825
 F 0 "R25" H 17875 1800 50  0000 L CNN
@@ -3230,7 +3230,7 @@ $EndComp
 Wire Wire Line
 	17725 2550 17725 2625
 $Comp
-L power:GNDD #PWR040
+L Shield_Nucleo-rescue:GNDD-power #PWR040
 U 1 1 62333FF9
 P 17725 2625
 F 0 "#PWR040" H 17725 2375 50  0001 C CNN
@@ -3247,7 +3247,7 @@ Wire Wire Line
 Text Label 17350 2100 0    50   ~ 0
 Temp
 $Comp
-L Device:Thermistor TH1
+L Shield_Nucleo-rescue:Thermistor-Device TH1
 U 1 1 61AD6692
 P 17725 2350
 F 0 "TH1" H 17830 2396 50  0000 L CNN
@@ -3273,7 +3273,7 @@ V_high_mcu
 Text Notes 13175 10225 0    50   ~ 0
 filter to be added\n
 $Comp
-L Device:CP1_Small C29
+L Shield_Nucleo-rescue:CP1_Small-Device C29
 U 1 1 60BCBBF5
 P 21050 7825
 F 0 "C29" H 21141 7871 50  0000 L CNN
@@ -3292,7 +3292,7 @@ Wire Wire Line
 	20950 7625 21050 7625
 Connection ~ 21050 7625
 $Comp
-L Device:C_Small C19
+L Shield_Nucleo-rescue:C_Small-Device C19
 U 1 1 60DFE6D9
 P 19400 7825
 F 0 "C19" H 19492 7871 50  0000 L CNN
@@ -3312,7 +3312,7 @@ Connection ~ 19400 8025
 Wire Wire Line
 	19400 8025 19550 8025
 $Comp
-L Device:C_Small C35
+L Shield_Nucleo-rescue:C_Small-Device C35
 U 1 1 61049C35
 P 13700 8375
 F 0 "C35" H 13792 8421 50  0000 L CNN
@@ -3339,7 +3339,7 @@ Wire Wire Line
 Wire Wire Line
 	15325 9250 15325 9150
 $Comp
-L Device:C_Small C38
+L Shield_Nucleo-rescue:C_Small-Device C38
 U 1 1 6128ACFF
 P 15325 9350
 F 0 "C38" H 15417 9396 50  0000 L CNN
@@ -3351,7 +3351,7 @@ F 4 "CL32B106KBJZW6E" H 15325 9350 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C37
+L Shield_Nucleo-rescue:C_Small-Device C37
 U 1 1 6147BA04
 P 15300 8350
 F 0 "C37" H 15392 8396 50  0000 L CNN
@@ -3374,7 +3374,7 @@ Wire Wire Line
 Wire Wire Line
 	15175 8575 15175 8625
 $Comp
-L Device:C_Small C36
+L Shield_Nucleo-rescue:C_Small-Device C36
 U 1 1 61552459
 P 13700 9350
 F 0 "C36" H 13792 9396 50  0000 L CNN
@@ -3397,7 +3397,7 @@ Wire Wire Line
 Wire Wire Line
 	13900 9550 13900 9600
 $Comp
-L Device:C_Small C40
+L Shield_Nucleo-rescue:C_Small-Device C40
 U 1 1 61699404
 P 17500 7800
 F 0 "C40" H 17592 7846 50  0000 L CNN
@@ -3419,7 +3419,7 @@ Connection ~ 17500 8025
 Wire Wire Line
 	17500 8025 18375 8025
 $Comp
-L Device:C_Small C39
+L Shield_Nucleo-rescue:C_Small-Device C39
 U 1 1 61775415
 P 16550 7825
 F 0 "C39" H 16642 7871 50  0000 L CNN
@@ -3473,7 +3473,7 @@ Wire Wire Line
 Wire Wire Line
 	12375 2125 12375 2175
 $Comp
-L power:GNDD #PWR09
+L Shield_Nucleo-rescue:GNDD-power #PWR09
 U 1 1 62282732
 P 12375 2175
 F 0 "#PWR09" H 12375 1925 50  0001 C CNN
@@ -3486,7 +3486,7 @@ $EndComp
 Wire Wire Line
 	12375 1875 12375 1925
 $Comp
-L Device:D_Zener_Small D3
+L Shield_Nucleo-rescue:D_Zener_Small-Device D3
 U 1 1 61FAFA50
 P 12375 2025
 F 0 "D3" V 12329 2095 50  0000 L CNN
@@ -3505,7 +3505,7 @@ Temp_mcu
 Wire Wire Line
 	14650 3075 14650 3125
 $Comp
-L power:GNDD #PWR016
+L Shield_Nucleo-rescue:GNDD-power #PWR016
 U 1 1 621B93D9
 P 14650 3125
 F 0 "#PWR016" H 14650 2875 50  0001 C CNN
@@ -3518,7 +3518,7 @@ $EndComp
 Wire Wire Line
 	14650 2825 14650 2875
 $Comp
-L Device:D_Zener_Small D9
+L Shield_Nucleo-rescue:D_Zener_Small-Device D9
 U 1 1 62095E19
 P 14650 2975
 F 0 "D9" V 14604 3045 50  0000 L CNN
@@ -3532,7 +3532,7 @@ $EndComp
 Wire Wire Line
 	14850 2825 14650 2825
 $Comp
-L Device:R R8
+L Shield_Nucleo-rescue:R-Device R8
 U 1 1 6059F7CD
 P 15000 2825
 F 0 "R8" V 15150 2800 50  0000 L CNN
@@ -3546,7 +3546,7 @@ $EndComp
 Text Label 15175 2825 0    50   ~ 0
 Temp
 $Comp
-L power:GNDD #PWR0106
+L Shield_Nucleo-rescue:GNDD-power #PWR0106
 U 1 1 621D621A
 P 15525 2925
 F 0 "#PWR0106" H 15525 2675 50  0001 C CNN
@@ -3649,7 +3649,7 @@ VREF1024
 Wire Wire Line
 	16100 9625 16550 9625
 $Comp
-L power:GNDD #PWR0117
+L Shield_Nucleo-rescue:GNDD-power #PWR0117
 U 1 1 60FE6C0A
 P 16450 9775
 F 0 "#PWR0117" H 16450 9525 50  0001 C CNN
@@ -3720,7 +3720,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 1900 4475 1900
 $Comp
-L Connector:TestPoint TP8
+L Shield_Nucleo-rescue:TestPoint-Connector TP8
 U 1 1 607A6952
 P 4475 1900
 F 0 "TP8" V 4400 1925 50  0000 L CNN
@@ -3732,7 +3732,7 @@ F 4 "5001" H 4475 1900 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R26
+L Shield_Nucleo-rescue:R_Small-Device R26
 U 1 1 60857965
 P 21550 5625
 F 0 "R26" H 21354 5625 50  0000 C CNN
@@ -3744,7 +3744,7 @@ F 4 "APC0805B100KN" H 21550 5625 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R27
+L Shield_Nucleo-rescue:R_Small-Device R27
 U 1 1 608A70AB
 P 21550 5875
 F 0 "R27" H 21354 5875 50  0000 C CNN
@@ -3769,7 +3769,7 @@ Wire Wire Line
 Text Label 20825 5750 0    50   ~ 0
 VREF1024
 $Comp
-L power:GNDD #PWR0120
+L Shield_Nucleo-rescue:GNDD-power #PWR0120
 U 1 1 60C151A0
 P 21550 6050
 F 0 "#PWR0120" H 21550 5800 50  0001 C CNN
@@ -3788,7 +3788,7 @@ Wire Notes Line
 Wire Notes Line
 	16850 4250 22675 4250
 $Comp
-L Jumper:SolderJumper_2_Open JP4
+L Shield_Nucleo-rescue:SolderJumper_2_Open-Jumper JP4
 U 1 1 60E55E7E
 P 21550 5300
 F 0 "JP4" V 21550 5505 50  0000 C CNN
@@ -3810,7 +3810,7 @@ Wire Wire Line
 Text Label 5025 2875 2    50   ~ 0
 DAC2
 $Comp
-L Jumper:SolderJumper_2_Open JP3
+L Shield_Nucleo-rescue:SolderJumper_2_Open-Jumper JP3
 U 1 1 61438E85
 P 20450 5300
 F 0 "JP3" V 20450 5505 50  0000 C CNN
@@ -3840,7 +3840,7 @@ Text Label 21250 8425 0    50   ~ 0
 Text Label 21025 1150 0    50   ~ 0
 +12VD
 $Comp
-L power:+12V #PWR042
+L Shield_Nucleo-rescue:+12V-power #PWR042
 U 1 1 61CB8E3F
 P 20675 2225
 F 0 "#PWR042" H 20675 2075 50  0001 C CNN
@@ -3920,7 +3920,7 @@ Wire Wire Line
 Wire Wire Line
 	13900 9150 14150 9150
 $Comp
-L Connector:Conn_01x03_Male J4
+L Shield_Nucleo-rescue:Conn_01x03_Male-Connector J4
 U 1 1 607EEA57
 P 7400 5200
 F 0 "J4" H 7450 5025 50  0000 C CNN
@@ -3932,7 +3932,7 @@ F 4 "TSW-103-07-T-S" H 7400 5200 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR044
+L Shield_Nucleo-rescue:GNDD-power #PWR044
 U 1 1 608E5E39
 P 8125 5100
 F 0 "#PWR044" H 8125 4850 50  0001 C CNN
@@ -3945,7 +3945,7 @@ $EndComp
 Wire Wire Line
 	7600 5100 8125 5100
 $Comp
-L Connector:Conn_01x05_Male J5
+L Shield_Nucleo-rescue:Conn_01x05_Male-Connector J5
 U 1 1 609DAEDF
 P 7400 5975
 F 0 "J5" H 7425 5675 50  0000 C CNN
@@ -3957,7 +3957,7 @@ F 4 "TSW-105-07-T-S" H 7400 5975 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR043
+L Shield_Nucleo-rescue:GNDD-power #PWR043
 U 1 1 60A7F5F6
 P 7750 6175
 F 0 "#PWR043" H 7750 5925 50  0001 C CNN
@@ -3980,7 +3980,7 @@ I1 is tied to PC1 which is \nADC2 CH2 or \nCOMP1 INP (in current mode)
 Wire Wire Line
 	8400 4625 8400 4675
 $Comp
-L power:GNDD #PWR041
+L Shield_Nucleo-rescue:GNDD-power #PWR041
 U 1 1 61392ABD
 P 8400 4675
 F 0 "#PWR041" H 8400 4425 50  0001 C CNN
@@ -3995,7 +3995,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 4275 8400 4325
 $Comp
-L Device:R R28
+L Shield_Nucleo-rescue:R-Device R28
 U 1 1 6129C61B
 P 8400 4475
 F 0 "R28" H 8470 4521 50  0000 L CNN
@@ -4007,7 +4007,7 @@ F 4 "CRCW0805330RFKEAC" H 8400 4475 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED LED1
+L Shield_Nucleo-rescue:LED-Device LED1
 U 1 1 61233B4F
 P 8400 4125
 F 0 "LED1" V 8439 4007 50  0000 R CNN
@@ -4058,7 +4058,7 @@ I2_low_mcu
 Wire Wire Line
 	13175 2425 13175 2475
 $Comp
-L power:GNDD #PWR011
+L Shield_Nucleo-rescue:GNDD-power #PWR011
 U 1 1 6226C392
 P 13175 2475
 F 0 "#PWR011" H 13175 2225 50  0001 C CNN
@@ -4071,7 +4071,7 @@ $EndComp
 Wire Wire Line
 	13175 2175 13175 2225
 $Comp
-L Device:D_Zener_Small D5
+L Shield_Nucleo-rescue:D_Zener_Small-Device D5
 U 1 1 6206A5A4
 P 13175 2325
 F 0 "D5" V 13129 2395 50  0000 L CNN
@@ -4085,7 +4085,7 @@ $EndComp
 Text Label 14600 2175 0    50   ~ 0
 I2_low_op
 $Comp
-L Device:R R4
+L Shield_Nucleo-rescue:R-Device R4
 U 1 1 605168DE
 P 14425 2175
 F 0 "R4" V 14575 2150 50  0000 L CNN
@@ -4111,7 +4111,7 @@ F 4 "x" H 16150 2025 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDD #PWR032
+L Shield_Nucleo-rescue:GNDD-power #PWR032
 U 1 1 616D387A
 P 15525 2625
 F 0 "#PWR032" H 15525 2375 50  0001 C CNN
@@ -4122,7 +4122,7 @@ F 3 "" H 15525 2625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR031
+L Shield_Nucleo-rescue:GNDD-power #PWR031
 U 1 1 61667B0D
 P 15500 2275
 F 0 "#PWR031" H 15500 2025 50  0001 C CNN
@@ -4133,7 +4133,7 @@ F 3 "" H 15500 2275 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR030
+L Shield_Nucleo-rescue:GNDD-power #PWR030
 U 1 1 616317B3
 P 15500 1975
 F 0 "#PWR030" H 15500 1725 50  0001 C CNN
@@ -4144,7 +4144,7 @@ F 3 "" H 15500 1975 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR029
+L Shield_Nucleo-rescue:GNDD-power #PWR029
 U 1 1 615FB3D4
 P 15000 1625
 F 0 "#PWR029" H 15000 1375 50  0001 C CNN
@@ -4155,7 +4155,7 @@ F 3 "" H 15000 1625 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR028
+L Shield_Nucleo-rescue:GNDD-power #PWR028
 U 1 1 615C58EC
 P 15000 1325
 F 0 "#PWR028" H 15000 1075 50  0001 C CNN
@@ -4166,7 +4166,7 @@ F 3 "" H 15000 1325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDD #PWR08
+L Shield_Nucleo-rescue:GNDD-power #PWR08
 U 1 1 6158FE4D
 P 15000 1025
 F 0 "#PWR08" H 15000 775 50  0001 C CNN
@@ -4177,7 +4177,7 @@ F 3 "" H 15000 1025 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Notes Line
-	19925 650  9225 650 
+	19175 675  8475 675 
 Wire Wire Line
 	14275 1525 11650 1525
 Wire Wire Line
@@ -4194,7 +4194,7 @@ Wire Wire Line
 Wire Wire Line
 	13875 2525 13875 2575
 $Comp
-L Device:D_Zener_Small D6
+L Shield_Nucleo-rescue:D_Zener_Small-Device D6
 U 1 1 6208017C
 P 13875 2675
 F 0 "D6" V 13829 2745 50  0000 L CNN
@@ -4206,7 +4206,7 @@ F 4 "MMSZ5226C-HE3-08" H 13875 2675 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L Shield_Nucleo-rescue:R-Device R3
 U 1 1 61D45CC5
 P 14425 925
 F 0 "R3" V 14575 900 50  0000 L CNN
@@ -4218,7 +4218,7 @@ F 4 "PCF-W0805LF-03-2002-B-P-LT" H 14425 925 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R5
+L Shield_Nucleo-rescue:R-Device R5
 U 1 1 61D302D0
 P 14425 1225
 F 0 "R5" V 14575 1200 50  0000 L CNN
@@ -4230,7 +4230,7 @@ F 4 "PCF-W0805LF-03-2002-B-P-LT" H 14425 1225 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R7
+L Shield_Nucleo-rescue:R-Device R7
 U 1 1 61C92639
 P 14425 1525
 F 0 "R7" V 14575 1500 50  0000 L CNN
@@ -4249,10 +4249,10 @@ Text Label 14950 1525 2    50   ~ 0
 V_high_op
 Text Label 14950 1225 2    50   ~ 0
 V2_low_op
-Text Label 14950 925  2    50   ~ 0
+Text Label 14925 925  2    50   ~ 0
 V1_low_op
 $Comp
-L Device:R R6
+L Shield_Nucleo-rescue:R-Device R6
 U 1 1 60518213
 P 14425 2525
 F 0 "R6" V 14575 2500 50  0000 L CNN
@@ -4264,7 +4264,7 @@ F 4 "PCF-W0805LF-03-2002-B-P-LT" H 14425 2525 50  0001 C CNN "Manf#"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R2
+L Shield_Nucleo-rescue:R-Device R2
 U 1 1 605148BD
 P 14425 1875
 F 0 "R2" V 14575 1850 50  0000 L CNN
@@ -4275,4 +4275,12 @@ F 4 "PCF-W0805LF-03-2002-B-P-LT" H 14425 1875 50  0001 C CNN "Manf#"
 	1    14425 1875
 	0    -1   -1   0   
 $EndComp
+Text Notes 13875 825  0    50   ~ 0
+Replaced with a 120Ω resistor\n\n
+Text Notes 13150 1400 0    50   ~ 0
+Replaced with a 120Ω resistor\n
+Text Notes 13800 2400 0    50   ~ 0
+Replaced with a 120Ω resistor\n
+Text Notes 13875 2050 0    50   ~ 0
+Replaced with a 750Ω resistor\n
 $EndSCHEMATC

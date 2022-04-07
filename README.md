@@ -1,15 +1,36 @@
+# O2 Non Isolated Dual Channel Reprogrammable Converter
+
 ![](Images/power_ban-1.png)
-![](Images/shield_ban-1.png)
 
-# Low Side Synchronous Buck
 
-This converter is designed to operate between 10V to 120V as a Buck or Boost converter. 
-The power rating is given by the maximum current the inductors
-and is currently 9Amps per power leg. Which means a maximum current flow 
-of 18Amps continuous in interleaved operation. 
+OwnTech's O² reprogrammable power converter is
+a bi-directional 300W power converter. It features a
+dual 12V to 72V low side and a single 40V to 100V
+high side. Its maximum current value is 8A per
+power channel.
+The power channels can be used independently,
+yielding two output voltages or combined to double
+the current.
 
 A reasonable power rating is 300W. 
 The converter is meant to operate at 200kHz with interleaving control. 
+
+The O² converter is fully open-source, with a
+strong compatibility with the Zephyr RTOS and
+modular programming approach.
+A MATLAB® suit for code generation is also
+available for auto-generating the code.
+
+
+![](Images/shield_ban-1.png)
+
+OwnTech's O² Reprogrammable power converter has a dedicated control board
+composed of a STM32G474RE microcontroller connected to power drivers and a
+series of peripherals. This board is electrically isolated from the power board.
+
+OwnTech's O² has two expansion connectors compatible with USART and SPI. They
+can be used to interface typical add on modules such as SD card readers without the
+use of adapters.
 
 
 # Repository architecture 

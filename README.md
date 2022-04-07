@@ -28,7 +28,10 @@ The converter is meant to operate at 200kHz with interleaving control.
 
 The repository has the following organization 
 
-* Datasheet 	Contains all the datasheet of main components and integrated circuits used in the design
+* Documentation
+   * CN-01 Calculation note of the power converter
+   * Datasheet Datasheet of the power converter 
+   * Components_Datasheets Contains main components datasheets.
 * KiCAD_files	Contains the KiCAD project, for this converter two separated .pro files contains the two different pcb that compose the power converter. 
 * libs  
    * footprints.pretty Contains the project specific footprints

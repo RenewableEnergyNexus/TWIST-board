@@ -1,4 +1,4 @@
-update=mer. 09 sept. 2020 11:49:04
+update=09/06/2021 17:00:38
 version=1
 last_client=kicad
 [general]
@@ -16,12 +16,12 @@ LibDir=
 version=1
 PageLayoutDescrFile=Title_block.kicad_wks
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.2
 MinViaDiameter=0.4
 MinViaDrill=0.3
@@ -68,12 +68,12 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
-Enabled=0
+Type=1
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=0
-Enabled=0
+Type=1
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -243,7 +243,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=Title_block.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/amel-/OneDrive/Documents/stage/1-documentation/1leg/Definition_Package_Power/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

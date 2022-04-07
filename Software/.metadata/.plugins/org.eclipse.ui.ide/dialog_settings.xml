@@ -9,12 +9,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-			<item value="/home/jal/Documents/OwnTech/1leg/Software/AC.zip_expanded/Interleaved_Buck"/>
-			<item value="/home/jal/Documents/OwnTech/1leg/Software/AC.zip_expanded/Interleaved_Boost"/>
-			<item value="/home/jal/Documents/OwnTech/1leg/AC.zip"/>
-			<item value="/home/jal/Documents/OwnTech/1leg/Software"/>
-			<item value="/home/jal/Documents/OwnTech/1leg/Software/AC"/>
-			<item value="/home/jal/Documents/OwnTech/1leg/Software/AC.zip"/>
+			<item value="/home/jal/ownCloud/OwnTech/8-Interns/2-2021/1-Jacques/Test_boards_V1.1.2/Test_LED_Amine_archive.zip"/>
 		</list>
 	</section>
 </section>
